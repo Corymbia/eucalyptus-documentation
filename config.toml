@@ -1,0 +1,23 @@
+baseURL = "https://docs.eucalyptus.cloud/eucalyptus-doc/"
+languageCode = "en-us"
+title = "Eucalyptus Documentation"
+theme = "hugo-theme-learn"
+
+[params]
+editURL = "https://github.com/corymbia/eucalyptus-documentation/edit/master/content/"
+themeVariant = "blue"
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-cloud'></i> Site"
+url = "https://www.eucalyptus.cloud/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-rss'></i> Blog"
+url = "https://blog.eucalyptus.cloud/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub"
+url = "https://github.com/corymbia/eucalyptus/"
+weight = 30
