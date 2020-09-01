@@ -1,0 +1,15 @@
++++
+title = "Image Management Guide"
+weight = 5
+chapter = true
++++
+
+..  _image-guide:
+
+
+
+======================
+Image Management Guide
+======================
+
+This guide contains concepts and tasks to help you work with images in your cloud.

@@ -1,0 +1,15 @@
++++
+title = "Create an HVM Image"
+weight = 5
+chapter = true
++++
+
+..  _img_task_create_image_intro:
+
+
+
+===================
+Create an HVM Image
+===================
+
+This section covers how to create a new image for use in your Eucalyptus cloud.
