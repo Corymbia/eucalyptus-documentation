@@ -4,6 +4,10 @@ title = "Eucalyptus Documentation"
 
 ..  _index_main:
 
+########################
+Eucalyptus Documentation
+########################
+
 =====================================
 Installing and Maintaining Eucalyptus
 =====================================
