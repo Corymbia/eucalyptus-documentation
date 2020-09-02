@@ -7,6 +7,9 @@ theme = "hugo-theme-learn"
 editURL = "https://github.com/corymbia/eucalyptus-documentation/edit/master/content/"
 themeVariant = "blue"
 
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-cloud'></i> Site"
 url = "https://www.eucalyptus.cloud/"
