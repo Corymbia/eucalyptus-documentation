@@ -1,7 +1,6 @@
 +++
 title = "Hosts"
 weight = 10
-hidden = true
 +++
 
 This topic describes best practices for machines that host a Eucalyptus component.Eucalyptus recommends restricting physical and network access to all hosts comprising the Eucalyptus cloud, and disabling unused applications and ports on all machines used in your cloud. 

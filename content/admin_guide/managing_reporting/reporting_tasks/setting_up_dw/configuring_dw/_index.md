@@ -1,7 +1,6 @@
 +++
 title = "Configure the Database"
 weight = 10
-hidden = true
 +++
 
 To configure the database in your data warehouse perform the tasksInitialize the PostgreSQL database. 

@@ -1,7 +1,6 @@
 +++
 title = "Migrate Instances Between Node Controllers"
 weight = 10
-hidden = true
 +++
 
 In order to ensure optimal system performance, or to perform system maintenance, it is sometimes necessary to move running instances between Node Controllers (NCs). You can migrate instances individually, or migrate all instances from a given NC.

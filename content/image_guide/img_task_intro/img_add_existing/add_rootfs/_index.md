@@ -1,7 +1,6 @@
 +++
 title = "Add a Root Filesystem"
 weight = 10
-hidden = true
 +++
 
 When you add a root filesystem to Walrus, you bundle the root filesystem file, upload the file to a bucket in Walrus that you name, and then register the root filesystem with Eucalyptus. The bundle operation can include a registered ramdisk (ERI ID) and a registered kernel (EKI ID). The resulting image will associate the three images. 

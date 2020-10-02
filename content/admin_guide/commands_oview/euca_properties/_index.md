@@ -1,7 +1,6 @@
 +++
 title = "Eucalyptus Configuration Variables"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus exposes a number of variables that can be configured using the command. This topic explains what types of variables Eucalyptus uses, and lists the most common configurable variables.

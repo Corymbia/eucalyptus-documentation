@@ -1,7 +1,6 @@
 +++
 title = "Check the Data Warehouse Status"
 weight = 10
-hidden = true
 +++
 
 To check the data warehouse status perform the steps listed in this topic.Enter the following command: 

@@ -1,7 +1,6 @@
 +++
 title = "Assume a Role"
 weight = 10
-hidden = true
 +++
 
 A role is assigned a specific set of tasks and permissions. Users may assume a different role than the one they have in order to perform a different set of tasks. For example, the primary administrator is unavailable and the backup administrator is asked to assume the role of the primary administrator during his or her absence. A few points to consider before assuming a role: 

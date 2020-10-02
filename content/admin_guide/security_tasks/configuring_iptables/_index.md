@@ -1,7 +1,6 @@
 +++
 title = "Configure the Firewall"
 weight = 10
-hidden = true
 +++
 
 

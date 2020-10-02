@@ -1,7 +1,6 @@
 +++
 title = "Create an HVM Image from a Linux Distribution ISO (KVM)"
 weight = 10
-hidden = true
 +++
 
 This topic shows how to install a Linux distribution ISO and prepare an image for registration with Eucalyptus.Use the QEMU disk utility to create a disk image. In the following example, we create a 5GB disk image: `qemu-img create -f raw centos7.img 5G` Use the `parted` utility to set the disk label. `parted centos7.img mklabel msdos` Use `virt-install` to start a new virtual machine installation, as in the following example (note the example has been broken into multiple lines for formatting purposes): 

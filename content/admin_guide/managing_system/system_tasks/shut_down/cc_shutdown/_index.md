@@ -1,7 +1,6 @@
 +++
 title = "Shut Down the CCs"
 weight = 10
-hidden = true
 +++
 
 To shut down the CCs: 

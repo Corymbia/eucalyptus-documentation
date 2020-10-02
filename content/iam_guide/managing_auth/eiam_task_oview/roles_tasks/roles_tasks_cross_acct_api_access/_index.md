@@ -1,7 +1,6 @@
 +++
 title = "Delegate Access Across Your Accounts Using Roles"
 weight = 10
-hidden = true
 +++
 
 A role can be used to delegate access to resources that are in different accounts that you own.Using roles to access resources across different accounts allows users to assume a role that can access all the resources in in different acccounts, rather than having users log into different accounts to achieve the same result. 

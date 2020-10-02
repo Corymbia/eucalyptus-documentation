@@ -1,7 +1,6 @@
 +++
 title = "Configurable NetApp SAN Properties"
 weight = 10
-hidden = true
 +++
 
 This topic lists the NetApp SAN-specific properties you can configure using , along with their valid values and Eucalyptus default values.

@@ -1,7 +1,6 @@
 +++
 title = "Customizing Your Deployment"
 weight = 10
-hidden = true
 +++
 
 Managed mode references should be deleted in 5.0. DOC-1888 For most production deployments, we recommend that you use a configuration management tool. Customers have been successful deploying using the following: 

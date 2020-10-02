@@ -1,7 +1,6 @@
 +++
 title = "View User Resources"
 weight = 10
-hidden = true
 +++
 
 To see resource use by your cloud users, Eucalyptus provides the following commands with the flag.

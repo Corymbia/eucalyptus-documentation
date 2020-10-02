@@ -1,7 +1,6 @@
 +++
 title = "Verify Connectivity"
 weight = 10
-hidden = true
 +++
 
 

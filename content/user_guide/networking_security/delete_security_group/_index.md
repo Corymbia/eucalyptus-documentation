@@ -1,7 +1,6 @@
 +++
 title = "Delete a Security Group"
 weight = 10
-hidden = true
 +++
 
 The euca-delete-group command lets you delete security groups. To delete a security group: 

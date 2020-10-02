@@ -1,7 +1,6 @@
 +++
 title = "Back Up the Database"
 weight = 10
-hidden = true
 +++
 
 To back up the cloud database follow the steps listed in this topic.Bucket and object metadata are stored in the Eucalyptus cloud database. **To back up the database** 

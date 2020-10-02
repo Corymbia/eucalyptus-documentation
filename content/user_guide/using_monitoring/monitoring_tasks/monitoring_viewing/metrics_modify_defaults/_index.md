@@ -1,7 +1,6 @@
 +++
 title = "Modify Metric Polling Timing"
 weight = 10
-hidden = true
 +++
 
 You can modify metrics timing and reporting defaults.When using the default CloudWatch properties, metrics reporting can take around 15 minutes: 

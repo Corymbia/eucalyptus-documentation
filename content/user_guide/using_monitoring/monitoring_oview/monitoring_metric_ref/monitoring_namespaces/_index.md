@@ -1,7 +1,6 @@
 +++
 title = "Namespaces"
 weight = 10
-hidden = true
 +++
 
 All Eucalyptus services that provide CloudWatch data use a namespace string, beginning with "AWS/". This section describes the service namespaces.The following table lists the namespaces for services that push metric data points to CloudWatch. 

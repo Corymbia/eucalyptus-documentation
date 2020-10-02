@@ -1,7 +1,6 @@
 +++
 title = "Configuring Health Checks"
 weight = 10
-hidden = true
 +++
 
 By default, Auto Scaling group determines the health state of each instance by periodically checking the results of instance status checks. You can specify using the ELB health check method in addition to using the instance health check method.To use load balancing health checks for an Auto Scaling group: 

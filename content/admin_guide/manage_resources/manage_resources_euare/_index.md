@@ -1,7 +1,6 @@
 +++
 title = "Manage IAM Resources"
 weight = 10
-hidden = true
 +++
 
 To manage Euare (IAM) resources on your Eucalyptus cloud, use the option with any command that describes, adds, deletes, or modifies resources. This option allows you to assume the role of the admin user for a given account. You can also use a policy to control and limit instances to specific availability zones.The following are some examples. For more information about IAM commands, see [](../euca2ools-guide/eiam.dita) . 

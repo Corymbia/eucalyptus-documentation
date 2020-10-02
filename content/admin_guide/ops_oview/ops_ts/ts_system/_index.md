@@ -1,7 +1,6 @@
 +++
 title = "Network Information"
 weight = 10
-hidden = true
 +++
 
 When you have to troubleshoot, it's important to understand the elements of the network on your system.Here are some ideas for finding out information about your network: 

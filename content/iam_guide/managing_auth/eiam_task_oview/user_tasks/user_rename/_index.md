@@ -1,7 +1,6 @@
 +++
 title = "Modify a User"
 weight = 10
-hidden = true
 +++
 
 Modifying a user is similar to a "move" operation. To modify a user, you need permission to remove the user from the current path or name, and put that user in the new path or name.For example, if a user changes from one team in a company to another, you can change the user's path from */team_abc/* to */team_efg/* . You need permission to remove the user from */team_abc/* . You also need permission to put the user into */team_efg/* . This means you need permission to call UpdateUser on both *arn:aws:iam::123456789012:user/team_abc/** and *arn:aws:iam::123456789012:user/team_efg/** . 

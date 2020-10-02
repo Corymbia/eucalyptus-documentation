@@ -1,7 +1,6 @@
 +++
 title = "euserv-migrate-instances"
 weight = 10
-hidden = true
 +++
 
 

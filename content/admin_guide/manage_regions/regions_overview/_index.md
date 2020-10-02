@@ -1,7 +1,6 @@
 +++
 title = "Regions Overview"
 weight = 10
-hidden = true
 +++
 
 Eucalytpus provides support for the notion of federation of identity.Federation of identity information means that a Cloud Administrator can create a federation of (otherwise independent) Eucalyptus "clouds" where a Cloud User, using the same credentials as always, can use any of these federated Eucalyptus cloud regions. For the parts of Identify Access Management (IAM) and Security Token Service (STS) that Eucalyptus implements, the experience exposed to the Cloud User is the same as that seen by an AWS user working across AWS regions. 

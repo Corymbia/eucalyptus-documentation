@@ -1,7 +1,6 @@
 +++
 title = "Prerequisites"
 weight = 10
-hidden = true
 +++
 
 This topic discusses the prerequisites for installing Midokura Enterprise MidoNet.

@@ -1,7 +1,6 @@
 +++
 title = "Export Data"
 weight = 10
-hidden = true
 +++
 
 To export data from the Cloud Controller (CLC): 

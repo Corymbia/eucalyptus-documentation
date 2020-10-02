@@ -1,7 +1,6 @@
 +++
 title = "Create a Snapshot"
 weight = 10
-hidden = true
 +++
 
 The following example shows how to create a snapshot. 

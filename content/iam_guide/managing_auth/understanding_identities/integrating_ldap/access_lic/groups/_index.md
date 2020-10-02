@@ -1,7 +1,6 @@
 +++
 title = "groups"
 weight = 10
-hidden = true
 +++
 
 The element specifies how to map LDAP/AD groups to Eucalyptus groups. It contains the elements listed in the following table. The meanings are similar to those in accounting-groups element.

@@ -1,7 +1,6 @@
 +++
 title = "euserv-describe-services"
 weight = 10
-hidden = true
 +++
 
 

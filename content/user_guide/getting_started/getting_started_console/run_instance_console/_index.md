@@ -1,7 +1,6 @@
 +++
 title = "Launch and Connect to an Instance with the Management Console"
 weight = 10
-hidden = true
 +++
 
 To launch an instance: 

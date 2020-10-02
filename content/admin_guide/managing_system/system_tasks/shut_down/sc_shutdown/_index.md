@@ -1,7 +1,6 @@
 +++
 title = "Shut Down the SCs"
 weight = 10
-hidden = true
 +++
 
 To shut down the SC: 

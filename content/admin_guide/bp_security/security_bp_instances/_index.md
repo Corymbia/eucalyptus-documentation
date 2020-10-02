@@ -1,7 +1,6 @@
 +++
 title = "Images and Instances"
 weight = 10
-hidden = true
 +++
 
 Because all instances are based on images, creating a secure image helps to create secure instances. This topic lists best practices that will add additional security during image creation. As a general rule, harden your images similar to how you would harden your physical servers.

@@ -1,7 +1,6 @@
 +++
 title = "Use a Dell EqualLogic SAN"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to configure the Dell EqualLogic SAN as the block storage backend provider on the Storage Controller (SC).

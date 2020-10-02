@@ -1,7 +1,6 @@
 +++
 title = "Shut Down the CLC"
 weight = 10
-hidden = true
 +++
 
 To shut down the CLC: 

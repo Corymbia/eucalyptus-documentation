@@ -1,7 +1,6 @@
 +++
 title = "euserv-describe-node-controllers"
 weight = 10
-hidden = true
 +++
 
 

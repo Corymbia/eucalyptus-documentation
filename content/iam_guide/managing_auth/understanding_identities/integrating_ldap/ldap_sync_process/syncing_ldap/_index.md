@@ -1,7 +1,6 @@
 +++
 title = "Synchronize LDAP/AD"
 weight = 10
-hidden = true
 +++
 
 This topic describes the LDAP/AD syncronization process.To start an LDAP/AD synchronization: 

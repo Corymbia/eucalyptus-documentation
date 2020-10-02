@@ -1,7 +1,6 @@
 +++
 title = "Image Overview"
 weight = 10
-hidden = true
 +++
 
 An image defines what will run on a guest instance in your Eucalyptus cloud. An image contains everything necessary to boot and run an operating system: either one of the Linux distributions – CentOS, Fedora, Ubuntu, Debian, etc – or one of the supported Windows server versions.Images of two types are supported by Eucalyptus: 

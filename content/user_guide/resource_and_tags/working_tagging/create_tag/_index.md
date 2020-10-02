@@ -1,7 +1,6 @@
 +++
 title = "Add a Tag"
 weight = 10
-hidden = true
 +++
 
 Use the euca-create-tags command to add a tag to a resource. 

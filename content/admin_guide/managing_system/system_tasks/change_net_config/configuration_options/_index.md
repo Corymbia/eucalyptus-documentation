@@ -1,7 +1,6 @@
 +++
 title = "Networking Configuration Options"
 weight = 10
-hidden = true
 +++
 
 All network-related options specified in /etc/eucalyptus/eucalyptus.conf use the prefix VNET_. The most commonly used VNET options are described in the following table. 

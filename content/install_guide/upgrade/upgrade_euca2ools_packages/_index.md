@@ -1,7 +1,6 @@
 +++
 title = "Upgrade Euca2ools Package Repositories"
 weight = 10
-hidden = true
 +++
 
 This topic describes the steps to upgrade the Euca2ools package repositories.**Prerequisites** See [](upgrade_prep.dita#upgrade_prep) for the complete list of upgrade prerequisites. 

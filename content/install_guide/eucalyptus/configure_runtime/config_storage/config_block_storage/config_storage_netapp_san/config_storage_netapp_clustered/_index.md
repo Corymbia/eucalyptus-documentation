@@ -1,7 +1,6 @@
 +++
 title = "Enable NetApp Clustered Data ONTAP"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to configure the NetApp Clustered Data ONTAP SAN block storage backend for the Storage Controller (SC).**Prerequisites** 

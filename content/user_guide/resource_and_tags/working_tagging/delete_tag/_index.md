@@ -1,7 +1,6 @@
 +++
 title = "Delete a Tag"
 weight = 10
-hidden = true
 +++
 
 To delete a tag: 

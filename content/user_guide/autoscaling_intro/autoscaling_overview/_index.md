@@ -1,7 +1,6 @@
 +++
 title = "How Auto Scaling Works"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus Auto Scaling is designed to address a common web application scenario: that you are running multiple copies of an application across several identical instances to adequately handle a certain volume of user requests. Eucalyptus Auto Scaling can help you make more efficient use of the computing resources in your cloud by automatically launching and terminating these instances, based on metrics and/or a schedule that you can define. There are three main Auto Scaling components that work together to provide this functionality: the *Auto Scaling group* , the *launch configuration* , and the *scaling plan* . 

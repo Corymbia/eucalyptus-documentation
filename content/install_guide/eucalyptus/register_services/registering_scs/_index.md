@@ -1,7 +1,6 @@
 +++
 title = "Register the Storage Controller"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to register a Storage Controller (SC) with the Cloud Controller (CLC).**Prerequisites** 

@@ -1,7 +1,6 @@
 +++
 title = "Add a Group Policy"
 weight = 10
-hidden = true
 +++
 
 To add a group policy perform the steps listed in this topic.Enter the following command: 

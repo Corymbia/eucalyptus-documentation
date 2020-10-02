@@ -1,7 +1,6 @@
 +++
 title = "Create an Alarm"
 weight = 10
-hidden = true
 +++
 
 You can create a CloudWatch alarm using a resource's metric, and then add an action using the action’s dedicated Amazon Resource Name (ARN). You can add the action to any alarm state. 

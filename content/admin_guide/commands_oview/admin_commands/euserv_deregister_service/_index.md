@@ -1,7 +1,6 @@
 +++
 title = "euserv-deregister-service"
 weight = 10
-hidden = true
 +++
 
 

@@ -1,7 +1,6 @@
 +++
 title = "Monitoring"
 weight = 10
-hidden = true
 +++
 
 This topic includes details about which resources you should monitor.

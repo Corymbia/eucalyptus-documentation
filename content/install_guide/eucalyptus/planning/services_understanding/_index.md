@@ -1,7 +1,6 @@
 +++
 title = "Plan Services Placement"
 weight = 10
-hidden = true
 +++
 
 

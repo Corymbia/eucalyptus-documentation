@@ -1,7 +1,6 @@
 +++
 title = "Eucalyptus Overview"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus is open source software for building AWS-compatible private and hybrid clouds. As an Infrastructure as a Service product, Eucalyptus allows you to flexibly provision your own collections of resources (both compute and storage), on an as-needed basis.Whether you're looking for an on-premise complement to your public cloud setup, or already have a virtual data center and now want to move into a private or hybrid cloud setup, Eucalyptus can help you get started today. Download Faststart and have your cloud up and running in half an hour, or take advantage of Eucalyptus' seamless interoperation with Amazon Web Services’ EC2 and S3 public cloud services, for an enterprise-grade hybrid cloud platform out of the box. 
@@ -20,7 +19,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 |  :---- |  :---- | 
 | Begin using and configuring Eucalyptus | [getting_started]({{< relref "getting_started" >}}) | 
 | Run and control with virtual machine (VM) instances | [using_instances]({{< relref "using_instances" >}}) | 
-| Use Eucalyptus’ elastic block storage |  |
+| Use Eucalyptus’ elastic block storage | [../shared/using_block_storage]({{< relref "../shared/using_block_storage" >}}) | 
 | Apply tags and filters | [resource_and_tags]({{< relref "resource_and_tags" >}}) | 
 | Manage access for groups and users | [using_access]({{< relref "using_access" >}}) | 
 | Understand the Eucalyptus VM networking and security features | [networking_security]({{< relref "networking_security" >}}) | 
@@ -28,7 +27,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 | Use elastic load balancing | [elb_intro]({{< relref "elb_intro" >}}) | 
 | Generate metrics about my cloud | [using_monitoring]({{< relref "using_monitoring" >}}) | 
 | Use scalable object storage | [osg_using]({{< relref "osg_using" >}}) | 
-| Use CloudFormation |  | 
+| Use CloudFormation | [../cloudformation/cf_overview]({{< relref "../cloudformation/cf_overview" >}}) | 
 | Use Virtual Private Cloud | [vpc_intro]({{< relref "vpc_intro" >}}) | 
 
 

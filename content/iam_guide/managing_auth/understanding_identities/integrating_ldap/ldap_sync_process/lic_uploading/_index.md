@@ -1,7 +1,6 @@
 +++
 title = "Upload a New LIC File"
 weight = 10
-hidden = true
 +++
 
 To upload a new LIC file perform the steps listed in this topic.To upload a new LIC file: 

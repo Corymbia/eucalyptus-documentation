@@ -1,7 +1,6 @@
 +++
 title = "Install MidoNet for Eucalyptus"
 weight = 10
-hidden = true
 +++
 
 This topic shows how to install Midokura Enterprise MidoNet for use in your Eucalyptus cloud.

@@ -1,7 +1,6 @@
 +++
 title = "Security Groups"
 weight = 10
-hidden = true
 +++
 
 A security group is a mechanism that allows you to control inbound and outbound traffic for your VPC. A security group has rules that specify what kinds of traffic are allowed in and out of instances (VMs) running in your VPC. 

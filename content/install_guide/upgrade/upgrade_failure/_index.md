@@ -1,7 +1,6 @@
 +++
 title = "Downgrade a Failed Upgrade"
 weight = 10
-hidden = true
 +++
 
 If your upgrade fails, this topic describes how to downgrade your Eucalyptus cloud to an earlier release.

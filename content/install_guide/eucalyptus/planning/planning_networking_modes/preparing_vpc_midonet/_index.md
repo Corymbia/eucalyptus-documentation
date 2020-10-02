@@ -1,7 +1,6 @@
 +++
 title = "Understanding VPCMIDO and MidoNet"
 weight = 10
-hidden = true
 +++
 
 This topic describes MidoNet components and their Eucalyptus deployment options, which provide support for VPC on Eucalyptus .Eucalyptus VPCMIDO mode resembles the Amazon Virtual Private Cloud (VPC) product wherein the network is fully configurable by users. In Eucalyptus , it is implemented with a Software-Defined Networking (SDN) technology developed by Midokura, called MidoNet. Midokura Enterprise MidoNet is a network virtualization platform for Infrastructure-as-a-Service (IaaS) clouds that implements and exposes virtual network components as software abstractions, enabling programmatic provisioning of virtual networks. 

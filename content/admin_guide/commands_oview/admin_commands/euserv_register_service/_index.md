@@ -1,7 +1,6 @@
 +++
 title = "euserv-register-service"
 weight = 10
-hidden = true
 +++
 
 

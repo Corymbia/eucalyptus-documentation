@@ -1,7 +1,6 @@
 +++
 title = "Authorize Security Groups"
 weight = 10
-hidden = true
 +++
 
 Before you can log in to an instance, you must authorize access to that instance. This done by configuring a security group for that instance. 

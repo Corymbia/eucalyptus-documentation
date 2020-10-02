@@ -1,7 +1,6 @@
 +++
 title = "Shut Down the NCs"
 weight = 10
-hidden = true
 +++
 
 To shut down the NCs perform the steps listed in this topic.To shut down the NCs: 

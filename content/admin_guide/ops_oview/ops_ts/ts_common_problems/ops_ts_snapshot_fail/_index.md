@@ -1,7 +1,6 @@
 +++
 title = "Problem: snapshot creation failed"
 weight = 10
-hidden = true
 +++
 
 On the SC, depending on the backend used for storage: 

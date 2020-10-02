@@ -1,7 +1,6 @@
 +++
 title = "CloudWatch Concepts"
 weight = 10
-hidden = true
 +++
 
 This section describes the terminology and concepts you need in order to understand and use CloudWatch.

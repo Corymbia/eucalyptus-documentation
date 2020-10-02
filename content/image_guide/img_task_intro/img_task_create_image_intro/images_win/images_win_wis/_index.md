@@ -1,7 +1,6 @@
 +++
 title = "Install Eucalyptus Windows Integration"
 weight = 10
-hidden = true
 +++
 
 To install the Eucalyptus Windows Integration Service: 

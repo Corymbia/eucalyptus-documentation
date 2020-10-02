@@ -1,7 +1,6 @@
 +++
 title = "NetApp Clustered Data ONTAP"
 weight = 10
-hidden = true
 +++
 
 A clustered ONTAP system consists of two or more individual NetApp storage controllers with attached disks. The basic building block is the HA pair, a term familiar from Data ONTAP 7G or 7-Mode environments.An HA pair consists of two identical controllers; each controller actively provides data services and has redundant cabled paths to the other controller’s disk storage. 

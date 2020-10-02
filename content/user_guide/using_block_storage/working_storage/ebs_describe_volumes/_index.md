@@ -1,7 +1,6 @@
 +++
 title = "List Available EBS Volumes"
 weight = 10
-hidden = true
 +++
 
 You can use the Eucalyptus command line tools to list all available volumes and retrieve information about a specific volume. 

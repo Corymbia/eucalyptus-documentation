@@ -1,7 +1,6 @@
 +++
 title = "Upgrade Eucalyptus Package Repositories"
 weight = 10
-hidden = true
 +++
 
 This topic describes the steps to upgrade the Eucalyptus package repositories.**Prerequisites** See [](upgrade_prep.dita#upgrade_prep) for the complete list of upgrade prerequisites. 

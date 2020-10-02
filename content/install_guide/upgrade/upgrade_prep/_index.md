@@ -1,7 +1,6 @@
 +++
 title = "Prepare for Upgrade"
 weight = 10
-hidden = true
 +++
 
 This topic helps you prepare for upgrading Eucalyptus .**Prerequisites** Before starting the upgrade, ensure that you have: 

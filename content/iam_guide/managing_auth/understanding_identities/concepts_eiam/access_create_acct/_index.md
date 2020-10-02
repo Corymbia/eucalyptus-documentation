@@ -1,7 +1,6 @@
 +++
 title = "Account Creation"
 weight = 10
-hidden = true
 +++
 
 This topic describes the process for creating an account using the command line tool.You must be a cloud administrator to use this command. Accounts created are available for immediate access. 

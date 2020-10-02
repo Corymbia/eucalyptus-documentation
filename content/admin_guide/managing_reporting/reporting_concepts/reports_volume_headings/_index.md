@@ -1,7 +1,6 @@
 +++
 title = "Volume Report"
 weight = 10
-hidden = true
 +++
 
 The S3 Report has the following column headings: 

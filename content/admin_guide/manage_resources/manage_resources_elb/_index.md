@@ -1,7 +1,6 @@
 +++
 title = "Manage ELB Resources"
 weight = 10
-hidden = true
 +++
 
 To list and delete ELB resources on a Eucalyptus cloud, use the option with any command.The following are some examples. 

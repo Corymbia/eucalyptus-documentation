@@ -1,7 +1,6 @@
 +++
 title = "About Eucanetd"
 weight = 10
-hidden = true
 +++
 
 The eucanetd service implements artifacts to manage and define Eucalyptus cloud networking. Eucanetd runs alongside the CLC, CC, and/or NC services, depending on the configured networking mode.Eucanetd manages network functionality. For example: 

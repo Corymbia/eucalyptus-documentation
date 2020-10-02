@@ -1,7 +1,6 @@
 +++
 title = "Change Multicast Address"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to change your multicast address for group membership.By default, Eucalyptus uses the multicast address 239.193.7.3 for group membership. Most data centers limit multicast address communication for security measures. We recommend that you use addresses in the administratively-scoped multicast address range. 

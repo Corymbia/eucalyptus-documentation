@@ -1,7 +1,6 @@
 +++
 title = "Configure SELinux"
 weight = 10
-hidden = true
 +++
 
 We recommend enabling SELinux on host systems running Eucalyptus 4.4 services to improve their security on RHEL 7. Enabling SELinux, as described in this topic, can help contain break-ins. For more information, see [RedHat SELinux](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/SELinux_Users_and_Administrators_Guide/chap-Security-Enhanced_Linux-Troubleshooting.html) documentation. 

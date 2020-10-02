@@ -1,7 +1,6 @@
 +++
 title = "Problem: install-time checks"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus offers installation checks for any Eucalyptus component or service (CLC, Walrus, SC, NC, SC, services, and more). When Eucalyptus encounters an error, it presents the problem to the operator. These checks are used for install-time problems. They provide resolutions to some of the fault conditions. 

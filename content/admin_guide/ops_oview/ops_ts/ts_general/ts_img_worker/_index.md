@@ -1,7 +1,6 @@
 +++
 title = "Imaging Worker"
 weight = 10
-hidden = true
 +++
 
 This topic contains troubleshooting tips for the Imaging Worker.Some requests that require the Imaging Worker might remain in pending for a long time. For example: an import task or a paravirtual instance run. If request remains in pending, the Imaging Worker instance might not able to run because of a lack of resources (for example, instance slots or IP addresses). 

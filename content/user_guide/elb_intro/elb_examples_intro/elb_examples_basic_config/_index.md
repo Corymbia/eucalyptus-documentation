@@ -1,7 +1,6 @@
 +++
 title = "Creating a Basic Elastic Load Balancing Configuration"
 weight = 10
-hidden = true
 +++
 
 Elastic load balancing requires two basic elements to function properly: a load balancer and instances registered with that load balancer. The following examples show how to set up the basic elements of an elastic load balancer configuration.

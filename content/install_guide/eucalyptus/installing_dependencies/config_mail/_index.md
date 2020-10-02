@@ -1,7 +1,6 @@
 +++
 title = "Configure an MTA"
 weight = 10
-hidden = true
 +++
 
 You can use Sendmail, Exim, postfix, or something simpler. The MTA server does not have to be able to receive incoming mail. 

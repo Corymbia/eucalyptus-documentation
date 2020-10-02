@@ -1,7 +1,6 @@
 +++
 title = "euserv-describe-service-types"
 weight = 10
-hidden = true
 +++
 
 

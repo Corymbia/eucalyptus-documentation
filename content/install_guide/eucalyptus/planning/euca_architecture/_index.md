@@ -1,7 +1,6 @@
 +++
 title = "Eucalyptus Architecture Overview"
 weight = 10
-hidden = true
 +++
 
 This topics describes the relationship of the components in a Eucalyptus installation.

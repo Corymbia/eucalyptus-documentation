@@ -1,7 +1,6 @@
 +++
 title = "Synchronize Components"
 weight = 10
-hidden = true
 +++
 
 To synchronize your Eucalyptus component machines with an NTP server, perform the following tasks. 

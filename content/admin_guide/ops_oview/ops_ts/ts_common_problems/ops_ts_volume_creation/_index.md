@@ -1,7 +1,6 @@
 +++
 title = "Problem: volume creation failed"
 weight = 10
-hidden = true
 +++
 
 Symptom: Went from available to fail. This is typically caused by the CLC and the SC.On the SC, use `df` or `lvdisplay` to check the disk space. Is there enough space? 

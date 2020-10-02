@@ -1,7 +1,6 @@
 +++
 title = "Adding and Editing Predefined Security Policies"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to add and edit ELB security policies.Default ELB policies are stored as JSON files in the `/etc/eucalyptus/cloud.d/elb-security-policy` directory. You can add or edit policy files here, and the changes will take effect when the CLC is restarted. 

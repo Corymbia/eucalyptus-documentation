@@ -1,7 +1,6 @@
 +++
 title = "Start the Management Console"
 weight = 10
-hidden = true
 +++
 
 **Prerequisites** The link to the shared topics below need to be drupal-ified! Before you start the Management Console, ensure that you have reviewed the [](../shared/console_configure_intro.dita#console_configure_intro/console_configure_intro_requirements) in the [Management Console Guide](../console-guide/index.dita) . 

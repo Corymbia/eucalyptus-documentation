@@ -1,7 +1,6 @@
 +++
 title = "Create a Report: Data Warehouse"
 weight = 10
-hidden = true
 +++
 
 To create a report from data in the data warehouse: 

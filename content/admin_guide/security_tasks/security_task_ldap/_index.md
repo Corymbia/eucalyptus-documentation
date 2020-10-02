@@ -1,7 +1,6 @@
 +++
 title = "Start a LIC File"
 weight = 10
-hidden = true
 +++
 
 The LIC is a file in JSON format and specifies what Eucalyptus needs for synchronizing with an LDAP or AD service. Eucalyptus provides a LIC template at . This template shows all the fields of the LIC, and provides detailed documentation and example values for each field.To start a LIC file: 

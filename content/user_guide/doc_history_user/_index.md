@@ -1,7 +1,6 @@
 +++
 title = "User Guide History"
 weight = 10
-hidden = true
 +++
 
 This section contains information about changes to the user documentation in this release.

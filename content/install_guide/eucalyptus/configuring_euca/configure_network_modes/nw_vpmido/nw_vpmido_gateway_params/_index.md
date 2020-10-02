@@ -1,7 +1,6 @@
 +++
 title = "VPCMIDO Gateway Configuration Parameters"
 weight = 10
-hidden = true
 +++
 
 This topic provides detailed configuration parameter information for Eucalyptus VPCMIDO network mode.

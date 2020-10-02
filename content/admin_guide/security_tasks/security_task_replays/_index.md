@@ -1,7 +1,6 @@
 +++
 title = "Configure Replay Protection"
 weight = 10
-hidden = true
 +++
 
 You can configure replay detection in Java components (which includes the CLC, UFS, OSG, Walrus, and SC) to allow replays of the same message for a set time period. 

@@ -1,7 +1,6 @@
 +++
 title = "Reporting Best Practices"
 weight = 10
-hidden = true
 +++
 
 This topic provides guidelines for using the reporting feature in Eucalyptus.

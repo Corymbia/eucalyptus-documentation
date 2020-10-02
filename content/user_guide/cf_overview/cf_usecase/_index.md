@@ -1,7 +1,6 @@
 +++
 title = "CloudFormation Use Case"
 weight = 10
-hidden = true
 +++
 
 This topic describes a use case for creating a stack, checking the stack progress, and deleting the stack.For this use case, we will use the following template: 

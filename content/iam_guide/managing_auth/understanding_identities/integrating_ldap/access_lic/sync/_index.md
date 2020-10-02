@@ -1,7 +1,6 @@
 +++
 title = "sync"
 weight = 10
-hidden = true
 +++
 
 The element contains elements for controlling synchronization.

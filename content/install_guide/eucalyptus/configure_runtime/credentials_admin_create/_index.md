@@ -1,7 +1,6 @@
 +++
 title = "Create the Eucalyptus Cloud Administrator User"
 weight = 10
-hidden = true
 +++
 
 After your cloud is running and DNS is functional, create a user and access key for day-to-day cloud administration.**Prerequisites** 

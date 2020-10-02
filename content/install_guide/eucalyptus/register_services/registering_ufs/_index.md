@@ -1,7 +1,6 @@
 +++
 title = "Register User-Facing Services"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to register the User-Facing Services (UFS) with the Cloud Controller (CLC).**Prerequisites** 

@@ -1,7 +1,6 @@
 +++
 title = "Terminate an Instance"
 weight = 10
-hidden = true
 +++
 
 The `euca-terminate-instances` command lets you cancel running VM instances. When you terminate instances, you must specify the ID string of the instance(s) you wish to terminate. You can obtain the ID strings of your instances using the euca-describe-instances command. 

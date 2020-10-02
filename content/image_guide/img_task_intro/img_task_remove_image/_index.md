@@ -1,7 +1,6 @@
 +++
 title = "Remove an Image"
 weight = 10
-hidden = true
 +++
 
 When a new image is uploaded to Eucalyptus, Eucalyptus saves the bundle and the image manifest to a bucket in Walrus. This bucket is stored in the Walrus directory that is defined in the Eucalyptus property `walrusbackend.storageDir` . The default value for this property is `/var/lib/eucalyptus/bukkits` . 

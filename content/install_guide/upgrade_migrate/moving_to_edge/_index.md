@@ -1,7 +1,6 @@
 +++
 title = "Eucalyptus Migration to Edge Networking Mode"
 weight = 10
-hidden = true
 +++
 
 You can configure your existing cloud to use Edge networking mode. This topic provides instructions for configuring and installing additional Eucalyptus components in an existing environment for the purpose of moving to Edge.

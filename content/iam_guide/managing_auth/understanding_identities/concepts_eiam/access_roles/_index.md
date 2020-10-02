@@ -1,7 +1,6 @@
 +++
 title = "Roles"
 weight = 10
-hidden = true
 +++
 
 A *role* A role is a mechanism that enables the delegation of access to users or applications. 

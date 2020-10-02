@@ -1,7 +1,6 @@
 +++
 title = "Start Eucalyptus Services"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to start all Eucalyptus services after upgrade.**Prerequisites** You should have successfully completed [](upgrade_packages.dita) before you begin this process. 

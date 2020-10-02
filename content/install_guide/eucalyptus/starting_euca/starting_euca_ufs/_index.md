@@ -1,7 +1,6 @@
 +++
 title = "Start the UFS"
 weight = 10
-hidden = true
 +++
 
 **Prerequisites** You should have installed and configured Eucalyptus before starting the UFS. 

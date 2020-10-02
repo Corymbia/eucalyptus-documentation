@@ -1,7 +1,6 @@
 +++
 title = "Generating User Credentials"
 weight = 10
-hidden = true
 +++
 
 The first time you get credentials using the `eval `clcadmin-assume-system-credentials`` command, a new secret access key is generated. On each subsequent request to get credentials, an existing active secret key is returned. You can also generate new keys using the `euare-useraddkey` command. 

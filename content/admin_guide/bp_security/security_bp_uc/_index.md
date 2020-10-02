@@ -1,7 +1,6 @@
 +++
 title = "Management Console"
 weight = 10
-hidden = true
 +++
 
 This topic describes things you can do to secure the Eucalyptus Management Console.

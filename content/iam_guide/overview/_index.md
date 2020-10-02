@@ -1,7 +1,6 @@
 +++
 title = "IAM Overview"
 weight = 10
-hidden = true
 +++
 
 Welcome to the IAM Guide. IAM is an acronymn for Identity Access Management. IAM is used for account management where cloud administrator establish accounts, users and their identities.You can do many things with IAM, including: 

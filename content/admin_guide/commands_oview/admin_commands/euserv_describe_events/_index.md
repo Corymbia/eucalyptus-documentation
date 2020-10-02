@@ -1,7 +1,6 @@
 +++
 title = "euserv-describe-events"
 weight = 10
-hidden = true
 +++
 
 

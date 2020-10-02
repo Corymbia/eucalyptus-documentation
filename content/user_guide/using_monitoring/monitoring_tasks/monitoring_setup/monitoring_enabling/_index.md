@@ -1,7 +1,6 @@
 +++
 title = "Enable Monitoring"
 weight = 10
-hidden = true
 +++
 
 This section describes steps for enabling monitoring on your cloud resources.To enable monitoring on your resources, following the steps for your resource. 

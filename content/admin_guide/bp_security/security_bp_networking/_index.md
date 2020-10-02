@@ -1,7 +1,6 @@
 +++
 title = "Message Security"
 weight = 10
-hidden = true
 +++
 
 This topic describes which networking mode is the most secure, and describes how to enforce message security.

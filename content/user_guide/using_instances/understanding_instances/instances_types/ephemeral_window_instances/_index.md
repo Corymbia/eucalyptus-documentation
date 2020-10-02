@@ -1,7 +1,6 @@
 +++
 title = "Ephemeral Windows Instances"
 weight = 10
-hidden = true
 +++
 
 It is also possible to launch ephemeral Windows instances. Just like their Linux counterparts, modifications to Windows instance store-backed instances are lost when instances are purposely or accidentally terminated. 

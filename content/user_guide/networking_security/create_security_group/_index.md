@@ -1,7 +1,6 @@
 +++
 title = "Create a Security Group"
 weight = 10
-hidden = true
 +++
 
 Security groups let you control network access to instances by applying network rules to instances associated with a group. 

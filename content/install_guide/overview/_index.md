@@ -1,7 +1,6 @@
 +++
 title = "Installation Overview"
 weight = 10
-hidden = true
 +++
 
 This topic helps you understand, plan for, and install Eucalyptus . If you follow the recommendations and instructions in this guide, you will have a working version of Eucalyptus customized for your specific needs and requirements.This guide walks you through installations for a few different use cases. You can choose from one of the installation types listed in the following table. 

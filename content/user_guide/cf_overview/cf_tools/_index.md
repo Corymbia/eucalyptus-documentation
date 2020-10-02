@@ -1,7 +1,6 @@
 +++
 title = "CloudFormation Run Options"
 weight = 10
-hidden = true
 +++
 
 You can run CloudFormation using Euca2ools, the AWS SDK for Java, the AWS command line interface, and Boto.

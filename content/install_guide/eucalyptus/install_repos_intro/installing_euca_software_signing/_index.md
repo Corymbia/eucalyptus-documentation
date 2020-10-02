@@ -1,7 +1,6 @@
 +++
 title = "Software Signing"
 weight = 10
-hidden = true
 +++
 
 This topic describes Eucalyptus software signing keys.We use a number of GPG keys to sign our software packages and package repositories. The necessary public keys are provided with the relevant products and can be used to automatically verify software updates. You can also verify the packages or package repositories manually using the keys on this page. 

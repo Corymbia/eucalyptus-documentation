@@ -1,7 +1,6 @@
 +++
 title = "Configure and Enable SSL for the Management Console"
 weight = 10
-hidden = true
 +++
 
 You can use secure HTTP for your console.To run your console over Secure HTTP: 

@@ -1,7 +1,6 @@
 +++
 title = "Understanding Health Checks"
 weight = 10
-hidden = true
 +++
 
 Auto scaling periodically performs *health checks* on the instances in your Auto Scaling group. By default, Auto Scaling group determines the health state of each instance by periodically checking the results of Eucalyptus instance status checks. When Auto Scaling determines that an instance is unhealthy, it terminates that instance and launches a new one. 

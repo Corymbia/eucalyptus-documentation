@@ -1,7 +1,6 @@
 +++
 title = "Elastic Load Balancing"
 weight = 10
-hidden = true
 +++
 
 This topic explains suggestions for problems you might have with Elastic Load Balancing (ELB).

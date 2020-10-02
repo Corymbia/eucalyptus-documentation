@@ -1,7 +1,6 @@
 +++
 title = "Federation Differences Between AWS and Eucalyptus"
 weight = 10
-hidden = true
 +++
 
 This section outlines the differences between AWS and Eucalyptus with respect to federation in the following platforms: 

@@ -1,7 +1,6 @@
 +++
 title = "Get Statistics for a Metric"
 weight = 10
-hidden = true
 +++
 
 You can get statistics for metrics via Euca2ools.**To get statistics for a metric:** 

@@ -1,7 +1,6 @@
 +++
 title = "euctl"
 weight = 10
-hidden = true
 +++
 
 

@@ -1,7 +1,6 @@
 +++
 title = "Understanding Launch Configurations"
 weight = 10
-hidden = true
 +++
 
 The launch configuration defines the settings used by the Eucalyptus instances launched within an Auto Scaling group. This includes the image name, the instance type, key pairs, security groups, and block device mappings. You associate the launch configuration with an Auto Scaling group. Each Auto Scaling group can have one (and only one) associated launch configuration. 

@@ -1,7 +1,6 @@
 +++
 title = "Configure EDGE Network Mode"
 weight = 10
-hidden = true
 +++
 
 This topic provides configuration instructions for Eucalyptus EDGE network mode. Eucalyptus requires network connectivity between its clients (end-users) and the cloud components (e.g., CC, CLC, and Walrus).

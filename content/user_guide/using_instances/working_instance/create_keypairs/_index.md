@@ -1,7 +1,6 @@
 +++
 title = "Create Key Pairs"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus uses cryptographic key pairs to verify access to instances. Key pairs are used if you want to connect to your instance using SSH. Creating a key pair generates two keys: a public key (saved within Eucalyptus) and a corresponding private key (output to the user as a character string). To enable this private key you must save it to a file and set appropriate access permissions (using the chmod command), as shown in the example below. 

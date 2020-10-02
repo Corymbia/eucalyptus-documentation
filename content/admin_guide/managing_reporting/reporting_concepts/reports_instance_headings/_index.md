@@ -1,7 +1,6 @@
 +++
 title = "Instance Report"
 weight = 10
-hidden = true
 +++
 
 The Instance Report has the following column headings: 

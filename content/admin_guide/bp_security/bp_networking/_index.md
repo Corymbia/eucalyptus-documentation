@@ -1,7 +1,6 @@
 +++
 title = "Networking Modes"
 weight = 10
-hidden = true
 +++
 
 This topic describes the recommendations for networking modes.A Eucalyptus deployment can be configured in EDGE (AWS EC2 Classic compatible) or VPCMIDO (AWS VPC compatible) networking modes. In both modes, by default, instances are not allowed to send traffic with spoofed IP and/or MAC addresses and receive traffic that are not destined to their own IP and/or MAC addresses. Security groups should be used to control the ingress traffic to instances (EDGE and VPCMIDO modes) and to control the egress traffic from instances (VPCMIDO mode). 

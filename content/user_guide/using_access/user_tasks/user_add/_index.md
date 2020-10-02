@@ -1,7 +1,6 @@
 +++
 title = "Add a User"
 weight = 10
-hidden = true
 +++
 
 To add a user, perform the steps in this topic.Enter the following command 

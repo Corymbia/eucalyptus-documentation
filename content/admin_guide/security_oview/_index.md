@@ -1,7 +1,6 @@
 +++
 title = "Security Overview"
 weight = 10
-hidden = true
 +++
 
 This topic is intended for people who are currently using Eucalyptus and who want to harden the cloud and underlying configuration.

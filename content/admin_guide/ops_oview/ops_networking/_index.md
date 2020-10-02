@@ -1,7 +1,6 @@
 +++
 title = "Networking"
 weight = 10
-hidden = true
 +++
 
 This topic addresses networking in the Eucalyptus cloud.

@@ -1,7 +1,6 @@
 +++
 title = "Instance Metrics and Dimensions"
 weight = 10
-hidden = true
 +++
 
 This section describes the instance metrics and dimensions available to CloudWatch.

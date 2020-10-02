@@ -1,7 +1,6 @@
 +++
 title = "Windows Guest OS Support"
 weight = 10
-hidden = true
 +++
 
 

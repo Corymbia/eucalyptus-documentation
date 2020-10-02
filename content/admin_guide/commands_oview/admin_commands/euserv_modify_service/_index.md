@@ -1,7 +1,6 @@
 +++
 title = "euserv-modify-service"
 weight = 10
-hidden = true
 +++
 
 

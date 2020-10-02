@@ -1,7 +1,6 @@
 +++
 title = "Release an IP Address"
 weight = 10
-hidden = true
 +++
 
 Use euca-disassociate-address and euca-release-address to disassociate an IP address from an instance and to release the IP address to the global pool, respectively. 

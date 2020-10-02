@@ -1,7 +1,6 @@
 +++
 title = "SAN Support"
 weight = 10
-hidden = true
 +++
 
 

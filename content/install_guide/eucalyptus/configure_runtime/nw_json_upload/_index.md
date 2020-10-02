@@ -1,7 +1,6 @@
 +++
 title = "Upload the Network JSON Configuration File"
 weight = 10
-hidden = true
 +++
 
 This topic describes how to upload the JSON network configuration file you created earlier in the installation process.To upload the JSON file with your networking configuration: 

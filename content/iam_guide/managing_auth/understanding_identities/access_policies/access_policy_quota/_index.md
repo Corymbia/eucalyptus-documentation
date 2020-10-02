@@ -1,7 +1,6 @@
 +++
 title = "Quotas"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus adds quota enforcement to resource usage. To avoid introducing another configuration language into Eucalyptus, and simplify the management, we extend the IAM policy language to support quotas.The only addition added to the language is the new `limit` effect. If a policy statement’s `effect` is `limit` , it is a quota statement. 

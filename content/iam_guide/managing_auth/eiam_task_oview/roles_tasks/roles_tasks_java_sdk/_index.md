@@ -1,7 +1,6 @@
 +++
 title = "Use a Role with an Instance Application"
 weight = 10
-hidden = true
 +++
 
 You can use the AWS Java SDK to programmatically perform IAM role-related operations in your Eucalyptus cloud. This example shows how to use the AWS SDK to retrieve the credentials for the IAM role associated with the Eucalyptus instance.The following program lists the contents of the bucket "my-test-bucket" using the credentials stored in the Java system properties: 

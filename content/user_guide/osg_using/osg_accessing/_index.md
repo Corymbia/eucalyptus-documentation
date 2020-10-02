@@ -1,7 +1,6 @@
 +++
 title = "Access Object Storage"
 weight = 10
-hidden = true
 +++
 
 You can use your favorite S3 client (for example, ) to interact with Eucalyptus.To access object storage: 

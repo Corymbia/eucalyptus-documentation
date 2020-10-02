@@ -1,7 +1,6 @@
 +++
 title = "Inspect System Health"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus provides access to the current view of service state and the ability to manipulate the state. You can inspect the service state to either ensure system health or to identify faulty services. You can modify a service state to maintain activities and apply external service placement policies.

@@ -1,7 +1,6 @@
 +++
 title = "Troubleshooting CloudFormation"
 weight = 10
-hidden = true
 +++
 
 This topic describes some of the issues that can happen with CloudFormation. It also talks about how you can detect these issues, and offers some ways to fix the issues.

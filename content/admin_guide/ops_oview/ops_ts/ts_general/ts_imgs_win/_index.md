@@ -1,7 +1,6 @@
 +++
 title = "Windows Images"
 weight = 10
-hidden = true
 +++
 
 This topic contains information to help you troubleshoot your Windows images.

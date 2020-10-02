@@ -1,7 +1,6 @@
 +++
 title = "Default Permissions"
 weight = 10
-hidden = true
 +++
 
 Different identities have different default access permissions. When no policy is associated with them, these identities have the permission listed in the following table.

@@ -1,7 +1,6 @@
 +++
 title = "Comparing Instance Types"
 weight = 10
-hidden = true
 +++
 
 The graphic below illustrates the differences between an instance store-backed instance and an EBS-backed instance.   Both types of instances still boot from an EMI; the difference is what is behind the EMI.   For an instance store-backed instance the EMI is backed by a bundled image.  For an EBS-backed instance the EMI is backed by a snapshot of a volume that contains bootable software, similar to a physical host's boot disk. 

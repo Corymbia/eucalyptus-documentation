@@ -1,7 +1,6 @@
 +++
 title = "Configure Eucalyptus DNS"
 weight = 10
-hidden = true
 +++
 
 Eucalyptus provides a DNS service that maps service names, bucket names, and more to IP addresses. This section details how to configure the Eucalyptus DNS service.

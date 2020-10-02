@@ -1,7 +1,6 @@
 +++
 title = "Set Up A Web Server on an Instance"
 weight = 10
-hidden = true
 +++
 
 Once you've launched an instance and connected to it, you can test it by setting up a web server. 

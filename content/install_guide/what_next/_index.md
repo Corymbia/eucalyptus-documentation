@@ -1,7 +1,6 @@
 +++
 title = "Find More Information"
 weight = 10
-hidden = true
 +++
 
 This topic explains what to do once you have installed Eucalyptus, including further reading and other resources for understanding your cloud.
