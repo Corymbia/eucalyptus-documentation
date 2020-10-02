@@ -1,6 +1,7 @@
 +++
 title = "Install the Data Warehouse"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To install the Data Warehouse on hosts running RHEL 7 or CentOS 7: 

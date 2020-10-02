@@ -1,6 +1,7 @@
 +++
 title = "Log in to an Instance"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 

@@ -1,6 +1,7 @@
 +++
 title = "Command Line Interface"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus supports two command line interfaces (CLIs): the administration CLI and the user CLI.The administration CLI is installed when you install Eucalyptus server-side components. The administration CLI is for maintaining and modifying Eucalyptus. 

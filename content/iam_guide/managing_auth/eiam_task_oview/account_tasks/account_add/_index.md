@@ -1,6 +1,7 @@
 +++
 title = "Add an Account"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To add an account perform the steps listed in this topic.To add a new account: 

@@ -1,6 +1,7 @@
 +++
 title = "Find an Image"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To find an image: 

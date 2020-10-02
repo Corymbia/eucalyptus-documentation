@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Plan Networking Modes
+# Plan Networking Modes
 These networking modes are designed to allow you to choose an appropriate level of security and flexibility for your cloud. The purpose is to direct Eucalyptus to use different network features to manage the virtual networks that connect VMs to each other and to clients external to Eucalyptus . 
 
 Eucalyptus networking modes are generally modeled after AWS networking capabilities. In legacy AWS accounts, you have the ability to choose EC2 Classic network mode or VPC network mode. New AWS accounts do not have this flexibility and are forced into using VPC. Eucalyptus VPCMIDO mode is similar to AWS VPC in that it allows users to fully manage their cloud network, including the definition of a Classless Inter-Domain Routing (CIDR) block, subnets, and security groups with rules for additional protocols beyond the default three (UDP, TCP, and ICMP) available in EC2 Classic networking. 
@@ -19,3 +19,6 @@ Your choice of networking mode depends on the following considerations:
 
 Each networking mode is described in the following sections. 
 
+
+
+{{% children %}}

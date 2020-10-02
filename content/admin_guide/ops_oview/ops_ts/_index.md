@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Troubleshooting
+# Troubleshooting
 This topic details how to find information you need to troubleshoot most problems in your cloud.To troubleshoot Eucalyptus, you must have the following: 
 
 
@@ -18,3 +18,6 @@ For most problems, the procedure for tracing problems is the same: start at the 
 
 For more information about troubleshooting, go to Tips to Troubleshooting Eucalyptus [Part 1](https://eucalyptus.atlassian.net/wiki/display/ETKB/Tips+to+Troubleshoot+Eucalyptus%2C+Part+1) and [Part 2](https://eucalyptus.atlassian.net/wiki/display/ETKB/Tips+to+Troubleshoot+Eucalyptus%2C+Part+2) . 
 
+
+
+{{% children %}}

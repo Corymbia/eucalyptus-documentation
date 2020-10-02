@@ -5,6 +5,9 @@ chapter = true
 +++
 
 
-## Best Practices
+# Best Practices
 This topic contains recommendations for hardening your Eucalyptus cloud.
 
+
+
+{{% children %}}

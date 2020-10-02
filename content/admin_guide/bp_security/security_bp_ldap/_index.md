@@ -1,9 +1,11 @@
 +++
 title = "LDAP Security"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic explains variables in the LIC file you should use to secure configuration.When you enable LDAP/Active Directory (AD) integration with Eucalyptus, we recommend that you use the following variables in the LDAP/AD Integration Configuration (LIC) file. These variables are located under the `ldap-service` element in the LIC file. 
+
 
 
 | Element | Description | 

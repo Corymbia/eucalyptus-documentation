@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Configuring Monitoring
+# Configuring Monitoring
 This section describes how to enable and disable monitoring for your cloud resources.
+
+{{% children %}}

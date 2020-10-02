@@ -1,6 +1,7 @@
 +++
 title = "Use the Overlay Local Filesystem"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure the local filesystem as the block storage backend provider for the Storage Controller (SC).**Prerequisites** 

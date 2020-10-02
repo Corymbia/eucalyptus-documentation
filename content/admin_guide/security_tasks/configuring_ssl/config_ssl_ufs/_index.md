@@ -1,6 +1,7 @@
 +++
 title = "Configure and Enable SSL for the UFS"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic details tasks to configure SSL for the User-Facing Services (UFS).

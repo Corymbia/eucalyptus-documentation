@@ -1,6 +1,7 @@
 +++
 title = "Using EBS-Backed Instances"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 An EBS-backed instance is very much like a physical machine in the way it boots and persists data.  Because an EBS-backed instance functions in a manner similar to physical machine, it makes it a good choice to run legacy applications that cannot be re-architected for the cloud.  

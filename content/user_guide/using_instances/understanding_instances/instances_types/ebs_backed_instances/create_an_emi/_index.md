@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## EBS EMI Creation Overview
+# EBS EMI Creation Overview
 You can create an EBS EMI from an existing *.img* file or create your own *.img* file.  One way to create your own EBS *.img* file is to use `virt-install` as described below. 
 
 Use `virt-install` on a system with the same operating system version and hypervisor as your Node Controller. When using `virt-install` , select *scsi* as the disk type for KVM if the VIRTIO paravirtualized devices are not enabled. If you have KVM with VIRTIO enabled (the default), select *virtio* as the disk type of the virtual machine. If you create, successfully boot, and connect the virtual machine to the network in this environment, it should boot as an EBS-backed instance in the Eucalyptus cloud. 
@@ -46,3 +46,6 @@ This process is illustrated below.
 ![image]({{< ref "/" >}}images/Creating-an-EBS-EMI.png)
 
 
+
+
+{{% children %}}

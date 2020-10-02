@@ -1,6 +1,7 @@
 +++
 title = "euserv-describe-events"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 
@@ -11,6 +12,7 @@ weight = 5
 
 ## Description
 Events come in the form of a list, where each event contains one or more of the following tags: 
+
 
 
 | Tag | Description | 
@@ -31,6 +33,7 @@ Events come in the form of a list, where each event contains one or more of the 
 The command requires access keys and knowledge of where to locate the web services it needs to contact. It can obtain these from several locations. 
 {{% /notice %}}
 
+
 | Environment | Description | 
 |  :---- |  :---- | 
 | AWS_ACCESS_KEY_ID | The access key ID to use when authenticating web service requests. This takes precedence over and euca2ools.ini, but not -I. | 
@@ -39,6 +42,7 @@ The command requires access keys and knowledge of where to locate the web servic
 
 
 ## Options
+
 
 | Option | Description | Required | 
 |  :---- |  :---- |  :---- | 

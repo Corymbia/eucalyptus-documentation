@@ -1,6 +1,7 @@
 +++
 title = "Change User Path"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Enter the following command: 

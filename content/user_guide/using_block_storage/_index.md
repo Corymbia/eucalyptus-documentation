@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Using EBS
+# Using EBS
 This section details what you need to know about Eucalyptus Elastic Block Storage (EBS).
+
+{{% children %}}

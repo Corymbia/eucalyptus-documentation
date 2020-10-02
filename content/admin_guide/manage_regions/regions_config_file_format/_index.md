@@ -1,9 +1,10 @@
 +++
 title = "Region Configuration File Format"
-weight = 5
+weight = 10
+hidden = true
 +++
 
-This section describes the necessary configuration properties that need to be addressed.For federation to be successfully configured, each cloud (i.e. region) that will be part of the federated cloud needs to have the following properties set (at a minimum):
+This section describes the necessary configuration properties that need to be addressed.For federation to be successfully configured, each cloud (i.e. region) that will be part of the federated cloud needs to have the following properties set (at a minimum): 
 
 | Property Name | Description | 
 |  :---- |  :---- | 

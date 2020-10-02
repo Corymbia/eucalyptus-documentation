@@ -1,6 +1,7 @@
 +++
 title = "Elastic Load Balancing Concepts"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes the terminology and concepts you need for understanding and using the Elastic Load Balancing service. 

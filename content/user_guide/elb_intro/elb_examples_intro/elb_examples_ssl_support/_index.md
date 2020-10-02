@@ -1,6 +1,7 @@
 +++
 title = "Adding SSL Support"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to add SSL support to a new or existing load balancer.

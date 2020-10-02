@@ -1,6 +1,7 @@
 +++
 title = "Domain Name System (DNS)"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Domain Name System (DNS) is an Internet standard that maps unique DNS names (for example: www.example.com) to the underlying public IP address (for example: 128.0.0.1). 

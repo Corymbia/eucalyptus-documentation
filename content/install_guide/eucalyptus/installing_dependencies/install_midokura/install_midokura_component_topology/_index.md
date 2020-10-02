@@ -1,6 +1,7 @@
 +++
 title = "MidoNet Component Topology"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic lists topology recommendations for installing Midokura Enterprise MidoNet.

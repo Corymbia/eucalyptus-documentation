@@ -1,6 +1,7 @@
 +++
 title = "Manage Compute Resources"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To manage compute resources on a Eucalyptus cloud, use the option in any command.The following are some examples you can use to view various compute resources. For more information about compute commands, see [](../euca2ools-guide/euca.dita) . 

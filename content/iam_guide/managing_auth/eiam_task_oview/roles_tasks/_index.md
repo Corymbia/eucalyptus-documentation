@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Roles
+# Roles
 A *role* is a mechanism that allows applications to request temporary security credentials on a user or application's behalf. 
 
 
@@ -14,3 +14,6 @@ Eucalyptus roles are managed through the Eucalyptus Euare service, which is comp
 {{% /notice %}}
 The suite of AssumeRoles gives you the ability to delegate users certain access to Eucalyptus cloud resources by allowing them to assume certain roles. 
 
+
+
+{{% children %}}

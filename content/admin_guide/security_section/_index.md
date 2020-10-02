@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Manage Security
+# Manage Security
 This section details concepts and tasks required to secure your cloud.
+
+{{% children %}}

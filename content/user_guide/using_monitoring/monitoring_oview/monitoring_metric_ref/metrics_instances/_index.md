@@ -1,10 +1,12 @@
 +++
 title = "Instance Metrics and Dimensions"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes the instance metrics and dimensions available to CloudWatch.
 ## Available Metrics for Instances
+
 
 | Metric | Description | Unit | 
 |  :---- |  :---- |  :---- | 
@@ -22,6 +24,7 @@ This section describes the instance metrics and dimensions available to CloudWat
 
 ## Available Dimensions for Instances
 You can filter the instance data using any of the dimensions in the following table. 
+
 
 
 | Dimension | Description | 

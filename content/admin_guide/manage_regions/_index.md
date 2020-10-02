@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Manage Regions
+# Manage Regions
 This section provides information about regions and identity federation.
+
+{{% children %}}

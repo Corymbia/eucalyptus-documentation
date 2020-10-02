@@ -1,6 +1,7 @@
 +++
 title = "Install an HVM Image"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 HVM (Hardware-assisted Virtual Machine) images are sequences of raw sectors of a complete bootable disk, including a boot loader and one or more partitions with an operating system. Such images are self-contained and can be booted on hardware that supports virtualization or on a full software emulation of hardware (QEMU). 

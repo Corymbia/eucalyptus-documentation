@@ -1,6 +1,7 @@
 +++
 title = "Publish Custom Metrics"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 CloudWatch allows you to publish your own metrics, such as application performance, system health, or customer usage.

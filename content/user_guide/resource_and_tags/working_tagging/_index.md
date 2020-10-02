@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Tagging and Filtering Tasks
+# Tagging and Filtering Tasks
 This section details the tasks that you can with tagging and filtering. You can use the Management Console or the command line interface. 
 
 Eucalyptus supports three commands for tagging: 
@@ -32,3 +32,6 @@ Eucalyptus supports the following commands for filtering:
 * euca-describe-volumes 
 For detailed information about these commands, see the [Euca2ools Reference Guide](../euca2ools-guide/index.dita) . 
 
+
+
+{{% children %}}

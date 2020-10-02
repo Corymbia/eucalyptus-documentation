@@ -1,6 +1,7 @@
 +++
 title = "Disable Monitoring"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes steps for disabling monitoring on your cloud resources.To disable monitoring on your resources, following the steps for your resource. 
@@ -13,6 +14,7 @@ To disable monitoring for a running instance, enter the following command:
 
 ## Disable monitoring for a scaling group
 To enable monitoring for an existing Auto Scaling group: Create a launch configuration with `--monitoring-disabled` option. Make a euscale-update-auto-scaling-group request to update your Auto Scaling group with the launch configuration you created in the previous step. Auto Scaling will disable monitoring for new instances that it creates. Choose one of the following actions to deal with all existing instances in the Auto Scaling group: 
+
 | To . . . | Do this . . . | 
 |  :---- |  :---- | 
 | Preserve existing instances | Make a euca-unmonitor-instances request for all existing instances to disable monitoring. | 

@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Configuring Alarms
+# Configuring Alarms
 This section describes how to create, test, and delete and alarm.
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "Register the Cluster Controller"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to register a Cluster Controller (CC) with the Cloud Controller (CLC).**Prerequisites** 

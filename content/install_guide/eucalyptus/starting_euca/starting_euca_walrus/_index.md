@@ -1,6 +1,7 @@
 +++
 title = "Start Walrus"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 **Prerequisites** You should have installed and configured Eucalyptus before starting the Walrus Backend. 

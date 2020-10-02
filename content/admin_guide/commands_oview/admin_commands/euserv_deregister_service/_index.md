@@ -1,6 +1,7 @@
 +++
 title = "euserv-deregister-service"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 
@@ -13,6 +14,7 @@ weight = 5
 
 
 ## Positional Arguments
+
 
 | Argument | Description | 
 |  :---- |  :---- | 

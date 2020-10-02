@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Configure VPCMIDO Network Mode
+# Configure VPCMIDO Network Mode
 This topic provides configuration instructions for Eucalyptus VPCMIDO network mode. Eucalyptus requires network connectivity between its clients (end-users) and the cloud components (e.g., CC, CLC, and storage).
 {{% notice note %}}
 If you are not using VPCMIDO mode with , you can skip this topic. See . 
@@ -71,3 +71,6 @@ Save the `network.json` file. The following example demonstrates a gateway with 
         ]
     }
 
+
+
+{{% children %}}

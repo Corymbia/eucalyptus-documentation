@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Configure Dependencies
+# Configure Dependencies
 Before you install Eucalyptus , ensure you have the appropriate dependencies installed and configured.
+
+{{% children %}}

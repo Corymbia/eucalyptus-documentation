@@ -1,9 +1,11 @@
 +++
 title = "sync"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The element contains elements for controlling synchronization.
+
 | Element | Description | 
 |  :---- |  :---- | 
 | enable | Set to "true" to enable LDAP synchronization. When this is “false”, all other fields can be ignored. Default value: false | 

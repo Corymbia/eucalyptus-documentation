@@ -1,6 +1,7 @@
 +++
 title = "Authorize Security Group Rules"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 By default, a security group prevents incoming network traffic from all sources. You can modify network rules and allow incoming traffic to security groups from specified sources using the euca-authorize command. 

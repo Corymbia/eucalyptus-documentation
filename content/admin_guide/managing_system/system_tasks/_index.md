@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Cloud Tasks
+# Cloud Tasks
 This section contains a listing of your Eucalyptus cloud-related tasks.
+
+{{% children %}}

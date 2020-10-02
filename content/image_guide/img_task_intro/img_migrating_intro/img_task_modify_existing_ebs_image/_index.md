@@ -1,6 +1,7 @@
 +++
 title = "Create an Image from an Existing EBS-Backed Instance"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 A common way to create a new image is to customize an existing instance. This topic describes how to create a new image by modifying an existing EBS-backed instance.This example shows how to create a new EBS-backed Eucalyptus image based on an existing EBS-backed Eucalyptus instance. 

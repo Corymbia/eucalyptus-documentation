@@ -5,9 +5,11 @@ chapter = true
 +++
 
 
-## Use a NetApp SAN
+# Use a NetApp SAN
 This topic describes how to configure the NetApp Data ONTAP SAN as the block storage backend provider on the Storage Controller (SC).
 {{% notice note %}}
 
 {{% /notice %}}
 Eucalyptus supports both NetApp Clustered Data ONTAP and traditional 7-mode SANs. NetApp Vservers and 7-mode Filers are managed by Eucalyptus using NetApp Manageability Software Development Kit (NMSDK) and Data ONTAP APIs. 
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "About Operation Mode Optimization"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes the operation modes available for 3PAR SAN backends for Eucalyptus cloud.The Eucalyptus 3PAR backend provider implements a mapping between EBS and 3PAR concepts. Operation mode optimization allows you to make storage operations more efficient in your cloud. Predominant use cases are described below. 

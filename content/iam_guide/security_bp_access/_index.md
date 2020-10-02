@@ -1,6 +1,7 @@
 +++
 title = "Authentication and Access Control Best Practices"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes best practices for Identity and Access Management and the account.

@@ -1,6 +1,7 @@
 +++
 title = "euserv-register-service"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 
@@ -15,12 +16,14 @@ weight = 5
 
 ## Positional Arguments
 
+
 | Argument | Description | 
 |  :---- |  :---- | 
 | SVCINSTANCE | The name of the new service instance to register. | 
 
 
 ## Options
+
 
 | Option | Description | Required | 
 |  :---- |  :---- |  :---- | 

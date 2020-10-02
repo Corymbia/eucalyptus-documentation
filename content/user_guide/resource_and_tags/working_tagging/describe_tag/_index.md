@@ -1,6 +1,7 @@
 +++
 title = "List Tags"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Use the euca-describe-tags command to list your tags and filter the results different ways. 

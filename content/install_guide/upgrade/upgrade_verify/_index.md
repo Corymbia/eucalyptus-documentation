@@ -1,6 +1,7 @@
 +++
 title = "Verify the Services"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to verify all the services after upgrading.Verify that all Eucalyptus components are running and properly connected to one another. Check to make sure that the status of each service is enabled. 

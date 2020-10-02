@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Instance Basics
+# Instance Basics
 This section describes information to help you decide which type of instance you need.
+
+{{% children %}}

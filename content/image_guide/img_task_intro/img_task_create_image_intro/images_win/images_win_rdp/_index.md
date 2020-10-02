@@ -1,6 +1,7 @@
 +++
 title = "Configure Remote Desktop"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Domain users or groups require remote desktop permission to log into an instance. By default, only the local administrator has the remote desktop permission. The Eucalyptus Integration Service provides a way to grant remote desktop permission to additional domain users or groups. 

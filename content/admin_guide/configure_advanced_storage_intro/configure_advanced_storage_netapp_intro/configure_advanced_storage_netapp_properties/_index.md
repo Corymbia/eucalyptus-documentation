@@ -1,6 +1,7 @@
 +++
 title = "Configurable NetApp SAN Properties"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic lists the NetApp SAN-specific properties you can configure using , along with their valid values and Eucalyptus default values.
@@ -10,6 +11,7 @@ The following configuration options are a subset of the Netapp SAN configuration
 
 ## 7-Mode and Cluster Mode Properties
 The following table lists properties that are applicable to both 7-mode and cluster mode: 
+
 
 
 | Eucalyptus Property | Description | Valid Values | 
@@ -37,6 +39,7 @@ The following table lists properties that are applicable to both 7-mode and clus
 The following properties are specific to 7-mode: 
 
 
+
 | Eucalyptus Property | Description | Valid Values | 
 |  :---- |  :---- |  :---- | 
 | <region>.storage.convertucode | Setting this option to "on" forces conversion of all directories to UNICODE format when accessed from both NFS and CIFS. | "on" (default) or "off" | 
@@ -49,6 +52,7 @@ The following properties are specific to 7-mode:
 
 ## Cluster Mode Properties
 The following properties are cluster mode specific: 
+
 
 
 | Eucalyptus Property | Description | Valid Values | 

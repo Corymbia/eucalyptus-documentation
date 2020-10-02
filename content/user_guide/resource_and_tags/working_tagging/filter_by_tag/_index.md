@@ -1,6 +1,7 @@
 +++
 title = "Filter by Tag"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 You can describe your resources and filter the results based on the tags. To filter by tag: 

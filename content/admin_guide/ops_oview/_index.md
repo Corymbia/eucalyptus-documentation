@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Operations
+# Operations
 This section contains concepts and tasks associated with operating your Eucalyptus cloud.
+
+{{% children %}}

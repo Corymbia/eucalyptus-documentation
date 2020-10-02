@@ -1,6 +1,7 @@
 +++
 title = "Import Data"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To import data into the data warehouse: 

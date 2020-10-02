@@ -1,6 +1,7 @@
 +++
 title = "Policy Extensions"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus extends the IAM policy in order to meet the needs of enterprise customers.

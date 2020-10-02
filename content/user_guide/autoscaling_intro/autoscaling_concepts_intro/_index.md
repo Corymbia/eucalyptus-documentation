@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Auto Scaling Concepts
+# Auto Scaling Concepts
 This section discusses Auto Scaling concepts and terminology.
+
+{{% children %}}

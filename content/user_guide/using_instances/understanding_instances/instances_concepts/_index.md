@@ -1,6 +1,7 @@
 +++
 title = "Instance Concepts"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes conceptual information to help you understand instances.

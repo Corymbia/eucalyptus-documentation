@@ -1,6 +1,7 @@
 +++
 title = "Configure Hypervisor Support for Ceph-RBD"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure the hypervisor for Ceph-RBD support.The following instructions will walk you through steps for verifying and or installing the required hypervisor for Ceph-RBD support. **Repeat this process for every NC in the Eucalyptus zone** 

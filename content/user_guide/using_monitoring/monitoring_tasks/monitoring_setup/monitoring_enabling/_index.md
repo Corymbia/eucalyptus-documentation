@@ -1,6 +1,7 @@
 +++
 title = "Enable Monitoring"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes steps for enabling monitoring on your cloud resources.To enable monitoring on your resources, following the steps for your resource. 
@@ -16,6 +17,7 @@ To enable monitoring when you launch an instance, enter the following command:
 
 ## Enable monitoring for a scaling group
 To enable monitoring for an existing Auto Scaling group: Create a launch configuration with `--monitoring-enabled` option. Make a euscale-update-auto-scaling-group request to update your Auto Scaling group with the launch configuration you created in the previous step. Auto Scaling will enable monitoring for new instances that it creates. Choose one of the following actions to deal with all existing instances in the Auto Scaling group: 
+
 | To . . . | Do this . . . | 
 |  :---- |  :---- | 
 | Preserve existing instances | Make a euca-monitor-instances request for all existing instances to enable monitoring. | 

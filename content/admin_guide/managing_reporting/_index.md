@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Manage Reporting
+# Manage Reporting
 Eucalyptus provides two ways for getting metrics for your cloud: you can get a report directly from the Cloud Controller (CLC), or you can get a report from data exported from the CLC and imported to a data warehouse.
 {{% notice note %}}
 
@@ -16,3 +16,6 @@ When you install Eucalyptus, you automatically get the reporting system in place
 
 This section describes the concepts and best practices for Eucalyptus reporting, and how to generate reports. 
 
+
+
+{{% children %}}

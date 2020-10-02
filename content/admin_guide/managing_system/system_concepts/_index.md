@@ -1,6 +1,7 @@
 +++
 title = "Cloud Overview"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic presents an overview of the components in Eucalyptus.Eucalyptus is comprised of several components: Cloud Controller, Walrus, Cluster Controller, Storage Controller, and Node Controller. Each component is a stand-alone web service. This architecture allows Eucalyptus both to expose each web service as a well-defined, language-agnostic API, and to support existing web service standards for secure communication between its components. 

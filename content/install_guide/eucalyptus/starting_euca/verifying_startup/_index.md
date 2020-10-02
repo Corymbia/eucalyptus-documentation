@@ -1,6 +1,7 @@
 +++
 title = "Verify the Startup"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 At this point, all Eucalyptus services are enabled and starting up. Some of these services perform intensive initialization at start-up, particularly the first time they are started. You might have to wait a few minutes until they are fully operational. 

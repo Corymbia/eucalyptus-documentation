@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Manage Resources
+# Manage Resources
 This section includes tasks to help you manage your users' cloud resources.
+
+{{% children %}}

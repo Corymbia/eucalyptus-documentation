@@ -1,9 +1,11 @@
 +++
 title = "ldap-service"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The element contains everything related to the LDAP/AD service.
+
 | Element | Description | 
 |  :---- |  :---- | 
 | server-url | The LDAP/AD server URL, starting with ldap://. | 

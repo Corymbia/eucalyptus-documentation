@@ -1,6 +1,7 @@
 +++
 title = "Register the Walrus Backend"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to register the Walrus Backend service with the Cloud Controller (CLC).**Prerequisites** 

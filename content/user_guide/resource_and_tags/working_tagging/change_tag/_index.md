@@ -1,6 +1,7 @@
 +++
 title = "Change a Tag's Value"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To change a tag's value: 

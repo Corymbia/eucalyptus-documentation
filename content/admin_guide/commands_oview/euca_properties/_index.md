@@ -1,6 +1,7 @@
 +++
 title = "Eucalyptus Configuration Variables"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus exposes a number of variables that can be configured using the command. This topic explains what types of variables Eucalyptus uses, and lists the most common configurable variables.
@@ -14,6 +15,7 @@ Once a cloud is in use and has started operating based on these variables, it is
 
 ## Eucalyptus Variables
 The following table contains a list of common Eucalyptus cloud variables. 
+
 
 
 | Variable | Description | 

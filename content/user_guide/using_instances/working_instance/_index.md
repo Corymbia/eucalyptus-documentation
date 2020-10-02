@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Instance Tasks
+# Instance Tasks
 This section describes the tasks you can perform with instances in Eucalyptus.
+
+{{% children %}}

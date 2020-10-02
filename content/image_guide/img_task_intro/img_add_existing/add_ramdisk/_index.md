@@ -1,6 +1,7 @@
 +++
 title = "Add a Ramdisk"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 When you add a ramdisk to Walrus, you bundle the ramdisk file, upload the file to a bucket in Walrus that you name, and then register the ramdisk with Eucalyptus. 

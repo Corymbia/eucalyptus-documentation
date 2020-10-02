@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Install a paravirtual image
+# Install a paravirtual image
 
 {{% notice note %}}
 As of Eucalyptus version 4.0, it is now required to pass a Eucalyptus Kernel Image (EKI) and a Eucalyptus Ramdisk Image (ERI) when uploading and registering a paravirtual Eucalyptus Machine Image (EMI) using the , , and command line tools. 
@@ -23,3 +23,6 @@ Note that while all users can bundle, upload and register images, only users und
 {{% /notice %}}
 Once you have an image that meets your needs, perform the tasks listed in this section to add the image to your cloud. 
 
+
+
+{{% children %}}

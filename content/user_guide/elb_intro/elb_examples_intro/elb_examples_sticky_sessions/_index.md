@@ -1,6 +1,7 @@
 +++
 title = "Creating Elastic Load Balancing Sticky Sessions"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 By default, a load balancer routes each request independently to the application instance with the smallest load. However, you can use the sticky session feature (also known as session affinity) which enables the load balancer to bind a user's session to a specific application instance. This ensures that all requests coming from the user during the session will be sent to the same application instance.

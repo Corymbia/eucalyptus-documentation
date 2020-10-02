@@ -1,6 +1,7 @@
 +++
 title = "Revoke Security Group Rules"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To revoke security group rules: 

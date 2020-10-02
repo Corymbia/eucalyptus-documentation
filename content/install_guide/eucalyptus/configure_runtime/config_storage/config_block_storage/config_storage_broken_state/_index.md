@@ -1,6 +1,7 @@
 +++
 title = "About the BROKEN State"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes the initial state of the Storage Controller (SC) after you have registered it with the Cloud Controller (CLC).The SC automatically goes to the `broken` state after being registered with the CLC; it will remain in that state until you explicitly configure the SC by telling it which backend storage provider to use. 

@@ -1,6 +1,7 @@
 +++
 title = "Use Case: Create a User"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This use case details tasks needed to create a user with limited access. 

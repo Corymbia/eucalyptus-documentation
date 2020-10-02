@@ -1,6 +1,7 @@
 +++
 title = "List Available Metrics"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 You can list available metrics via Euca2ools.**To list available metrics:** 

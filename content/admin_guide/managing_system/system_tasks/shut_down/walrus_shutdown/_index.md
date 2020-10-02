@@ -1,6 +1,7 @@
 +++
 title = "Shut Down Walrus"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To shut down Walrus: 

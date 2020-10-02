@@ -1,6 +1,7 @@
 +++
 title = "Sample Policies"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 A few example use cases and associated policies.Here are some example use cases and associated polices. You can edit these polices for your use, or use them as examples of JSON syntax and form. 

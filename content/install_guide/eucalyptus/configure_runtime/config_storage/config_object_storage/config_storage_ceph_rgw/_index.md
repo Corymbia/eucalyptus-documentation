@@ -1,6 +1,7 @@
 +++
 title = "Use Ceph-RGW"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure Ceph Rados Gateway (RGW) as the backend for the Object Storage Gateway (OSG).**Prerequisites** 

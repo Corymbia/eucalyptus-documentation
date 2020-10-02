@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Use an HP 3PAR SAN
+# Use an HP 3PAR SAN
 This topic describes how to configure the HP 3PAR SAN as the block storage backend provider for the Storage Controller (SC).
 {{% notice note %}}
 
@@ -76,3 +76,5 @@ Assign the 3PAR CPG that should be used for creating virtual volume snapshot spa
 For more information about the `threeparoptimizesnaptovol` property, and how to configure it, see [About Operation Mode Optimization](../install-guide/config_storage_3par_op_modes.dita#op_modes) . 
 
 Your 3PAR SAN backend is now ready to use with Eucalyptus . 
+
+{{% children %}}

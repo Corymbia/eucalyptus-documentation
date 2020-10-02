@@ -1,9 +1,11 @@
 +++
 title = "Capacity Report"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Capacity Report has the following column headings: 
+
 
 
 | Heading | Description | 

@@ -1,6 +1,7 @@
 +++
 title = "Use Case: Create an Administrator"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This use case details tasks for creating an administrator. These tasks require that you have your account credentials for sending requests to Eucalyptus using the command line interface (CLI) tools.To create an administrator account, perform the tasks that follows. 

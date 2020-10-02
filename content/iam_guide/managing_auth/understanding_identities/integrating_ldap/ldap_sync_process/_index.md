@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Synchronization Process
+# Synchronization Process
 This topic explains what happens to start the synchronization process and what the synchronization process does.The synchronization always starts when the following happens: 
 
 
@@ -27,3 +27,6 @@ During a synchronization, everything specified by an LIC in the LDAP/AD tree wil
 {{% notice note %}}
 If clean-deletion is set to true, the removed entities in Eucalyptus will be lost forever, along with all its permissions and credentials. The resources associated with the entity will be left untouched. It is system administrator’s job to recycle these resources. 
 {{% /notice %}}
+
+
+{{% children %}}

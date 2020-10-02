@@ -1,6 +1,7 @@
 +++
 title = "Associate an IP Address with an Instance"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To associate an IP address with an instance: 

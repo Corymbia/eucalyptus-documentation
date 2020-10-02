@@ -1,6 +1,7 @@
 +++
 title = "Credentials"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes the different types of credentials used by Eucalyptus.Each user has a unique set of credentials. These credentials are used to authenticate access to resources. There are three types of credentials: 

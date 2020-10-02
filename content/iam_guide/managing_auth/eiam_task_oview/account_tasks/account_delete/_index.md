@@ -1,6 +1,7 @@
 +++
 title = "Delete an Account"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To delete an account perform the steps listed in this topic.

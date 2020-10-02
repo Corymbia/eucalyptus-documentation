@@ -1,6 +1,7 @@
 +++
 title = "Understanding Auto Scaling Policies"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 An Auto Scaling policy defines how to perform scaling actions in response to CloudWatch alarms. Auto scaling policies can either *scale-in* , which terminates instances in your Auto Scaling group, or *scale-out* , which will launch new instances in your Auto Scaling group. You can define an Auto Scaling policy based on demand, or based on a fixed schedule. 

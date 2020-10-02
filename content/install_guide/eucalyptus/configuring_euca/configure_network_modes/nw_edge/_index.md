@@ -1,6 +1,7 @@
 +++
 title = "Configure EDGE Network Mode"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic provides configuration instructions for Eucalyptus EDGE network mode. Eucalyptus requires network connectivity between its clients (end-users) and the cloud components (e.g., CC, CLC, and Walrus).
@@ -14,6 +15,7 @@ To configure Eucalyptus for EDGE mode, most networking configuration is handled 
 The */etc/eucalyptus/eucalyptus.conf* file contains some network-related options in the “Networking Configuration” section. These options use the prefix VNET_. The most commonly used VNET options are described in the following table. 
 
 The most commonly used VNET options are described in the following table. 
+
 
 
 | Option | Description | Component | 

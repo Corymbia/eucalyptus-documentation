@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Network Migration and Upgrade
+# Network Migration and Upgrade
 This section details how migrate and upgrade network modes.
+
+{{% children %}}

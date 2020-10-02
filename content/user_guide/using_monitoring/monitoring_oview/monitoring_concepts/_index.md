@@ -1,6 +1,7 @@
 +++
 title = "CloudWatch Concepts"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes the terminology and concepts you need in order to understand and use CloudWatch.
@@ -63,6 +64,7 @@ Though CloudWatch attaches no significance to a unit, other applications can der
 
 ## Statistic
 A statistic is computed aggregation of metric data over a specified period of time. CloudWatch provides statistics based on the metric data points you or Eucalyptus provide. Aggregations are made using the namespace, metric name, dimensions, and the data point unit of measure, within the time period you specify. The following table describes the available statistics. 
+
 
 
 | Statistic | Description | 

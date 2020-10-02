@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Configure Object Storage
+# Configure Object Storage
 This topic describes how to configure object storage on the Object Storage Gateway (OSG) for the backend of your choice.The OSG passes requests to object storage providers and talks to the persistence layer (DB) to authenticate requests. You can use Walrus, Riak CS, or Ceph-RGW as the object storage provider. 
 
 
@@ -38,3 +38,6 @@ If OSG has been registered but not yet properly configured, it will be listed in
     SERVICE  TYPE              	ZONE    	NAME                   	  STATE	
     SERVICE  objectstorage      user-api-1  user-api-1.objectstorage  broken
 
+
+
+{{% children %}}

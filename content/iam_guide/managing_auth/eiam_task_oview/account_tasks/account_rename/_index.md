@@ -1,6 +1,7 @@
 +++
 title = "Rename an Account"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To rename an account perform the steps listed in this topic.To change an account's name: 

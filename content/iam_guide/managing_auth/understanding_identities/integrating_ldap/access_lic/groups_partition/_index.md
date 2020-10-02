@@ -1,6 +1,7 @@
 +++
 title = "groups-partition"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Like accounting-groups, groups-partition specifies how to map LDAP/AD groups to Eucalyptus accounts. However, in this section you to manually specify which LDAP/AD groups you want to map to Eucalyptus accounts.

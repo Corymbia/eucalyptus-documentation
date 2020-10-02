@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Using CloudFormation
+# Using CloudFormation
 This topic describes the Eucalyptus implementation of the AWS CloudFormation web service, how CloudFormation works, and some details and examples of how to add CloudFormation to your Eucalyptus deployment.
 ## Why use CloudFormation?
 Cloud computing allows for application repeatability and redundancy. This means that you can spin up as many virtual machines as you need, but the application configuration only needs to happen when the images are created. CloudFormation takes this concept to the next level: it allows you to configure an entire set of resources (instances, security groups, user roles and policies, and more) in a single [JSON](../shared/glossary.dita#json) template file. Then you can run all with a single command. So, you don't just get machine repeatability, you get environment repeatability. CloudFormation allows you to clone environments in different cloud setups, as well as giving applications the ability to be set up and torn down in a repeatable manner. 
@@ -108,6 +108,7 @@ To run CloudFormation on Eucalyptus, you need the following:
 The following resources are supported by CloudFormation in Eucalyptus. 
 
 
+
 | Resource | Description | 
 |  :---- |  :---- | 
 | AWS::AutoScaling::AutoScalingGroup | All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier. | 
@@ -183,3 +184,6 @@ The services path may not be necessary if DNS is enabled, it may look something 
 
 CloudFormation follows the same convention as the other [user-facing services](../shared/glossary.dita#ufs) . 
 
+
+
+{{% children %}}

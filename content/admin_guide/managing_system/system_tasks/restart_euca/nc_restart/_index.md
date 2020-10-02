@@ -1,6 +1,7 @@
 +++
 title = "Restart an NC"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To restart an NC perform the steps listed in this topic.Log in to the NC and enter the following command: 

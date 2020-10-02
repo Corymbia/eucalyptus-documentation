@@ -1,6 +1,7 @@
 +++
 title = "Install and Configure the Imaging Service"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Eucalyptus Imaging Service, introduced in Eucalyptus 4.0, makes it easier to deploy EBS images in your Eucalyptus cloud and automates many of the labor-intensive processes required for uploading data into EBS images.The Eucalyptus Imaging Service is implemented as a system-controlled "worker" virtual machine that is monitored and controlled via Auto Scaling. Once the Imaging Service is configured, the Imaging Service VM will be started automatically upon the first request that requires it: such as an EBS volume ingress. Specifically, in this release of Eucalyptus , these are the usage scenarios for the Eucalyptus Imaging Service: 

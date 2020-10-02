@@ -1,6 +1,7 @@
 +++
 title = "Use Direct Attached Storage (JBOD)"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure the DAS-JBOD as the block storage backend provider for the Storage Controller (SC).**Prerequisites** 

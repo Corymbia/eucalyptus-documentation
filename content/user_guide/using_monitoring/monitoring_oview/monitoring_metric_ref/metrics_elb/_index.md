@@ -1,12 +1,14 @@
 +++
 title = "ELB Metrics and Dimensions"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section discusses the Elastic Load Balancing (ELB) metrics and dimensions available to CloudWatch. 
 
 
 ## Available Metrics for ELB
+
 
 | Metric | Description | Unit | 
 |  :---- |  :---- |  :---- | 
@@ -26,6 +28,7 @@ This section discusses the Elastic Load Balancing (ELB) metrics and dimensions a
 You can use the currently available dimensions for ELB to refine the metrics returned by a query. For example, you could use `HealthyHostCount` and dimensions `LoadBalancerName` and `AvailabilityZone` to get the average number of healthy instances behind the specified load balancer within the specified Availability Zone for a given period of time. 
 
 You can aggregate ELB data along any of the following dimensions shown in the following table. 
+
 
 
 | Metric | Description | 

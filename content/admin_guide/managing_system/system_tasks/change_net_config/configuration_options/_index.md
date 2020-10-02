@@ -1,6 +1,7 @@
 +++
 title = "Networking Configuration Options"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 All network-related options specified in /etc/eucalyptus/eucalyptus.conf use the prefix VNET_. The most commonly used VNET options are described in the following table. 
@@ -9,6 +10,7 @@ All network-related options specified in /etc/eucalyptus/eucalyptus.conf use the
 {{% notice note %}}
 If you change the value of in the file, you must restart the Cluster Controller. 
 {{% /notice %}}
+
 
 | Option | Description | Component | 
 |  :---- |  :---- |  :---- | 

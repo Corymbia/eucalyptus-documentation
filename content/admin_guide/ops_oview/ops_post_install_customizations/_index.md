@@ -1,6 +1,7 @@
 +++
 title = "Customizing Your Deployment"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Managed mode references should be deleted in 5.0. DOC-1888 For most production deployments, we recommend that you use a configuration management tool. Customers have been successful deploying using the following: 
@@ -31,6 +32,7 @@ To add network IPs:In EDGE mode, adding or changing the IP involves creating a J
 You can modify the default network from Managed to EDGE networking mode.See [Eucalyptus Migration to Edge Networking Mode](../install-guide/moving_to_edge.dita) for more details. 
 ## Change Reporting/CloudWatch Properties
 You can change the following reporting and CloudWatch properties:
+
 | Reporting Property | Description | 
 |  :---- |  :---- | 
 | cloud.monitor.default_poll_interval_mins | This is how often the CLC sends a request to the CC for sensor data. Default value is 5 minutes. If you set it to 0 = no reporting. The more often you poll, the more hit on system performance. | 

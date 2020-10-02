@@ -1,6 +1,7 @@
 +++
 title = "Problem: instance runs but fails"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Run `euca-describe-nodes` to verify if instance is there. Is the instance there? 

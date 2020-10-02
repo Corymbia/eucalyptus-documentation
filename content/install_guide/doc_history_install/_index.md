@@ -1,9 +1,11 @@
 +++
 title = "Installation Guide History"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section contains information about changes to the installation documentation in this release.
+
 | Section / Topic | Description of Change | Date Changed | 
 |  :---- |  :---- |  :---- | 
 |  | Added snapshot delta functionality. | March 2017 | 

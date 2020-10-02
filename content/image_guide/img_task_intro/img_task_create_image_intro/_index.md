@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Create an HVM Image
+# Create an HVM Image
 This section covers how to create a new image for use in your Eucalyptus cloud.
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "Overview of Eucalyptus"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus is a Linux-based software architecture that implements scalable, efficiency-enhancing private and hybrid clouds within an enterprise’s existing IT infrastructure. Because Eucalyptus provides Infrastructure as a Service (IaaS), you can provision your own resources (hardware, storage, and network) through Eucalyptus on an as-needed basis. 

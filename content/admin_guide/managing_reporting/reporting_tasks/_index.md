@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Reporting Tasks
+# Reporting Tasks
 This section explains the tasks associated with the Eucalyptus reporting feature.
 {{% notice note %}}
 
@@ -21,3 +21,6 @@ Once the data warehouse is installed, the workflow for running reports against t
 1. Export the data from the CLC. For more information, see . 
 1. Import the data to the data warehouse. For more information, see . 
 1. Create the report from the data in the data warehouse. For more information, see . 
+
+
+{{% children %}}

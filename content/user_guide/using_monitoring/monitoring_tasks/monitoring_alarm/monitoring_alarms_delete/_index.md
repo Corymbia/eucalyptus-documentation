@@ -1,6 +1,7 @@
 +++
 title = "Delete an Alarm"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To delete an alarm, perform the following step. 

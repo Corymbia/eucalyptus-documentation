@@ -1,6 +1,7 @@
 +++
 title = "Troubleshooting"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section is presented in a Q&A format to provide a quick reference to the most frequently asked questions. 

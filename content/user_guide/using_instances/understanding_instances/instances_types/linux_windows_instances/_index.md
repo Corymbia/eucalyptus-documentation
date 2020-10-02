@@ -1,6 +1,7 @@
 +++
 title = "Linux and Windows Instances"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 A Linux instance store-backed instance actually consists of three separate images: 

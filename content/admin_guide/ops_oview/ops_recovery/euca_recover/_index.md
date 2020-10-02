@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Recover Cloud Data
+# Recover Cloud Data
 This topic explains what to include when you recover your cloud.**Recovering Your Cloud Data** 
 
 
@@ -30,3 +30,6 @@ We recommend that you recover the following data:
 * SAN technologies vary, so see the restore documentation for your SAN. 
 Users are responsible for volume restore using EBS snapshots. 
 
+
+
+{{% children %}}

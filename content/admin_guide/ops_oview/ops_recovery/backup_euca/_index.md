@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Back Up Cloud Data
+# Back Up Cloud Data
 This section explains what you need to back up and protect your cloud data.We recommend that you back up the following data: 
 
 
@@ -24,3 +24,6 @@ This section explains what you need to back up and protect your cloud data.We re
 * SAN technologies vary, so see the backup documentation for your SAN. 
 Users are responsible for volume backups using EBS snapshots on their defined schedules. 
 
+
+
+{{% children %}}

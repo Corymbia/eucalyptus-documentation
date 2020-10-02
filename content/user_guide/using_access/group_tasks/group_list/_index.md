@@ -1,6 +1,7 @@
 +++
 title = "List Groups"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To list groups perform the steps listed in this topic.Enter the following command: 

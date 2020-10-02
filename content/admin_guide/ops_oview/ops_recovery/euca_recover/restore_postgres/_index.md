@@ -1,6 +1,7 @@
 +++
 title = "Restore the Database"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To restore the cloud database follow the steps listed in this topic.

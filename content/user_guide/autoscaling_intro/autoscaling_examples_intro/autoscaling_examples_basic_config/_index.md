@@ -1,6 +1,7 @@
 +++
 title = "Creating a Basic Auto Scaling Configuration"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Auto scaling requires two basic elements to function properly: a launch configuration and an Auto Scaling group. The following examples show how to set up the basic elements of an Auto Scaling configuration.

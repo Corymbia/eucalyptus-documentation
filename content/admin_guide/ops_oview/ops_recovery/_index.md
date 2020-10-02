@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Backup and Recovery
+# Backup and Recovery
 This section provides details on important files to back up and recover.
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "CloudFormation Templates"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic details templates that have been tested with Eucalyptus.

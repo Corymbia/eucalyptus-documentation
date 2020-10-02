@@ -1,9 +1,11 @@
 +++
 title = "OSG Advanced Configuration"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The following properties are for tuning the behavior of the Object Storage service and Gateways; the defaults are reasonable and changing is not necessary, but they are available for unexpected situations. 
+
 
 
 | Property | Description | 

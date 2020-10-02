@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Policy Overview
+# Policy Overview
 Eucalyptus uses the policy language to specify user level permissions as AWS IAM. Policies are written in JSON. Each policy file can contain multiple statements, each specifying a permission.A permission statement specifies whether to allow or deny a list of actions to be performed on a list of resources, under specific conditions. 
 
 A permission statement has the following components: 
@@ -39,3 +39,6 @@ You can attach IAM policies to both users and groups. When attached to groups, a
 
 Do not attach IAM policies (except quota policies, a Eucalyptus extension) to account admins. At this point, doing so won’t result in a failure but may have unexpected consequences. 
 
+
+
+{{% children %}}

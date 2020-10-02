@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Eucalyptus Commands
+# Eucalyptus Commands
 This section contains reference information for Eucalyptus administration and reporting commands.
+
+{{% children %}}

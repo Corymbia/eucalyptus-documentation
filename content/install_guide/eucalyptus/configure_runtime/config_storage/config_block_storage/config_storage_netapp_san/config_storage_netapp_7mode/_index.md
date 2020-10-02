@@ -1,6 +1,7 @@
 +++
 title = "Enable NetApp 7-mode"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure the NetApp 7-mode SAN block storage backend for the Storage Controller (SC).**Prerequisites** 

@@ -1,6 +1,7 @@
 +++
 title = "Testing Your Deployment"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic details what you should test when you want to make sure your deployment is working. The following suggested test plan contains tasks that ensure DNS, imaging, and storage are working.

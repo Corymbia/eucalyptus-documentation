@@ -1,6 +1,7 @@
 +++
 title = "Synchronize Clocks"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus checks message timestamps across components in the cloud infrastructure. This assures command integrity and provides better security.Eucalyptus components receive and exchange messages using either Query or SOAP interfaces (or both). Messages received over these interfaces are required to have some form of a time stamp (as defined by AWS specification) to prevent message replay attacks. Because Eucalyptus enforces strict policies when checking timestamps in the received messages, for the correct functioning of the cloud infrastructure, it is crucial to have clocks constantly synchronized (for example, with ntpd) on all machines hosting Eucalyptus components. To prevent user command failures, it is also important to have clocks synchronized on the client machines. 

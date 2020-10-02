@@ -1,6 +1,7 @@
 +++
 title = "Access and Identities"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic contains information about access-related problems and solutions.

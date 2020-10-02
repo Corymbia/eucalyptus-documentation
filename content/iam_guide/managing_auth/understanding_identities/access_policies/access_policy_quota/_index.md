@@ -1,6 +1,7 @@
 +++
 title = "Quotas"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus adds quota enforcement to resource usage. To avoid introducing another configuration language into Eucalyptus, and simplify the management, we extend the IAM policy language to support quotas.The only addition added to the language is the new `limit` effect. If a policy statement’s `effect` is `limit` , it is a quota statement. 
@@ -34,6 +35,7 @@ You can attach quotas to both users and accounts, although some of the quotas on
 When a quota policy is attached to an account, it actually is attached to the account administrator user. Since only system administrator can specify account quotas, the account administrator can only inspect quotas but can't change the quotas attached to herself. 
 
 The following is all the quota keys implemented in Eucalyptus: 
+
 
 
 | Quota Key | Description | Applies to | 

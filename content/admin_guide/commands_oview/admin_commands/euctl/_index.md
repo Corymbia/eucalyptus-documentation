@@ -1,6 +1,7 @@
 +++
 title = "euctl"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 
@@ -15,6 +16,7 @@ weight = 5
 
 ## Positional Arguments
 
+
 | Argument | Description | 
 |  :---- |  :---- | 
 | NAME | Output a variable's value. | 
@@ -23,6 +25,7 @@ weight = 5
 
 
 ## Options
+
 
 | Option | Description | Required | 
 |  :---- |  :---- |  :---- | 

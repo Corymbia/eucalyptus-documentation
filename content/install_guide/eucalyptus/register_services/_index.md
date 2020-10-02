@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Register Services
+# Register Services
 This section describes how to register Eucalyptus services.
 {{% notice note %}}
 If you are upgrading, proceed to the section. (You don't need to register the rest (e.g., UFS, Walrus, etc.) during the non-NC upgrade, because those registrations are already listed in the cloud database, which you recovered before getting here.) 
@@ -24,3 +24,6 @@ Registration commands need the following information:
 * The of the service being registered. Required. The host must be specified by IP address to function correctly. 
 * The the service belongs to. This is roughly equivalent to the availability zone in AWS. 
 * The you assign to each instance of a service, up to 256 characters. Required. This is the name used to identify the service in a human-friendly way. This name is also used when reporting system state changes that require administrator attention. 
+
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "Manage Walrus Resources"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic explains Walrus resources.

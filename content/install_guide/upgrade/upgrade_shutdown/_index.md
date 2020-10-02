@@ -1,6 +1,7 @@
 +++
 title = "Shutdown Services"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to stop all Eucalyptus services.**Prerequisites** See [](upgrade_prep.dita#upgrade_prep) for the complete list of upgrade prerequisites. 

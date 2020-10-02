@@ -1,6 +1,7 @@
 +++
 title = "Use Riak CS"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure Riak CS as the object storage backend provider for the Object Storage Gateway (OSG).**Prerequisites** 

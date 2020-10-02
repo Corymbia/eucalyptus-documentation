@@ -1,6 +1,7 @@
 +++
 title = "Manage Auto Scaling Resources"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 You can list, delete, update, and suspend your Eucalyptus cloud's Autoscaling resources by passing the option with the keyword with the appropriate command.The followings are some examples you can use to act on your Auto Scaling resources. For more information about Auto Scaling commands, see [.](../euca2ools-guide/euscale.dita) 

@@ -1,6 +1,7 @@
 +++
 title = "euserv-describe-services"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 
@@ -17,12 +18,14 @@ weight = 5
 
 ## Positional Arguments
 
+
 | Argument | Description | 
 |  :---- |  :---- | 
 | SVCINSTANCE | Limit results to specific instances of services. | 
 
 
 ## Options
+
 
 | Option | Description | Required | 
 |  :---- |  :---- |  :---- | 

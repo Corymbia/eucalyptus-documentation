@@ -1,9 +1,11 @@
 +++
 title = "Elastic IP Report"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Elastic IP Report has the following column headings: 
+
 
 
 | Heading | Description | 

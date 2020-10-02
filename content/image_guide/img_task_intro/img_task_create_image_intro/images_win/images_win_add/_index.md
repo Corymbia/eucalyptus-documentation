@@ -1,6 +1,7 @@
 +++
 title = "Add a Windows Image to Eucalyptus"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 After the Windows virtual machine has been shut down, its entire disk can be uploaded to Eucalyptus as an HVM image. 

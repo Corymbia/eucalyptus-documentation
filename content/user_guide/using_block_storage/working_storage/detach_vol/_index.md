@@ -1,6 +1,7 @@
 +++
 title = "Detach an EBS Volume"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To detach a block volume from an instance: 

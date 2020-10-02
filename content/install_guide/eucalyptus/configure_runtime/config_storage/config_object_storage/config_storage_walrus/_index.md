@@ -1,6 +1,7 @@
 +++
 title = "Use Walrus Backend"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to configure Walrus as the object storage backend provider for the Object Storage Gateway (OSG).**Prerequisites** 

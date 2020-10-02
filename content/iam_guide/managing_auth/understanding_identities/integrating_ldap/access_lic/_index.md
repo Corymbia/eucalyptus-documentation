@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## LDAP/AD Integration Configuration
+# LDAP/AD Integration Configuration
 The LDAP/AD Integration Configuration (LIC) is a JSON format file. This file specifies everything Eucalyptus needs to know about how to synchronize with an LDAP or AD service.You can find a LIC template at */usr/share/eucalyptus/lic_template* . This template shows all the fields of the LIC, and provides detailed documentation and example values for each field. 
 
 To start a LIC file, use the LIC command line tool. 
@@ -79,3 +79,6 @@ Once you have the LIC template, you can fill in the details by editing the “*.
 
 In the following sections explain each field of LIC in detail. 
 
+
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "About Eucanetd"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The eucanetd service implements artifacts to manage and define Eucalyptus cloud networking. Eucanetd runs alongside the CLC, CC, and/or NC services, depending on the configured networking mode.Eucanetd manages network functionality. For example: 
@@ -17,6 +18,7 @@ The eucanetd service implements artifacts to manage and define Eucalyptus cloud 
 On a Eucalyptus 4.4 cloud: 
 
 
+
 | Host Machine | EDGE mode | VPCMIDO mode | 
 |  :---- |  :---- |  :---- | 
 | CLC | No | Only on CLC | 
@@ -24,6 +26,7 @@ On a Eucalyptus 4.4 cloud:
 | NC | On each NC | No | 
 
 REMOVE THE FOLLOWING TABLE in 5.0. DOC-1888 On a Eucalyptus 4.3 cloud: 
+
 
 
 | Host Machine | EDGE mode | MANAGED modes (deprecated) | VPCMIDO mode | 

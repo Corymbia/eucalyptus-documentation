@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Component Workarounds
+# Component Workarounds
 This section contains troubleshooting information for Eucalyptus components and services.
+
+{{% children %}}

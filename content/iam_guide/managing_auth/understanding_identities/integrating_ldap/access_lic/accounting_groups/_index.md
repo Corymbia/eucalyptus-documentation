@@ -1,6 +1,7 @@
 +++
 title = "accounting-groups"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section uses a special group in LDAP/AD to designate accounts in the Eucalyptus “accounting group.” The accounting group takes normal LDAP/AD groups as members, i.e., they are groups of groups.The accounting group’s name becomes the account name in Eucalyptus. The member groups become Eucalyptus groups in that account. And the users of all those groups become Eucalyptus users within that account and corresponding Eucalyptus groups. 
@@ -9,6 +10,7 @@ This section uses a special group in LDAP/AD to designate accounts in the Eucaly
 {{% notice note %}}
 If you use , remove the section. These two sections are mutually exclusive. 
 {{% /notice %}}
+
 
 | Element | Description | 
 |  :---- |  :---- | 

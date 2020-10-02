@@ -1,6 +1,7 @@
 +++
 title = "Configuring Auto Scaling with Elastic Load Balancing"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This example shows how to set up Auto Scaling with Elastic Load Balancing.To set up a load-balanced auto scaling configuration: 

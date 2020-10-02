@@ -1,6 +1,7 @@
 +++
 title = "Install Base Windows OS"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The first task for creating a Windows image is installing a base Windows operating system (OS). To install a base Windows OS using KVM: 

@@ -1,6 +1,7 @@
 +++
 title = "Configuring Back-end Server Authentication"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 When running a web application with HTTPS or SSL as the backend server’s protocol, you might want to authenticate the back-end servers using the public key of the back-end server’s certificate. This authentication can be used to ensure that back-end servers accept only encrypted communication and to ensure that the back-end servers have the correct certificate.To configure back-end server authentication: 

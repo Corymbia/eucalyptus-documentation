@@ -1,6 +1,7 @@
 +++
 title = "Windows Instance Support"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus supports several different Windows operating system versions running as instances. Normal Windows licensing policies still apply. See the Compatibility Matrix in the Release Notes for supported versions. 

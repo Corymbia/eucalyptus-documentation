@@ -1,6 +1,7 @@
 +++
 title = "Virtual Machine Types"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 A virtual machine type, known as a VM type, defines the number of CPUs, the size of memory, and the size of storage that is given to an instance when it boots. There are five pre-defined VM types in Eucalyptus. You can change the quantity of resources associated with each of the five VM types, but you cannot change the name of the VM types or the number of VM types available. If you customize the sizes they must be well-ordered. That means that the CPU, memory, and storage sizes of the next VM type must be equal to, or larger than, the size of the preceding VM type.  
@@ -22,6 +23,7 @@ Eucalyptus, like AWS, offers families of VM types. These families are composed o
 The following tables list each VM type Eucalyptus offers. Each type is listed in its associate VM family. 
 
 
+
 | Instance Type | Virtual CPU | Disk Size | Memory | 
 |  :---- |  :---- |  :---- |  :---- | 
 | m1.small | 1 | 5 | 256 | 
@@ -32,6 +34,7 @@ The following tables list each VM type Eucalyptus offers. Each type is listed in
 | m3.2xlarge | 4 | 30 | 4096 | 
 
 
+
 | Instance Type | Virtual Cores | Disk Size | Memory | 
 |  :---- |  :---- |  :---- |  :---- | 
 | c1.medium | 2 | 10 | 512 | 
@@ -40,12 +43,14 @@ The following tables list each VM type Eucalyptus offers. Each type is listed in
 | cc2.8xlarge | 16 | 120 | 6144 | 
 
 
+
 | Instance Type | Virtual Cores | Disk Size | Memory | 
 |  :---- |  :---- |  :---- |  :---- | 
 | m2.xlarge | 2 | 10 | 2048 | 
 | m2.2xlarge | 2 | 30 | 4096 | 
 | m2.4xlarge | 8 | 60 | 4096 | 
 | cr1.8xlarge | 16 | 240 | 16384 | 
+
 
 
 | Instance Type | Virtual Cores | Disk Size | Memory | 

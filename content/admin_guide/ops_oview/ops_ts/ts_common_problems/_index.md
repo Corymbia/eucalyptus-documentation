@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Common Problems
+# Common Problems
 This section describes common problems and workarounds.
+
+{{% children %}}

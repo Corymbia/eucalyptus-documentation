@@ -1,6 +1,7 @@
 +++
 title = "Disable CloudWatch"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To disable CloudWatch, run the following command.

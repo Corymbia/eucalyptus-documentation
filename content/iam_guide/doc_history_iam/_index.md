@@ -1,9 +1,11 @@
 +++
 title = "IAM Guide History"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section contains information about changes to the IAM documentation in this release.
+
 | Section / Topic | Description of Change | Date Changed | 
 |  :---- |  :---- |  :---- | 
 | LDAP | Minor updates. | September 2016 | 

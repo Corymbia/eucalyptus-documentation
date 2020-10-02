@@ -1,6 +1,7 @@
 +++
 title = "Configure the Load Balancer"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 

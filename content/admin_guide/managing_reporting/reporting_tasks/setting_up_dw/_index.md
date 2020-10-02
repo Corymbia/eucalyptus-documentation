@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Set Up the Data Warehouse
+# Set Up the Data Warehouse
 This section explains how to set up the data warehouse and how to generate reports using data in the data warehouse. 
 
 
@@ -14,3 +14,6 @@ This section explains how to set up the data warehouse and how to generate repor
 {{% /notice %}}
 
 
+
+
+{{% children %}}

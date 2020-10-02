@@ -1,6 +1,7 @@
 +++
 title = "Configure SSL for LDAP"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic details tasks required to configure SSL for LDAP.To configure SSL for LDAP, make the following edits to your LIC template or file. 

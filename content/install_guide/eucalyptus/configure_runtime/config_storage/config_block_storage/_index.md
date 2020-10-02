@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Configure Block Storage
+# Configure Block Storage
 This topic describes how to configure block storage on the Storage Controller (SC) for the backend of your choice.
 {{% notice note %}}
 
@@ -32,3 +32,6 @@ Eucalyptus also offers the following subscription-based (paid) storage area netw
 * - stacked or unstacked storage arrays 
 You must configure the SC to use one of the backend provider options. 
 
+
+
+{{% children %}}

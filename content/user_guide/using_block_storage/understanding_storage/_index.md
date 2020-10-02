@@ -1,6 +1,7 @@
 +++
 title = "EBS Overview"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Eucalyptus Elastic Block Storage (EBS) provides block-level storage volumes that you can attach to instances running in your Eucalyptus cloud. An EBS volume looks like any other block-level storage device when attached to a running Eucalyptus instance, and may be formatted with an appropriate file system and used as you would a regular storage device. Any changes that you make to an attached EBS volume will persist after the instance is terminated. 

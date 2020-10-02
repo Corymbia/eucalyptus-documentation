@@ -1,6 +1,7 @@
 +++
 title = "Configure Bridges"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To configure a bridge on CentOS 7 or RHEL 7, you need to create a file with bridge configuration (for example, ifcfg-brX) and modify the file for the physical interface (for example, ifcfg-ethX). The following steps describe how to set up a bridge on both CentOS 7 and RHEL 7. We show examples for configuring bridge devices that either obtain IP addresses using DHCP or statically. 

@@ -1,10 +1,12 @@
 +++
 title = "EBS Metrics and Dimensions"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section describes the Elastic Block Store (EBS) metrics and dimensions available to CloudWatch.
 ## Available Metrics for EBS
+
 
 | Metric | Description | Unit | 
 |  :---- |  :---- |  :---- | 

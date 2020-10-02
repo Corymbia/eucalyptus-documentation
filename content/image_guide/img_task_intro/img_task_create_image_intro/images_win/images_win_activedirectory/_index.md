@@ -1,6 +1,7 @@
 +++
 title = "Configure Active Directory"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Eucalyptus Integration service lets an enterprise with existing Active Directory domains attach Windows instances to the domains and control access to these instances using the existing AD user database. Users can log into the instance either using their domain credentials or the Administrator’s password generated with the `euca-get-password` command. 

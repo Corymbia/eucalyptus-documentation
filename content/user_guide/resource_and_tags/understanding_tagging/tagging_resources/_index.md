@@ -1,6 +1,7 @@
 +++
 title = "Tagging Resources"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To help you manage your cloud's instances, images, and other Eucalyptus resources, you can assign your own metadata to each resource in the form of tags. You can use tags to create user-friendly names, make resource searching easier, and improve coordination between multiple users. This section describes tags and how to create them. 
@@ -18,6 +19,7 @@ You can only assign tags to resources that already exist. However, if you use th
 
 ## Tagging Restrictions
 The following restrictions apply to tags: 
+
 
 
 | Restriction | Description | 

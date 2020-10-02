@@ -1,6 +1,7 @@
 +++
 title = "Image Management Overview"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Welcome to the Eucalyptus Image Management Guide. This guide contains conceptual overview about what images are, as well as best practices and common tasks for using images in your cloud.

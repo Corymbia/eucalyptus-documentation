@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Configure SSL
+# Configure SSL
 In order to connect to Eucalyptus using SSL, you must have a valid certificate for the User-Facing Services (UFS).
+
+{{% children %}}

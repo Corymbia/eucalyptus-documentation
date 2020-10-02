@@ -1,6 +1,7 @@
 +++
 title = "Create an EBS EMI"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To create a new EMI that is used to boot EBS-backed instances: 

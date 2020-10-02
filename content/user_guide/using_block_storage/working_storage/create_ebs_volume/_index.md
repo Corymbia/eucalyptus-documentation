@@ -1,6 +1,7 @@
 +++
 title = "Create and Attach an EBS Volume"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The following example shows how to create a 10 gigabyte EBS volume and attach it to a running instance called `i-00000000` running in availability zone `zone1` . 

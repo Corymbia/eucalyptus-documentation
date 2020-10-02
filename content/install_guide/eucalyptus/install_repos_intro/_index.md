@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Install Repositories
+# Install Repositories
 This section guides you through installing Eucalyptus from RPM package downloads.The first step to installing Eucalyptus is to download the RPM packages. When you're ready, continue to [](installing_euca_software_signing.dita#installing_software_signing) . 
 
 The following *terminology* might help you as you proceed through this section. 
@@ -20,3 +20,6 @@ RPM and YUM and software signing — Eucalyptus CentOS and RHEL download package
 
 EPEL software — EPEL (Extra Packages for Enterprise Linux) are free, open source software, which is fully separated from licensed RHEL distribution. It requires its own package. 
 
+
+
+{{% children %}}

@@ -1,6 +1,7 @@
 +++
 title = "Add a Kernel"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 When you add a kernel to Walrus, you bundle the kernel file, upload the file to a bucket in Walrus that you name, and then register the kernel with Eucalyptus. 

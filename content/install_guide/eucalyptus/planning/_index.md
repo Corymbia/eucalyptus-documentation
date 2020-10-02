@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Plan Your Installation
+# Plan Your Installation
 Before you install Eucalyptus components on your machines, we recommend that you take the time to plan how you want to install it.
 {{% notice note %}}
 If you are upgrading from an existing release, see . 
@@ -20,3 +20,6 @@ This section describes how to evaluate each tradeoff to determine the best choic
 
 By the end of this section, you should be able to specify how you will deploy Eucalyptus in your environment, any tradeoffs between feature set and flexibility, and where your deployment will integrate with existing infrastructure systems. 
 
+
+
+{{% children %}}

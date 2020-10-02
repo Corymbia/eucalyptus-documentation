@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Use Ceph-RBD
+# Use Ceph-RBD
 This topic describes how to configure Ceph-RBD as the block storage backend provider for the Storage Controller (SC).**Prerequisites** 
 
 * Successful completion of all the install sections prior to this section. 
@@ -93,3 +93,5 @@ To override the above defaults, add/edit the following properties in the `/etc/e
     CEPH_CONFIG_PATH="path-to-ceph.conf-file"
 
 Repeat this step for every NC in the specific Eucalyptus zone. Your Ceph backend is now ready to use with Eucalyptus . 
+
+{{% children %}}

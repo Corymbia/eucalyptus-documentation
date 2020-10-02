@@ -1,6 +1,7 @@
 +++
 title = "Walrus and Storage"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic contains information about Walrus-related problems and solutions.

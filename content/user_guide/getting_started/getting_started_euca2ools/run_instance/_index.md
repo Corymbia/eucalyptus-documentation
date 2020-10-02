@@ -1,6 +1,7 @@
 +++
 title = "Launch an Instance"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To launch an instance: 

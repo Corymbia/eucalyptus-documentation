@@ -1,6 +1,7 @@
 +++
 title = "Launch an Instance with a Role"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To create a role for a Eucalyptus instance, you must first create a trust policy that you can use for it. 

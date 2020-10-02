@@ -1,9 +1,11 @@
 +++
 title = "Monitoring"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic includes details about which resources you should monitor.
+
 | Component | Running Processes | 
 |  :---- |  :---- | 
 | Cloud Controller (CLC) | eucalyptus-cloud, postgres, eucanetd (VPCMIDO mode) | 

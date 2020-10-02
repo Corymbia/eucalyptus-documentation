@@ -1,6 +1,7 @@
 +++
 title = "Problem: can't communicate with instance"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Use ping from a client (not the CLC). Can you ping it? 

@@ -1,9 +1,11 @@
 +++
 title = "users"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 Explicitly gives the full DN of entities NOT to be synchronized, in case this can not be specified by the search filter.
+
 | Element | Description | 
 |  :---- |  :---- | 
 | base-dn | The base DN for searching users. | 

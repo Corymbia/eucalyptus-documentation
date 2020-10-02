@@ -1,6 +1,7 @@
 +++
 title = "Plan Disk Space"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 We recommend that you choose a disk for the Walrus that is large enough to hold all objects and buckets you ever expect to have, including all images that will ever be registered to your system, plus any Amazon S3 application data. For heavy S3 usage, Riak CS is a better choice for object storage. 
@@ -9,6 +10,7 @@ We recommend that you choose a disk for the Walrus that is large enough to hold 
 {{% notice note %}}
 We recommend that you use LVM (Logical Volume Manager). If you run out of disk space, LVM allows you to add disks and migrate the data. 
 {{% /notice %}}
+
 
 | Service | Directory | Minimum Size | 
 |  :---- |  :---- |  :---- | 

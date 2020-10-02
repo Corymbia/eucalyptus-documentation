@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## LDAP/AD Integration
+# LDAP/AD Integration
 You can use the Eucalyptus LDAP/Active Directory (AD) integration to synchronize existing LDAP/AD user and group information with Eucalyptus.When you enable LDAP/AD synchronization, Eucalyptus imports specified user and group information from LDAP or AD and maps them into a predefined two-tier account/group/user structure 
 
 Note that Eucalyptus only imports the identities and some related information. Any Eucalyptus-specific attributes are still managed from Eucalyptus. These include: 
@@ -22,3 +22,6 @@ If you integrate LDAP/AD, you do not need to create IAM user login profiles for 
 
 
 {{% /notice %}}
+
+
+{{% children %}}

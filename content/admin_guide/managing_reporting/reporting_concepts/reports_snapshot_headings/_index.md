@@ -1,9 +1,11 @@
 +++
 title = "Snapshot Report"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 The Snapshot Report has the following column headings: 
+
 
 
 | Heading | Description | 

@@ -1,9 +1,11 @@
 +++
 title = "Administration Guide History"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This section contains information about changes to the administration documentation in this release.
+
 | Section / Topic | Description of Change | Date Changed | 
 |  :---- |  :---- |  :---- | 
 |  | Removed RHEL 6 / 7 info, which applied only to 4.3.x releases. | March 2017 | 

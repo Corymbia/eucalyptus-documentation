@@ -1,6 +1,7 @@
 +++
 title = "Register the Node Controllers"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 This topic describes how to register a Node Controller (NC) with a Cluster Controller (CC).**Prerequisites** 

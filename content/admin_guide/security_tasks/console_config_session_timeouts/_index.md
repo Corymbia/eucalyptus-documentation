@@ -1,6 +1,7 @@
 +++
 title = "Configure Session Timeouts"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To set the session timeouts in the Management Console: 

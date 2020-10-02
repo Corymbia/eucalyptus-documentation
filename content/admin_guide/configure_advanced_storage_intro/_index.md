@@ -5,5 +5,7 @@ chapter = true
 +++
 
 
-## Advanced Storage Configuration
+# Advanced Storage Configuration
 This section covers advanced storage provider configuration options.
+
+{{% children %}}

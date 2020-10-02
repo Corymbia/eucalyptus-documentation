@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## CloudWatch Overview
+# CloudWatch Overview
 This section describes the concepts and details you need to understand the CloudWatch service. This section also includes procedures to complete the most common tasks for CloudWatch.CloudWatch is a Eucalyptus service that collects, aggregates, and dispenses data from your cloud's resources. This data allows you to make operational and business decisions based on actual performance metrics. You can use CloudWatch to collect metrics about your cloud resources, such as the performance of your instances. You can also publish your own metrics directly to CloudWatch. 
 
 CloudWatch monitors the following cloud resources: 
@@ -26,3 +26,6 @@ A common use for CloudWatch is to keep your applications and services healthy an
 
 Another use for CloudWatch is to diagnose problems by looking at system performance before and after a problem occurs. CloudWatch helps you identify the cause and verify your fix by tracking performance in real time. 
 
+
+
+{{% children %}}

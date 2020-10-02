@@ -1,6 +1,7 @@
 +++
 title = "User Identities"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 In Eucalyptus, user identities are organized into accounts. An account is the unit of resource usage accounting, and also a separate namespace for many resources (security groups, key pairs, users, etc.).Accounts are identified by either a unique ID (UUID) or a unique name. The account name is like IAM’s account alias. It is used to manipulate accounts. However, for AWS compatibility, the EC2 commands often use account ID to display resource ownership. 

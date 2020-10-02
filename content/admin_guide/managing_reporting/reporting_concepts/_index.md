@@ -5,7 +5,7 @@ chapter = true
 +++
 
 
-## Reporting Overview
+# Reporting Overview
 Eucalyptus lets you generate reports to monitor cloud resource use. Each type of report is for a specified time range.Eucalyptus supports the following report types: 
 
 
@@ -26,3 +26,6 @@ All Eucalyptus reports contain a usage section. The instance report also contain
 
 The usage section shows cumulative ( cumul. ) metrics for each zone, account, and user. Then the report lists metrics for each resource. The column for each resource type (for example, Instance Id or Volume Id displays cumul. for all cumulative metrics. When individual resources are reported, the individual resource's name or identifier displays in that column. 
 
+
+
+{{% children %}}

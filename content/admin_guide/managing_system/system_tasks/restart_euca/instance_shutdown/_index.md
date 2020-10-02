@@ -1,6 +1,7 @@
 +++
 title = "Shut Down All Instances"
-weight = 5
+weight = 10
+hidden = true
 +++
 
 To terminate all instances on all NCs perform the steps listed in this topic.To terminate all instances on all NCs: 
