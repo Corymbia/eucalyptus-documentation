@@ -12,9 +12,9 @@ When you need to add a new user to your Eucalyptus cloud, you'll go through the 
 
 
 
-| 1 | Create a user[user_add]({{< relref "user_add" >}}) | 
-| 2 | Add user to a group[group_add_user]({{< relref "group_add_user" >}}) | 
-| 3 | Give user a login profile[user_loginprof]({{< relref "user_loginprof" >}}) | 
+| 1 | Create a user | 
+| 2 | Add user to a group | 
+| 3 | Give user a login profile | 
 
 
 

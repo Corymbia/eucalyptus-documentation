@@ -19,7 +19,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 |  :---- |  :---- | 
 | Begin using and configuring Eucalyptus | [getting_started]({{< relref "getting_started" >}}) | 
 | Run and control with virtual machine (VM) instances | [using_instances]({{< relref "using_instances" >}}) | 
-| Use Eucalyptus’ elastic block storage | [../shared/using_block_storage]({{< relref "../shared/using_block_storage" >}}) | 
+| Use Eucalyptus’ elastic block storage |  | 
 | Apply tags and filters | [resource_and_tags]({{< relref "resource_and_tags" >}}) | 
 | Manage access for groups and users | [using_access]({{< relref "using_access" >}}) | 
 | Understand the Eucalyptus VM networking and security features | [networking_security]({{< relref "networking_security" >}}) | 
@@ -27,7 +27,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 | Use elastic load balancing | [elb_intro]({{< relref "elb_intro" >}}) | 
 | Generate metrics about my cloud | [using_monitoring]({{< relref "using_monitoring" >}}) | 
 | Use scalable object storage | [osg_using]({{< relref "osg_using" >}}) | 
-| Use CloudFormation | [../cloudformation/cf_overview]({{< relref "../cloudformation/cf_overview" >}}) | 
+| Use CloudFormation |  | 
 | Use Virtual Private Cloud | [vpc_intro]({{< relref "vpc_intro" >}}) | 
 
 
