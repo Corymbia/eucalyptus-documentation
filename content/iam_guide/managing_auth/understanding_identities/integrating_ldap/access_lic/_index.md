@@ -11,11 +11,13 @@ The LDAP/AD Integration Configuration (LIC) is a JSON format file. This file spe
 To start a LIC file, use the LIC command line tool. 
 
 
+
     /usr/sbin/euca-lictool --password <password> --out example.lic
 
 The above command invokes the LIC tool to create a template LIC and fill in the encrypted password for authenticating to LDAP/AD service (i.e. the password of the administrative user for accessing the LDAP/AD during synchronization). The LIC tool’s primary functions are to encrypt the LDAP/AD password and to generate the starting LIC template. The usage of the LIC tool shows different ways to invoke the command. 
 
 Once you have the LIC template, you can fill in the details by editing the “*.lic” file using your favorite editor as it is a simple text file. As we said above, the LIC file is in JSON format. Each top level entity specifies one aspect of the LDAP/AD synchronization. The following shows one possible example of a LIC file. 
+
 
 
     {

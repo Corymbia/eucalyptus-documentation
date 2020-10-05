@@ -19,7 +19,7 @@ When registered in a Eucalyptus cloud, each distinct EMI is given a unique ID fo
 ![image]({{< ref "/" >}}images/Eucalyptus-Machine-Images.png)
 
 ## Instance
-A instance is a virtual machine deployed from an EMI. An instance then, is simply a running copy of an EMI, which means it always starts from a known baseline. There are two types of instances; instance store-backed and EBS-backed. This section describes store-backed instances. For information about EBS-backed instances, see [](../shared/using_block_storage.dita) . 
+A instance is a virtual machine deployed from an EMI. An instance then, is simply a running copy of an EMI, which means it always starts from a known baseline. There are two types of instances; instance store-backed and EBS-backed. This section describes store-backed instances. For information about EBS-backed instances, see [Using EBS]({{< ref using_block_storage.md >}}) . 
 
 
 

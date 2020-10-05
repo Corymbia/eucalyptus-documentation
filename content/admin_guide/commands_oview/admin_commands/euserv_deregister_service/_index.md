@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-deregister-service [-U URL] [--region USER@REGION] [-I KEY_ID]
     
            [-S KEY] [--security-token TOKEN] [--debug]
@@ -26,6 +27,7 @@ Eucalyptus returns a message stating that service instance was successfully de-r
 
 ## Example
 To de-register the dns service named "API_10.111.1.44.dns": 
+
 
 
     euserv-deregister-service API_10.111.1.44.dns

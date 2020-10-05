@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-register-service -t TYPE -h IP [--port PORT] [-z ZONE] [-U URL]
     
            [--region USER@REGION] [-I KEY_ID] [-S KEY]
@@ -38,6 +39,7 @@ No output is given when it succeeds.
 
 ## Example
 To register the ufs service named "user-api-5": 
+
 
 
     euserv-register-service -t user-api -h 10.0.0.15 user-api-5

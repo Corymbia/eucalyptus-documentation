@@ -8,11 +8,12 @@ If your upgrade fails, this topic describes how to downgrade your Eucalyptus clo
 The upgrade process creates a backup to `/var/lib/eucalyptus/upgrade/eucalyptus.backup.TIMESTAMP` . For example: 
 
 
+
     /var/lib/eucalyptus/upgrade/eucalyptus.backup.1326905212
 
 If the upgrade fails and needs to be reverted to your earlier version, you can find your preserved data in this directory. 
 
-If the upgrade fails, all changes to the database and configuration files will be rolled back. You can retry the upgrade by following the upgrade instructions in the sections, [](upgrade_shutdown.dita) and [](upgrade_packages.dita) . 
+If the upgrade fails, all changes to the database and configuration files will be rolled back. You can retry the upgrade by following the upgrade instructions in the sections, [Shutdown Services]({{< ref upgrade_shutdown.md >}}) and [Upgrade  Package Repositories]({{< ref upgrade_packages.md >}}) . 
 
 If you do not want to continue with the upgrade after a failure, you can downgrade your installation back to the previous version. Note that downgrade instructions are different, depending on whether your Eucalyptus services are co-located or each hosted on their own machine. You will need to perform the downgrade for all services running on a single machine at the same time. 
 
@@ -22,20 +23,24 @@ To downgrade from a failed upgrade, perform the tasks listed in the following se
 
 
 ## Downgrade
-You must [](upgrade_shutdown.dita) before downgrading Eucalyptus . Downgrade to the Eucalyptus 4.4.4 release package on each host machine: 
+You must [Shutdown Services]({{< ref upgrade_shutdown.md >}}) before downgrading Eucalyptus . Downgrade to the Eucalyptus 4.4.4 release package on each host machine: 
+
     yum downgrade 
 
 Enter `y` when prompted, to downgrade the release package. 
 
 If you have a Eucalyptus subscription, downgrade your subscription release package on each host machine to the release package you used for Eucalyptus 4.4.4 : 
+
     yum downgrade 
 
 Enter `y` when prompted, to downgrade the subscription release package. 
 
 Expire the cache for the yum repositories on each host machine: 
+
     yum clean expire-cache
 
 Log in to each NC host and downgrade it: 
+
     yum downgrade eucalyptus eucalyptus-admin-tools eucalyptus-axis2c-common eucalyptus-blockdev-utils eucalyptus-imaging-toolkit eucalyptus-node eucanetd
 
 
@@ -51,9 +56,11 @@ Use the `yum shell` command for the following instructions. This will allow you 
 
 {{% /notice %}}
 Log in to each machine running a Eucalyptus service and run the following command: 
+
     yum shell
 
 Add the transaction commands listed below for each service installed on the machine host. If more than one service requires the same transactional command, you only need to specify that command once per machine host. Transaction commands for a combined machine host with CLC, Walrus, CC, and SC: 
+
 
 
     downgrade eucalyptus
@@ -76,6 +83,7 @@ The service name changed to in 4.3.
 CLC transaction commands: 
 
 
+
     downgrade eucalyptus
     downgrade eucalyptus-admin-tools
     downgrade eucalyptus-axis2c-common
@@ -89,6 +97,7 @@ CLC transaction commands:
 UFS transaction commands: 
 
 
+
     downgrade eucalyptus
     downgrade eucalyptus-admin-tools
     downgrade eucalyptus-cloud
@@ -96,6 +105,7 @@ UFS transaction commands:
     downgrade eucalyptus-common-java-libs
 
 CC transaction commands: 
+
 
 
     downgrade eucalyptus
@@ -110,6 +120,7 @@ The service name changed to in 4.3.
 SC transaction commands: 
 
 
+
     downgrade eucalyptus
     downgrade eucalyptus-admin-tools
     downgrade eucalyptus-common-java
@@ -117,6 +128,7 @@ SC transaction commands:
     downgrade eucalyptus-sc
 
 Walrus Backend transaction commands: 
+
 
 
     downgrade eucalyptus
@@ -128,10 +140,12 @@ Walrus Backend transaction commands:
 SAN 3PAR transaction commands: 
 
 
+
     downgrade eucalyptus-enterprise-storage-san-threepar
     downgrade eucalyptus-enterprise-storage-san-threepar-libs
 
 SAN EqualLogic transaction commands: 
+
 
 
     downgrade eucalyptus-enterprise-storage-san-equallogic
@@ -140,19 +154,24 @@ SAN EqualLogic transaction commands:
 SAN NetApp transaction commands: 
 
 
+
     downgrade eucalyptus-enterprise-storage-san-netapp
     downgrade eucalyptus-enterprise-storage-san-netapp-libs
 
 When you have entered all the appropriate yum transaction commands, run the following command to verify that the transaction will be successful: 
+
     ts solve
 
 Perform the downgrade by running the following command in the yum transaction shell: 
+
     run
 
 Exit the yum transaction shell using the following command: 
+
     exit
 
 Remove the */etc/eucalyptus/.upgrade* file from each Eucalyptus host machine: 
+
     rm /etc/eucalyptus/.upgrade
 
 Enter `y` when prompted, to remove this file. 
@@ -164,6 +183,7 @@ Remove this file from every Eucalyptus host machine.
 
 {{% /notice %}}
 Clear out the */var/run/eucalyptus/classcache/* directory on all Eucalyptus host machines: 
+
     rm -rf /var/run/eucalyptus/classcache/
 
 This deletes 4.4 class file artifacts; they will be regenerated as needed for your downgraded cloud. 
@@ -181,9 +201,11 @@ If Euca2ools is not the source of upgrade failure, there is no reason to downgra
 
 
 Expire the cache for the yum repositories on each host machine: 
+
     yum clean expire-cache
 
 Downgrade to Euca2ools 3.3.3 on each host machine: 
+
     yum downgrade euca2ools
 
 Enter `y` when prompted, to downgrade Euca2ools. 
@@ -191,6 +213,7 @@ Enter `y` when prompted, to downgrade Euca2ools.
 
 ## Verify the Downgrade
 Restart your downgraded cloud. Verify the Eucalyptus versions. For example: 
+
     # euca-version
     euca2ools 
     eucalyptus 

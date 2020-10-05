@@ -9,7 +9,7 @@ A metric is a time-ordered set of data points. You can get metric data from Euca
 
 Data points represent values of a variable over time. For example you can get metrics for the CPU usage of a particular instance, or for the latency of an elastic load balancer (ELB). 
 
-Each metric is uniquely defined by a name, a namespace, and zero or more dimensions. Each data point has a time stamp, and (optionally) a unit of measure. When you request statistics, the returned data stream is identified by namespace, metric name, dimension, and (optionally) the unit. For more information about Eucalyptus-supported metrics, see [](monitoring_metric_ref.dita) . 
+Each metric is uniquely defined by a name, a namespace, and zero or more dimensions. Each data point has a time stamp, and (optionally) a unit of measure. When you request statistics, the returned data stream is identified by namespace, metric name, dimension, and (optionally) the unit. For more information about Eucalyptus-supported metrics, see [Namespaces, Metrics, and Dimensions]({{< ref monitoring_metric_ref.md >}}) . 
 
 CloudWatch stores your metric data for two weeks. You can publish metric data from multiple sources, such as incoming network traffic from dozens of different instances, or requested page views from several different web applications. You can request statistics on metric data points that occur within a specified time window. 
 
@@ -17,7 +17,7 @@ CloudWatch stores your metric data for two weeks. You can publish metric data fr
 ## Namespace
 A namespace is a conceptual container for a collection of metrics. Eucalyptus treats metrics in different namespaces as unique. This means that metrics from different services cannot mistakenly be aggregated into the same statistical set. 
 
-Namespace names are strings you define when you create a metric. The names must be valid XML characters, typically containing the alphanumeric characters "0-9A-Za-z" plus "."(period), "-" (hyphen), "_" (underscore), "/" (slash), "#" (hash), and ":" (colon). All Eucalyptus services that provide CloudWatch data follow the convention AWS/<service>, such as AWS/EC2 and AWS/ELB. For more information, see [](monitoring_namespaces.dita) . 
+Namespace names are strings you define when you create a metric. The names must be valid XML characters, typically containing the alphanumeric characters "0-9A-Za-z" plus "."(period), "-" (hyphen), "_" (underscore), "/" (slash), "#" (hash), and ":" (colon). All Eucalyptus services that provide CloudWatch data follow the convention AWS/<service>, such as AWS/EC2 and AWS/ELB. For more information, see [Namespaces]({{< ref monitoring_namespaces.md >}}) . 
 
 
 {{% notice note %}}
@@ -96,7 +96,7 @@ CloudWatch doesn't differentiate the source of a metric. If you publish a metric
 ## Alarm
 An alarm watches a single metric over a time period you set, and performs one or more actions based on the value of the metric relative to a given threshold over a number of time periods. CloudWatch alarms will not invoke actions just because they are in a particular state. The state must have changed and been maintained for a specified number of periods. 
 
-For example, [Auto Scaling](autoscaling_intro.dita) works with CloudWatch alarms to perform scaling activities. When an Auto Scaling activity reacts to a CloudWatch alarm, the cooldown period is the amount of time after the activity takes place where further Auto Scaling activity is suspended. This is to allow time for the Auto Scaling activities (such as new instance launches or terminations) to fully complete so that resources are not unnecessarily launched or terminated. You can specify this amount of time; if you don't specify a cooldown period, Auto Scaling uses a default cooldown period of 300 seconds (5 minutes). 
+For example, [Auto Scaling]({{< ref autoscaling_intro.md >}}) works with CloudWatch alarms to perform scaling activities. When an Auto Scaling activity reacts to a CloudWatch alarm, the cooldown period is the amount of time after the activity takes place where further Auto Scaling activity is suspended. This is to allow time for the Auto Scaling activities (such as new instance launches or terminations) to fully complete so that resources are not unnecessarily launched or terminated. You can specify this amount of time; if you don't specify a cooldown period, Auto Scaling uses a default cooldown period of 300 seconds (5 minutes). 
 
 After an alarm invokes an action due to a change in state, the alarm continues to invoke the action for every period that the alarm remains in the new state. 
 

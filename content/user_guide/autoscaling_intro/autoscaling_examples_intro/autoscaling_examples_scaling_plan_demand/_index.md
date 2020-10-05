@@ -12,6 +12,7 @@ For more information on CloudWatch, go to .
 To create the scaling policies: 
 
 Create a scale-out policy using the following command: 
+
     euscale-put-scaling-policy MyScaleoutPolicy --auto-scaling-group MyScalingGroup --adjustment=30 --type PercentChangeInCapacity
 
 This command will return a unique Amazon Resource Name (ARN) for the new policy. 
@@ -23,10 +24,12 @@ You will need this ARN to create the Cloudwatch alarms in subsequent steps.
 The following example has been split into two lines for legibility. 
 {{% /notice %}}
 
+
     arn:aws:autoscaling::706221218191:scalingPolicy:5d02981b-f440-4c8f-98f2-8a620dc2b787:
         autoScalingGroupName/MyScalingGroup:policyName/MyScaleoutPolicy
 
 Create a scale-in policy using the following command: 
+
     euscale-put-scaling-policy MyScaleinPolicy -g MyScalingGroup --adjustment=-2  --type ChangeInCapacity
 
 This command will return output containing a unique Amazon Resource Name (ARN) for the new policy, similar to the following: 
@@ -37,6 +40,7 @@ You will need this ARN to create the Cloudwatch alarms in subsequent steps.
 {{% notice note %}}
 The following example has been split into two lines for legibility. 
 {{% /notice %}}
+
 
     arn:aws:autoscaling::706221218191:scalingPolicy:d28c6ffc-e9f1-4a48-a79c-8b431794c367:
         autoScalingGroupName/MyScalingGroup:policyName/MyScaleinPolicy
@@ -50,6 +54,7 @@ Create a Cloudwatch alarm for scaling out when the average CPU usage exceeds 80 
 The following example has been split into multiple lines for legibility. 
 {{% /notice %}}
 
+
     euwatch-put-metric-alarm AddCapacity  --metric-name CPUUtilization --unit Percent
     --namespace "AWS/EC2" --statistic Average --period 120 --threshold 80 --comparison-operator 
     GreaterThanOrEqualToThreshold --dimensions "AutoScalingGroupName=MyScalingGroup" 
@@ -61,6 +66,7 @@ Create a Cloudwatch alarm for scaling in when the average CPU usage falls below 
 {{% notice note %}}
 The following example has been split into multiple lines for legibility. 
 {{% /notice %}}
+
 
     euwatch-put-metric-alarm RemoveCapacity --metric-name CPUUtilization --unit Percent
     --namespace "AWS/EC2" --statistic Average  --period 120  --threshold 40  --comparison-operator 
@@ -74,9 +80,11 @@ The following example has been split into multiple lines for legibility.
 Once you've created your Auto Scaling policies and CloudWatch alarms, you should verify them.To verify your alarms and policies: 
 
 Use the CloudWatch command `euwatch-describe-alarms` to see a list of the alarms you've created: 
+
     euwatch-describe-alarms 
 
 This will return output similar to the following: 
+
 
 
     AddCapacity	INSUFFICIENT_DATA	arn:aws:autoscaling::706221218191:scalingPolicy:5d02981b-f440-4c8f-98f2-8a620dc2b787:
@@ -87,9 +95,11 @@ This will return output similar to the following:
        AWS/EC2	CPUUtilization	120	Average	2	LessThanOrEqualToThreshold	40.0
 
 Use the euscale-describe-policies command to see the scaling policies you've created: 
+
     euscale-describe-policies --auto-scaling-group MyScalingGroup
 
 This will return output similar to the following (note that this output has been split into multiple lines for legibility): 
+
 
 
     SCALING-POLICY	MyScalingGroup	MyScaleinPolicy	-2	ChangeInCapacity	arn:aws:autoscaling::706221218191:

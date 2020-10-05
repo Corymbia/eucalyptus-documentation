@@ -8,6 +8,7 @@ This topic describes Eucalyptus software signing keys.We use a number of GPG key
 Use the `rpm --checksig` command on a download file to verify a RPM package for an Eucalyptus product. For example: 
 
 
+
     rpm --checksig -v myfilename.rpm
 
 

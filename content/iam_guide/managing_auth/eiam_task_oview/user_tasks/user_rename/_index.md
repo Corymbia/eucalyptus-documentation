@@ -8,9 +8,11 @@ Modifying a user is similar to a "move" operation. To modify a user, you need pe
 To rename a user: 
 
 Enter the following command to rename a user: 
+
     euare-usermod -u <user_name> --new-user-name <new_name>
 
 Eucalyptus does not return a message. Enter the following command: 
+
     euare-groupmod -u <user_name> -p <new_path>
 
 Eucalyptus does not return a message. 

@@ -12,6 +12,7 @@ Inaccurate IP addresses display in the output of euca-describe-addresses.
 A restart should only be performed when no instances are running, or when instance service interruption can be tolerated. A restart causes the CC to reset its networking configuration, regardless of whether or not it is in use. 
 {{% /notice %}}
 
+
     systemctl stop eucalyptus-cloud.service
     systemctl stop eucalyptus-cluster.service
     iptables -F
@@ -23,6 +24,7 @@ NC does not recalculate disk size correctly
  This can occur when trying to add extra disk space for instance ephemeral storage. To resolve this, you need to delete the instance cache and restart the NC. 
 
 For example: 
+
 
 
     rm -rf /var/lib/eucalyptus/instances/* 

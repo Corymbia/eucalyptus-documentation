@@ -5,7 +5,7 @@ weight = 10
 
 This topic addresses networking in the Eucalyptus cloud.
 ## Networking Modes
-Eucalyptus offers different modes to provide you with a cloud that will fit in your current network. For information what each networking mode has to offer, see [](../install-guide/planning_networking_modes.dita) . 
+Eucalyptus offers different modes to provide you with a cloud that will fit in your current network. For information what each networking mode has to offer, see [Plan Networking Modes]({{< ref planning_networking_modes.md >}}) . 
 
 
 ## EC2-Classic Networking

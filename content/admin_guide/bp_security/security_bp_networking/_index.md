@@ -9,7 +9,7 @@ Eucalyptus components receive and exchange messages using either Query or SOAP i
 
 Following the AWS specification, all Query interface requests containing the Timestamp element are rejected as expired after 15 minutes of the timestamp. Requests containing the Expires element expire at the time specified by the element. SOAP interface requests using WS-Security expire as specified by the WS-Security Timestamp element. 
 
-Replay detection parameters can be tuned as described in [Configure Replay Protection](security_task_replays.dita#security_task_replays) . 
+Replay detection parameters can be tuned as described in [Configure Replay Protection]({{< ref security_task_replays.md >}}) . 
 
 
 ## Endpoints

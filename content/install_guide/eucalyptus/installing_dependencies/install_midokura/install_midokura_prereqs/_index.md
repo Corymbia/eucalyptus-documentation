@@ -18,6 +18,7 @@ In order to use MidoNet with Eucalyptus you need access credentials to the Midok
 Create `/etc/yum.repos.d/midokura.repo` on all host machines that will run MidoNet components including ZooKeeper and Cassandra. For example: 
 
 Check MidoNet version # for software and gpgkey - Midokura changes often. 
+
     [midokura]
     name=MidoRepo
     baseurl=http://USERNAME:PASSWORD@repo.midokura.com/mem-5.2/stable/el7/

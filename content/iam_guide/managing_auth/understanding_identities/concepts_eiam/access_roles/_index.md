@@ -21,7 +21,7 @@ There are several scenarios in which roles can be useful, including:
 
 **Applications** 
 
-Applications running on instances in your Eucalyptus cloud will often need access to other resources in your cloud. Instead of creating AWS credentials for each application, or distributing your own credentials,, you can use roles to enable you to delegate permission to the application to make API requests. For more information, see [Launch an Instance with a Role](roles_tasks_create_role_application.dita) . 
+Applications running on instances in your Eucalyptus cloud will often need access to other resources in your cloud. Instead of creating AWS credentials for each application, or distributing your own credentials,, you can use roles to enable you to delegate permission to the application to make API requests. For more information, see [Launch an Instance with a Role]({{< ref roles_tasks_create_role_application.md >}}) . 
 
 **Account Delegation** 
 
@@ -34,6 +34,7 @@ Eucalyptus offers a number of pre-defined privileged roles. These roles are asso
 To see the pre-defined roles, use `euare-rolelistbypath` with the credentials of a user that is part of the `eucalyptus` account. For example: 
 
 
+
     # euare-rolelistbypath 
     arn:aws:iam::944786667073:role/eucalyptus/AccountAdministrator
     arn:aws:iam::944786667073:role/eucalyptus/InfrastructureAdministrator
@@ -42,6 +43,7 @@ To see the pre-defined roles, use `euare-rolelistbypath` with the credentials of
 **Account Administrator** 
 
 The Account Administrator (AA) can manage Eucalyptus accounts. To view the policy associated with the Account Administrator role, use `euare-rolelistpolicies` with the credentials of a user that is part of the `eucalyptus` account. For example: 
+
 
 
     # euare-rolelistpolicies --role-name AccountAdministrator --verbose
@@ -63,6 +65,7 @@ The Account Administrator (AA) can manage Eucalyptus accounts. To view the polic
 **Resource Administrator** 
 
 The Resource Administrator (RA) can manage AWS-defined resources (such as S3 objects, instances, users, etc) across accounts. To view the policy associated with the Resource Administrator role, use `euare-rolelistpolicies` with the credentials of a user that is part of the `eucalyptus` account. For example: 
+
 
 
     # euare-rolelistpolicies --role-name ResourceAdministrator --verbose
@@ -144,6 +147,7 @@ The Infrastructre Administrator (IA) can perform operations related to cloud set
 * Monitoring and maintenance (infrastructure supporting the cloud, cloud management layer, upgrades, security patches, diagnostics and troubleshooting) 
 * Backup and restoration 
 To view the policy associated with the Infrastructure Administrator role, use `euare-rolelistpolicies` with the credentials of a user that is part of the `eucalyptus` account. For example: 
+
 
 
     # euare-rolelistpolicies --role-name InfrastructureAdministrator --verbose

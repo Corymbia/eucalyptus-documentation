@@ -38,5 +38,6 @@ When the status of your new instance changes to Running, click the instance in t
 Note the Public IP address and/or the Public hostname fields. You will need this information to connect to your new instance. For example: 
 ![image]({{< ref "/" >}}images/run_instance_console_4l.jpg)
 Using the public IP address or hostname of your new instance, you can now use SSH to log into the instance using the private key file you saved when you created a key pair. For example: 
+
     ssh -i my-test-keypair.private root@10.111.57.109 
 

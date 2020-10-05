@@ -30,8 +30,6 @@ Eucalyptus supports the following commands for filtering:
 * euca-describe-snapshots 
 * euca-describe-tags 
 * euca-describe-volumes 
-For detailed information about these commands, see the [Euca2ools Reference Guide](../euca2ools-guide/index.dita) . 
-
 
 
 {{% children %}}

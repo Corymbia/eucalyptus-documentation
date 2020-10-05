@@ -37,9 +37,11 @@ When you investigate service failures, you can specify `-events` to return a sum
 To modify a service: 
 
 Enter the following command on the CLC, Walrus, or SC machines: 
+
     systemctl stop eucalyptus-cloud.service
 
 On the CC, use the following command: 
+
 
 
     systemctl stop eucalyptus-cluster.service
@@ -49,14 +51,17 @@ If you want to shut down the SC for maintenance. The SC is `SC00` is `ENABLED` a
 To stop `SC00` first verify that no volumes or snapshots are being created and that no volumes are being attached or detached, and then enter the following command on SC00: 
 
 
+
     systemctl stop eucalyptus-cloud.service
 
 To check status of services, you would enter: 
 
 
+
     euserv-describe-services
 
 When maintenance is complete, you can start the eucalyptus-cloud process on `SC00` , which will enter the `DISABLED` state by default. 
+
 
 
     systemctl start eucalyptus-cloud.service

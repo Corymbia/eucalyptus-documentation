@@ -6,11 +6,13 @@ weight = 10
 A role can be used to delegate access to resources that are in different accounts that you own.Using roles to access resources across different accounts allows users to assume a role that can access all the resources in in different acccounts, rather than having users log into different accounts to achieve the same result. 
 ## Using Roles to Access Resources in Another Account
 The scenario described in this section outlines the procedure for a user in Account B to create a role that provides access to a particular OSGObject Storage Gateway (OSG) bucket owned by Account B, which can be assumed by user in Account A.Using [s3cmd](https://github.com/s3tools/s3cmd) , list bucket that will be shared through role: 
+
     # ./s3cmd/s3cmd --config=.s3cfg-acctB-user11 ls s3://mongodb-snapshots
     2014-12-01 22:34 188563920   s3://mongodb-snapshots/mongodb-backup-monday.img.xz
     2014-12-02 13:34 188564068   s3://mongodb-snapshots/mongodb-backup-tuesday.img.xz
 
 Create Role in Account B with Trust Policy for User from Account A: 
+
     # cat acctB-role-trust-acctA-policy.json
     {
       "Version": "2012-10-17",
@@ -24,6 +26,7 @@ Create Role in Account B with Trust Policy for User from Account A:
     # euare-rolecreate --role-name cross-bucket-access-mongodb-logs --policy-document acctB-role-trust-acctA-policy.json
 
 Upload IAM Access Policy for Role in Account B: 
+
     # cat acctB-mongodb-snapshots-bucket-access-policy.json
     {
       "Version": "2012-10-17",
@@ -48,6 +51,7 @@ Upload IAM Access Policy for Role in Account B:
     # euare-roleuploadpolicy --role-name cross-bucket-access-mongodb-logs --policy-document acctB-mongodb-snapshots-bucket-access-policy.json --policy-name mongodb-logs-bucket-access
 
 Upload IAM access policy to Group (e.g. Testers) associated with user in Account A to allow for Role in Account B to be assumed. For more information, go to [Amazon Web Services IAM Best Practices](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html#use-groups-for-permissions) . 
+
     # cat acctA-assume-role-acctB-policy.json
     {
       "Statement": [
@@ -64,10 +68,11 @@ Upload IAM access policy to Group (e.g. Testers) associated with user in Account
     
     # euare-groupuploadpolicy --policy-name mongodb-bucket-access-role --group-name Testers --policy-document acctA-assume-role-acctB-policy.json
 
-The example below demonstrates how to use a python script leveraging the [boto](http://boto.readthedocs.org/en/latest/index.html) library. Another way to assume this role is to run the Euca2ools command, `euare-assumerole` , using the AccountA/user01 credentials. For more information regarding assuming a role, see an example from the [](../iam-guide/roles_tasks_assume_role_application.dita) section. The script below performs the following actions: 
+The example below demonstrates how to use a python script leveraging the [boto](http://boto.readthedocs.org/en/latest/index.html) library. Another way to assume this role is to run the Euca2ools command, `euare-assumerole` , using the AccountA/user01 credentials. For more information regarding assuming a role, see an example from the [Assume a Role]({{< ref roles_tasks_assume_role_application.md >}}) section. The script below performs the following actions: 
 
 * Accesses STS to get temporary access key, secret key and token 
 * List contents of bucket "mongodb-snapshots" 
+
 
     =======================	
     #!/bin/env python
@@ -107,10 +112,11 @@ The example below demonstrates how to use a python script leveraging the [boto](
     ==================
 
 Run the script: 
+
     # ./describe-bucket-script.py
     Bucket Information [mongodb-snapshots]:
     ------------------------------------------------------------
     	mongodb-backup-monday.img.xz
     	mongodb-backup-tuesday.img.xz
 
-For information about Euca2ools IAM commands, see [](../euca2ools-guide/eiam.dita) . 
+

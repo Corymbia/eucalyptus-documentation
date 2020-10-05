@@ -19,6 +19,7 @@ A permission statement has the following components:
 The following policy example contains a statement that gives a user with full permission. This is the same access as the account administrator: 
 
 
+
     {
       "Version":"2011-04-01",
      	"Statement":[{

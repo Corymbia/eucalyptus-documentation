@@ -10,12 +10,15 @@ If you're running RHEL/CentOS, you can use the following instructions to install
 To perform a standalone installation of Euca2ools on RHEL/CentOS: 
 
 Configure the EPEL package repository: 
+
     yum install 
 
 Configure the Euca2ools package repository: 
+
     yum install 
 
 Install Euca2ools: 
+
     yum install euca2ools
 
 You've now performed a standalone installation of Euca2ools. 

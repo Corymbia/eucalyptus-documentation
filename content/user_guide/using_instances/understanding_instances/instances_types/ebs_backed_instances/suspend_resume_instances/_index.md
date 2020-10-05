@@ -8,11 +8,13 @@ An EBS-backed instance can be suspended and resumed, similar to the operating sy
 To suspend a running EBS-backed instance: 
 
 
+
     euca-stop-instances i-<nnnnnnnn>
 
 
 
 To resume a suspended EBS-backed instance: 
+
 
 
     euca-start-instances i-<nnnnnnnn>
@@ -22,11 +24,13 @@ To resume a suspended EBS-backed instance:
 To reboot an EBS-backed instance: 
 
 
+
     euca-reboot-instances i-<nnnnnnnn>
 
 
 
 To terminate an EBS-backed instance: 
+
 
 
     euca-terminate-instances i-<nnnnnnnn>

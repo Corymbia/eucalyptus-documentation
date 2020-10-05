@@ -8,11 +8,12 @@ chapter = true
 # Using CloudFormation
 This topic describes the Eucalyptus implementation of the AWS CloudFormation web service, how CloudFormation works, and some details and examples of how to add CloudFormation to your Eucalyptus deployment.
 ## Why use CloudFormation?
-Cloud computing allows for application repeatability and redundancy. This means that you can spin up as many virtual machines as you need, but the application configuration only needs to happen when the images are created. CloudFormation takes this concept to the next level: it allows you to configure an entire set of resources (instances, security groups, user roles and policies, and more) in a single [JSON](../shared/glossary.dita#json) template file. Then you can run all with a single command. So, you don't just get machine repeatability, you get environment repeatability. CloudFormation allows you to clone environments in different cloud setups, as well as giving applications the ability to be set up and torn down in a repeatable manner. 
+Cloud computing allows for application repeatability and redundancy. This means that you can spin up as many virtual machines as you need, but the application configuration only needs to happen when the images are created. CloudFormation takes this concept to the next level: it allows you to configure an entire set of resources (instances, security groups, user roles and policies, and more) in a single JSON template file. Then you can run all with a single command. So, you don't just get machine repeatability, you get environment repeatability. CloudFormation allows you to clone environments in different cloud setups, as well as giving applications the ability to be set up and torn down in a repeatable manner. 
 
 
 ## How does CloudFormation Work?
 CloudFormation manages a set of resources, called a stack, in batch operations (create, update, or delete). Stacks are described in JSON templates, and can be simple, as the following example: 
+
 
 
     {
@@ -29,6 +30,7 @@ CloudFormation manages a set of resources, called a stack, in batch operations (
 This stack creates a single instance, based on the image with ID `emi-db0b2276` . However, this stack is not portable because different clouds might have different image IDs. 
 
 CloudFormation allows stack customization through user parameters that are passed in at stack creation time. The following is an example of the template above with a user parameter called `MyImageId` . Changes are in bold. 
+
 
 
     {
@@ -51,11 +53,13 @@ CloudFormation allows stack customization through user parameters that are passe
 This stack creates a single instance, but the image ID will be required to be passed in using the command line. For example, the following example uses the `euform-create-stack` command in Euca2ools: 
 
 
+
     euform-create-stack --template-file template.json -p MyImageId=emi-db0b2276 MyStack
 
 This command passes the parameter `MyImageId` with value `emi-db0b2276` into the stack creation process using the `-p` flag. 
 
 You can also use templates to create multiple resources and associate them with each other. For example, the following template creates an instance with its own security group and ingress rule. Additions are in bold. 
+
 
 
     {
@@ -154,14 +158,17 @@ The following resources are supported by CloudFormation in Eucalyptus.
 To register CloudFormation for your cloud, enter the following command: 
 
 
+
     euserv-register-service -t CloudFormation -h CLOUD_FORMATION_HOST_IP SVCINSTANCE
 
 For example: 
 
 
+
     euserv-register-service -t CloudFormation -h 203.0.113.13 cfn
 
 Eucalyptus returns information similar to the following: 
+
 
 
     Created new partition 'cfn'
@@ -175,14 +182,16 @@ The CloudFormation service will be shown when you run `euserv-describe-services`
 The service WSDL URL for CloudFormation is of the form: 
 
 
+
     http://<host-ip>:8773/services/CloudFormation
 
 The services path may not be necessary if DNS is enabled, it may look something like this: 
 
 
+
     http://cloudformation.g-19-10.autoqa.qa1.eucalyptus-systems.com:8773/
 
-CloudFormation follows the same convention as the other [user-facing services](../shared/glossary.dita#ufs) . 
+CloudFormation follows the same convention as the other user facing services. 
 
 
 

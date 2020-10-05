@@ -12,6 +12,7 @@ Terminating an instance can cause the instance and all items associated with the
 To terminate VM instances: 
 
 Enter `euca-describe` instances to obtain the ID of the instances you wish to terminate. Note that an instance ID strings begin with the prefix `i-` followed by an 8-character string: 
+
     euca-describe-instances
     RESERVATION	r-338206B5	alice	default
     INSTANCE	i-4DCF092C  emi-EC1410C1	192.168.7.24	10.17.0.130 ↵
@@ -19,6 +20,7 @@ Enter `euca-describe` instances to obtain the ID of the instances you wish to te
     wind 	eki-822C1344 	eri-BFA91429
 
 Enter `euca-terminate-instances` and the ID string(s) of the instance(s) you wish to terminate: 
+
     euca-terminate-instances i-4DCF092C
      INSTANCE	i-3ED007C8
 

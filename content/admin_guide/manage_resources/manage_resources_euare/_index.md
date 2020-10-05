@@ -3,22 +3,27 @@ title = "Manage IAM Resources"
 weight = 10
 +++
 
-To manage Euare (IAM) resources on your Eucalyptus cloud, use the option with any command that describes, adds, deletes, or modifies resources. This option allows you to assume the role of the admin user for a given account. You can also use a policy to control and limit instances to specific availability zones.The following are some examples. For more information about IAM commands, see [](../euca2ools-guide/eiam.dita) . 
+To manage Euare (IAM) resources on your Eucalyptus cloud, use the option with any command that describes, adds, deletes, or modifies resources. This option allows you to assume the role of the admin user for a given account. You can also use a policy to control and limit instances to specific availability zones.The following are some examples.
 
 To list all groups in an account, enter the following command: 
+
     euare-grouplistbypath --as-account <account-name>
 
 To list all users in an account, enter the following command: 
+
     euare-userslistbypath --as-account <account-name>
 
 To delete the login profile of a user in an account, enter the following command: 
+
     euare-userdelloginprofile --as-account <account-name> -u <user_name>
 
 To modify the login profile of a user in an account, enter the following command: 
+
     euare-usermod --as-account <account-name> -u <user_name> -n
     <new_user_name>
 
 To restrict an image to a specific availability zone, edit and attach this sample policy to a user: 
+
     {
         "Statement":[
           {
@@ -40,6 +45,7 @@ To restrict an image to a specific availability zone, edit and attach this sampl
       }
 
 To restrict a user to actions only within a specific availability zone, edit and attach this sample policy to a user: 
+
     {
         "Version": "2012-10-17",
         "Statement": [{
@@ -55,6 +61,7 @@ To restrict a user to actions only within a specific availability zone, edit and
       }
 
 To deny actions at the account level, edit and attach this example policy to an account: 
+
     {
         "Statement": [ {
           "Effect": "Deny",

@@ -10,8 +10,10 @@ The first time you get credentials using the `eval `clcadmin-assume-system-crede
 Each request to get a user's credentials generates a new pair of a private key and X.509 certificate.. 
 {{% /notice %}}
 To generate a new key for a user by an account administrator, enter the following 
+
     euare-useraddkey USER_NAME
 
 To generate a private key and an X.509 certificate pair, enter the following: 
+
     euare-usercreatecert USER_NAME
 

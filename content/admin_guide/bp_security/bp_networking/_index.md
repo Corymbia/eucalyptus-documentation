@@ -7,5 +7,5 @@ This topic describes the recommendations for networking modes.A Eucalyptus deplo
 
 VPCMIDO mode offers many security features not present in EDGE mode. Instances of different accounts are deployed in user-defined isolated networks within a Eucalyptus cloud. A combination of security features including VPC, VPC subnets, security groups, source/destination check configuration, route tables, internet gateways, and NAT gateways can be used to selectively enable and configure network access to/from instances or group of instances. 
 
-For more information about choosing a networking modes, see [](../install-guide/planning_networking_modes.dita) . 
+For more information about choosing a networking modes, see [Plan Networking Modes]({{< ref planning_networking_modes.md >}}) . 
 

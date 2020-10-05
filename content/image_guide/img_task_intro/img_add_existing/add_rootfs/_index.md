@@ -10,11 +10,13 @@ You can also bundle the root file system independently and associate the ramdisk
 To add a root filesystem to Walrus: 
 
 Use the following three commands: 
+
     euca-bundle-image -i <root_filesystem_file> -r <architecture>
     euca-upload-bundle -b <root_filesystem_file_bucket> -m /tmp/<root_filesystem_file>.manifest.xml
     euca-register <root_filesystem_file_bucket>/<root_filesystem_file>.manifest.xml -n <rootfs_name> -a <architecture>
 
 For example: 
+
 
 
     euca-bundle-image -i euca-fedora-10-x86_64/fedora.10.x86-64.img  --ramdisk eri-722B3CBA --kernel eki-5B3D3859 -r x86_64

@@ -12,12 +12,15 @@ This topic describes how to configure the local filesystem as the block storage 
 In this configuration the SC itself hosts the volume and snapshots for EBS and stores them as files on the local filesystem. It uses standard Linux iSCSI tools to serve the volumes to instances running on NCs. 
 
 **To configure overlay block storage for the zone, run the following commands on the CLC** Configure the SC to use the local filesystem for EBS. 
+
     euctl ZONE.storage.blockstoragemanager=overlay 
 
 The output of the command should be similar to: 
+
     one.storage.blockstoragemanager=overlay
 
 Verify that the property value is now: 'overlay' 
+
     euctl ZONE.storage.blockstoragemanager
 
 Your local filesystem (overlay) backend is now ready to use with Eucalyptus . 

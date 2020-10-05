@@ -9,17 +9,21 @@ This topic describes how to register a Node Controller (NC) with a Cluster Contr
 * The Node Controller service must be properly installed and started. 
 * If you are upgrading, you should understand that: 
 **To register the Node Controller service with the Eucalyptus cloud** SSH to the Cluster Controller in the zone. On the CC, register all NCs using the following command with the IP address of each NC host machine: 
+
     clusteradmin-register-nodes node0_IP_address ... [nodeN_IP_address]
 
 For example: 
 
 
+
     clusteradmin-register-nodes 10.111.5.160 10.111.5.161 10.111.5.162
 
 Copy the CC's security credentials using the following command: 
+
     clusteradmin-copy-keys node0_IP_address ... [nodeN_IP_address]
 
 For example: 
+
 
 
     clusteradmin-copy-keys 10.111.5.160 10.111.5.161 10.111.5.162

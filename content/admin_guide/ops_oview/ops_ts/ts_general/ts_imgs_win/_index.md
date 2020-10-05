@@ -8,6 +8,7 @@ This topic contains information to help you troubleshoot your Windows images.
 A typical size of Windows images is large and Eucalyptus has a set of properties that limit the size of various storage components. The first step in troubleshooting is to make sure that the values are large enough to store your Windows images. You can modify a property using 
 
 
+
     /usb/sbin/euctl-modify-property -p <property>=<value>
 
 The properties that might affect registering Windows images are: 

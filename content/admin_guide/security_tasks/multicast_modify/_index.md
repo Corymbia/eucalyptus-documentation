@@ -10,10 +10,12 @@ As of Eucalyptus 4.3, the default multicast address changed from 228.7.7.3 to 23
 
 
 **To change the multicast address for group membership** Stop all services, starting from the CC, SC, Walrus, then CLC. For example: 
+
     systemctl stop eucalyptus-cluster.service
     systemctl stop eucalyptus-cloud.service
 
 Change the *eucalyptus.conf* on the CC, modifying the `CLOUD_OPTS` parameter to the new IP address: 
+
     CLOUD_OPTS="--mcast-addr=228.7.7.3"
 
 
@@ -21,10 +23,12 @@ Change the *eucalyptus.conf* on the CC, modifying the `CLOUD_OPTS` parameter to 
 The above shows how to set the multicast address to a value compatible with releases prior to Eucalyptus 4.3. 
 {{% /notice %}}
 Restart all services, starting from the CLC, Walrus, SC, CC. For example: 
+
     systemctl start eucalyptus-cloud.service
     systemctl start eucalyptus-cluster.service
 
 Verify that the configured multicast address is being used via netstat: 
+
     netstat -nulp
 
 **Postrequisites** 

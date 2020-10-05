@@ -26,9 +26,9 @@ Over-subscription refers to the practice of expanding your computer beyond its l
 ## Networking Changes (EDGE and Managed modes)
 You can modify the default by adding network IPs to your cloud or changing your network from Managed to EDGE mode. Changing these values do not require shutting down the whole system.
 ## Add Network IPs
-To add network IPs:In EDGE mode, adding or changing the IP involves creating a JSON file and uploading it the Cloud Controller (CLC). See [Configure for Edge Mode](../install-guide/nw_edge.dita) for more details. No restart needed, changes apply automatically. 
+To add network IPs:In EDGE mode, adding or changing the IP involves creating a JSON file and uploading it the Cloud Controller (CLC). See [Configure for Edge Mode]({{< ref nw_edge.md >}}) for more details. No restart needed, changes apply automatically. 
 ## Change Modes
-You can modify the default network from Managed to EDGE networking mode.See [Eucalyptus Migration to Edge Networking Mode](../install-guide/moving_to_edge.dita) for more details. 
+You can modify the default network from Managed to EDGE networking mode.See [Eucalyptus Migration to Edge Networking Mode]({{< ref moving_to_edge.md >}}) for more details. 
 ## Change Reporting/CloudWatch Properties
 You can change the following reporting and CloudWatch properties:
 
@@ -41,4 +41,4 @@ You can change the following reporting and CloudWatch properties:
 
 
 ## Change Capacity
-Capacity changes refer to adding another zone or more nodes.To add another zone, [install](../install-guide/install_repos_intro.dita) , [start](../install-guide/starting_euca.dita) , and [register](../install-guide/registering_ccs.dita) . To add more nodes, see [Add a Node Controller](../admin-guide/add_nodes.dita) . 
+Capacity changes refer to adding another zone or more nodes.To add another zone, [install]({{< ref install_repos_intro.md >}}) , [start]({{< ref starting_euca.md >}}) , and [register]({{< ref registering_ccs.md >}}) . To add more nodes, see [Add a Node Controller]({{< ref add_nodes.md >}}) . 

@@ -12,6 +12,7 @@ The Eucalyptus accounts are created by partitioning LDAP/AD groups. Each partiti
 This section requires that you specify one partition at a time, using a list of JSON key-value pairs. For each entry, the key is the account name to be mapped and the value is a list of names of LDAP/AD groups to be mapped into the account. For example: 
 
 
+
     "groups-partition": {
               "salesmarketing": ["sales", "marketing"],
               "devsupport": ["engineering", "support"],

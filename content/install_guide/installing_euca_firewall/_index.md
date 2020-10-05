@@ -13,19 +13,23 @@ This procedure augments the standard installation instructions, and includes add
 **To install Eucalyptus from a local repository** 
 
 Download the Eucalyptus repository to a local directory. For example: 
+
     wget -r --no-parent \ 
     http://downloads.eucalyptus.com/software/eucalyptus//rhel/7/x86_64/ \
     -P /tmp/eucalyptus 
 
 Download Euca2ools: 
+
     wget -r --no-parent \
     http://downloads.eucalyptus.com/software/euca2ools//rhel/7/x86_64/ \
     -P /tmp/euca2ools 
 
-In step 1 of the [existing installation instructions](installing_euca_release.dita) , modify the baseurl to point to your Eucalyptus local repository: 
+In step 1 of the [existing installation instructions]({{< ref installing_euca_release.md >}}) , modify the baseurl to point to your Eucalyptus local repository: 
+
     baseurl=file:///tmp/eucalyptus/downloads.eucalyptus.com/software/eucalyptus//rhel/7/x86_64
 
-In step 2 of the [existing installation instructions](installing_euca_release.dita) , modify the baseurl to point to your local Euca2ools repository: 
+In step 2 of the [existing installation instructions]({{< ref installing_euca_release.md >}}) , modify the baseurl to point to your local Euca2ools repository: 
+
     baseurl=file:///tmp/euca2ools/downloads.eucalyptus.com/software/euca2ools//rhel/7/x86_64
 
 Run `yum update` . 

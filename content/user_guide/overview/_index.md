@@ -19,7 +19,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 |  :---- |  :---- | 
 | Begin using and configuring Eucalyptus | [getting_started]({{< relref "getting_started" >}}) | 
 | Run and control with virtual machine (VM) instances | [using_instances]({{< relref "using_instances" >}}) | 
-| Use Eucalyptus’ elastic block storage |  | 
+| Use Eucalyptus’ elastic block storage | [using_block_storage]({{< relref "using_block_storage" >}}) | 
 | Apply tags and filters | [resource_and_tags]({{< relref "resource_and_tags" >}}) | 
 | Manage access for groups and users | [using_access]({{< relref "using_access" >}}) | 
 | Understand the Eucalyptus VM networking and security features | [networking_security]({{< relref "networking_security" >}}) | 
@@ -27,7 +27,7 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 | Use elastic load balancing | [elb_intro]({{< relref "elb_intro" >}}) | 
 | Generate metrics about my cloud | [using_monitoring]({{< relref "using_monitoring" >}}) | 
 | Use scalable object storage | [osg_using]({{< relref "osg_using" >}}) | 
-| Use CloudFormation |  | 
+| Use CloudFormation | [cf_overview]({{< relref "cf_overview" >}}) | 
 | Use Virtual Private Cloud | [vpc_intro]({{< relref "vpc_intro" >}}) | 
 
 
@@ -57,7 +57,7 @@ Linux Guest OS Support
 Windows Guest OS Support
  Eucalyptus allows you to run, describe, terminate, reboot, and bundle instances of Windows VMs. 
 IP Address Management
- Eucalyptus can allocate, associate, disassociate, describe, and release IP addresses. Depending on the networking mode, you might have access to public IP addresses that are not statically associated with a VM ( [elastic IPs](../shared/glossary.dita#elasticips) ). Eucalyptus provides tools to allow users to reserve and dynamically associate these elastic IPs with virtual machines. 
+ Eucalyptus can allocate, associate, disassociate, describe, and release IP addresses. Depending on the networking mode, you might have access to public IP addresses that are not statically associated with a VM ( Elastic IPs ). Eucalyptus provides tools to allow users to reserve and dynamically associate these elastic IPs with virtual machines. 
 Security Group Management
  Security groups are sets of firewall rules applied to VMs associated with the group. Eucalyptus lets you create, describe, delete, authorize, and revoke security groups. How much of these things can a typical user actually do? 
 Volume and Snapshot Management

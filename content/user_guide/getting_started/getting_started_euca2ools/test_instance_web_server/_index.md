@@ -6,12 +6,15 @@ weight = 10
 Once you've launched an instance and connected to it, you can test it by setting up a web server. 
 
 ssh into your instance. 
+
     ssh 192.168.1.1 -l root
 
 Install Apache: 
+
     yum install -y httpd
 
 You should see output similar to the following: 
+
 
 
     Loaded plugins: fastestmirror, security, versionlock
@@ -33,9 +36,11 @@ You should see output similar to the following:
                         
 
 Start the web server: 
+
     systemctl start httpd.service
 
 You should see output similar to the following: 
+
 
 
     Starting httpd:                                            [  OK  ]

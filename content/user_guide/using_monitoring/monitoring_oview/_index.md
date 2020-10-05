@@ -18,7 +18,7 @@ CloudWatch monitors the following cloud resources:
 * Eucalyptus Load Balancers (ELB) 
 
 ## Alarms
-CloudWatch alarms help you make decisions more easily by automatically making changes to the resources you are monitoring, based on rules that you define. For example, you can create alarms that initiate Auto Scaling actions on your behalf. For more information about alarm tasks, see [](monitoring_alarm.dita) . 
+CloudWatch alarms help you make decisions more easily by automatically making changes to the resources you are monitoring, based on rules that you define. For example, you can create alarms that initiate Auto Scaling actions on your behalf. For more information about alarm tasks, see [Configuring Alarms]({{< ref monitoring_alarm.md >}}) . 
 
 
 ## Common Use Cases

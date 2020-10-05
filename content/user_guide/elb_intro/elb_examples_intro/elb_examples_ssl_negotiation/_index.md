@@ -6,6 +6,7 @@ weight = 10
 Eucalyptus Elastic Load Balancing (ELB) uses SSL negotiation configurations to determine how SSL connections to your load balancer behave. This topic shows how to update an existing load balancer with an SSL negotiation configuration. 
 
 Get a list of predefined security policies using the `eulb-describe-lb-policies` command: `eulb-describe-lb-policies` This produces output similar to the following: 
+
     POLICY	ELBSample-AppCookieStickinessPolicy	AppCookieStickinessPolicyType
     POLICY	ELBSample-LBCookieStickinessPolicy	LBCookieStickinessPolicyType
     POLICY	ELBSecurityPolicy-2014-10	SSLNegotiationPolicyType

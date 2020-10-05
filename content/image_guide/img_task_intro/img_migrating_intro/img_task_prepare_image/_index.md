@@ -10,10 +10,12 @@ For more information on cloud-init, go to
 For Red Hat, and CentOS EL7: 
 
 
+
     rpm -Uvh http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     yum install cloud-init
 
 Install and configure ssh: For Red Hat and CentOS: 
+
 
 
     yum install openssh-server
@@ -22,9 +24,11 @@ Install and configure ssh: For Red Hat and CentOS:
 Install Euca2ools: For Red Hat and CentOS: 
 
 
+
     yum install euca2ools
 
 Optionally, update existing packages. For Red Hat and CentOS: 
+
 
 
     yum update
@@ -32,9 +36,11 @@ Optionally, update existing packages. For Red Hat and CentOS:
 **Prepare the network:** Disable the firewall. It is recommended that the firewall is disabled and network rules are instead enforced in the security-group the instances run in. If the guest's firewall is not disabled, review the existing rules and make sure they are appropriate for the guest's future use within a cloud environment. Clear or disable iptable rules: Save the rules in case you want to restore them later: 
 
 
+
     sudo iptables-save > /root/firewall.rules
 
 Clear the rules: 
+
 
 
     iptables -F
@@ -48,6 +54,7 @@ Clear the rules:
     iptables -P FORWARD ACCEPT
 
 For Red Hat and CentOS 6, you can disable iptables via service scripts. For example: 
+
 
 
     service iptables stop
@@ -66,9 +73,11 @@ Make sure there is only a single primary network interface. Check the configurat
 For Red Hat and CentOS images, the configuration for the default network interface can usually be found in the following file: 
 
 
+
     /etc/sysconfig/network-scripts/ifcfg-eth0
 
 The following is an example of an `ifcfg-eth0` configuration file: 
+
 
 
     DEVICE=eth0
@@ -80,10 +89,12 @@ The following is an example of an `ifcfg-eth0` configuration file:
     PERSISTENT_DHCLIENT=yes
 
 Remove persistent udev rules: 
+
     echo "" > /etc/udev/rules.d/70-persistent-net.rules 
     echo "" > /lib/udev/rules.d/75-persistent-net-generator.rules 
 
 On CentOS and Red Hat, disable zeroconf by adding an entry to the `/etc/sysconfig/network` file: 
+
     NETWORKING=yes
     NOZEROCONF=yes
 

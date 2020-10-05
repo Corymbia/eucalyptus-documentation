@@ -19,5 +19,5 @@ For example, you can define the lower and upper thresholds of the CloudWatch ala
 
 A *cooldown period* is the amount of time after an Auto Scaling activity takes place where further Auto Scaling activity is suspended. This is to allow time for the Auto Scaling activities (such as new instance launches or terminations) to fully complete so that resources are not unnecessarily launched or terminated. You can specify this amount of time; if you don't specify a cooldown period, Auto Scaling uses a default cooldown period of 300 seconds (5 minutes). 
 
-For more information, go to [Configuring a Demand-Based Scaling Policy](autoscaling_examples_scaling_plan_demand.dita) . 
+For more information, go to [Configuring a Demand-Based Scaling Policy]({{< ref autoscaling_examples_scaling_plan_demand.md >}}) . 
 

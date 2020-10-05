@@ -4,6 +4,7 @@ weight = 10
 +++
 
 You can use the AWS Java SDK to programmatically perform IAM role-related operations in your Eucalyptus cloud. This example shows how to use the AWS SDK to retrieve the credentials for the IAM role associated with the Eucalyptus instance.The following program lists the contents of the bucket "my-test-bucket" using the credentials stored in the Java system properties: 
+
     import com.amazonaws.auth.*;
     import com.amazonaws.AmazonClientException;
     import com.amazonaws.AmazonServiceException;
@@ -65,6 +66,7 @@ You can use the AWS Java SDK to programmatically perform IAM role-related operat
 This application produces output similar to the following: 
 
 
+
     Listing bucket my-test-bucket:
      - precise-server-cloudimg-amd64-vmlinuz-virtual.manifest.xml  (size = 3553)
      - precise-server-cloudimg-amd64-vmlinuz-virtual.part.0  (size = 4904032)
@@ -96,7 +98,8 @@ This application produces output similar to the following:
 
 The problem with this approach is that the credentials are hardcoded into the application - this makes them less secure, and makes the application more difficult to maintain. Using IAM roles is a more secure and easier way to manage credentials for applications that run on Eucalyptus cloud instances. 
 
-Create a role with a policy that allows an instance to list the contents of a specific bucket, and then launch an instance with that role (for an example, see [Launch an Instance with a Role](roles_tasks_create_role_application.dita) . An example policy that allows listing of a specific bucket will look similar to the following: 
+Create a role with a policy that allows an instance to list the contents of a specific bucket, and then launch an instance with that role (for an example, see [Launch an Instance with a Role]({{< ref roles_tasks_create_role_application.md >}}) . An example policy that allows listing of a specific bucket will look similar to the following: 
+
     {
       "Statement": [
         {
@@ -110,6 +113,7 @@ Create a role with a policy that allows an instance to list the contents of a sp
     }             
 
 The following line of code retrieves the credentials that are stored in the application's credentials profile: `AWSCredentialsProvider credentials = new ClasspathPropertiesFileCredentialsProvider();` To use the role-based credentials associated with the instance, replace that line of code with the following: `AWSCredentialsProvider credentials = new InstanceProfileCredentialsProvider();` The program now looks like this: 
+
 
 
     import com.amazonaws.auth.*;
@@ -172,6 +176,7 @@ The following line of code retrieves the credentials that are stored in the appl
     }
 
 NOTE: Running this code outside of an instance will result in the following error message: 
+
 
 
     Listing bucket my-test-bucket:

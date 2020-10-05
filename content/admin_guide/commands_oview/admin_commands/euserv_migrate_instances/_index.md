@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-migrate-instances (-s HOST | -i INSTANCE)
     
       [--include-dest HOST | --exclude-dest HOST]
@@ -30,6 +31,7 @@ Unless requested, no output is given. You can run the `euserv-describe-*` comman
 
 ## Example
 To migrate an instance from its current host: 
+
 
 
     euserv-migrate-instances -i i-8eacd211 

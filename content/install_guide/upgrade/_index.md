@@ -6,7 +6,7 @@ chapter = true
 
 
 # Upgrade
-This section details the tasks to upgrade your current version of Eucalyptus .You can upgrade to Eucalyptus 4.4.5 from 4.4.4 (or 4.3.1.1). If your current version is earlier than 4.4.4 , see the prescribed paths below. Follow the directions in that version's Installation Guide in the [documentation archive](../shared/doc_archive.dita#doc_archive) , and then upgrade to 4.4.5 using the directions in this section. 
+This section details the tasks to upgrade your current version of Eucalyptus .You can upgrade to Eucalyptus 4.4.5 from 4.4.4 (or 4.3.1.1).
 
 
 ## Warm upgrade

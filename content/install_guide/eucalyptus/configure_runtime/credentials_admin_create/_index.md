@@ -12,9 +12,11 @@ After your cloud is running and DNS is functional, create a user and access key 
 This is where you would begin using the admin role, if you want to use that feature. 
 {{% /notice %}}
 **To create a cloud admin user** Eucalyptus admin tools and Euca2ools commands need configuration from *~/.euca* . If the directory does not yet exist, create it: 
+
     mkdir ~/.euca
 
 Choose a name for the new user and create it along with an access key: 
+
     euare-usercreate -wld DOMAIN USER >~/.euca/FILE.ini
 
 where: 
@@ -31,6 +33,7 @@ Need to sync up the various credential-related topics, across the doc set. Might
 This creates an admin user in the built-in 'eucalyptus' account. The admin user has full control of all aspects of the cloud. For additional security, you might instead want to create a new account and grant it access to a more limited administration role. See the for more information. 
 {{% /notice %}}
 Switch to the new admin user: 
+
     eval `euare-releaserole`
     export AWS_DEFAULT_REGION=REGION
 
@@ -39,7 +42,7 @@ where:
 * must match the region name from the previous step. By default, this is the same as the cloud's DNS domain chosen in . 
 
 
-As long as this file exists in *~/.euca* , you can use it by repeating the `export` command above. These `euca2ools.ini` configuration files are a flexible means of managing cloud regions and users. See the [Euca2ools Reference Guide](../euca2ools-guide/index.dita) for more information. 
+As long as this file exists in *~/.euca* , you can use it by repeating the `export` command above. These `euca2ools.ini` configuration files are a flexible means of managing cloud regions and users.
 
 **What to do next** 
 

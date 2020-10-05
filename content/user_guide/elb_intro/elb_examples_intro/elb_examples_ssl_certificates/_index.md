@@ -12,14 +12,17 @@ You must create the certificate and get it signed by a certificate authority (CA
 To upload a certificate : 
 
 Enter the `euare-servercertupload` command, specifying the name of your certificate, the contents of the PEM-encoded public- and private-keys: 
+
     euare-servercertupload -s cert-name --certificate-file ssl_server_cert.crt --private-key-file ssl_server_cert.pem
 
 You've now created an elastic load balancer. 
 ## Verify Server Certificate
 You can verify that an uploaded certificate is stored in IAM. Each certificate object has a unique Amazon Resource Name (ARN) and ID.To verify an uploaded certificate: Use the `euare-servercertlistbypath` command to verify the certificate is stored in IAM: 
+
     euare-servercertgetattributes -s elb-ssl-cert
 
 The command will return the ARN, followed by the GUID. For example: 
+
 
 
     arn:aws:iam::495375389014:server-certificate/elb-ssl-cert

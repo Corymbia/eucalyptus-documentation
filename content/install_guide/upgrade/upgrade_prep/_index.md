@@ -25,9 +25,10 @@ You can preview the install and its dependencies by running the following comman
 {{% /notice %}}
 **To preview the upgrade of Eucalyptus cloud** 
 
-The following steps are an optional preview of what the upgrade command will do. If you do not want to do this, continue to [](upgrade_shutdown.dita) . 
+The following steps are an optional preview of what the upgrade command will do. If you do not want to do this, continue to [Shutdown Services]({{< ref upgrade_shutdown.md >}}) . 
 
 (Optional) Test the new Eucalyptus release package on each host machine that runs a Eucalyptus service: 
+
     yum install 
 
 Review the dependencies and install package information. 
@@ -35,6 +36,7 @@ Review the dependencies and install package information.
 Enter `N` when prompted so you do **NOT** install the package. 
 
 (Optional) Test the new Euca2ools release package on each host machine that runs Euca2ools or a Eucalyptus service: 
+
     yum install 
 
 Review the dependencies and install package information. 
@@ -42,10 +44,11 @@ Review the dependencies and install package information.
 Enter `N` when prompted so you do **NOT** install the package. 
 
 (Optional) If you have a Eucalyptus subscription, test the new subscription release package on each host machine that runs a Eucalyptus service: 
+
     yum install 
 
 Review the dependencies and install package information. 
 
 Enter `N` when prompted so you do **NOT** install the package. 
 
-You are now ready to [](upgrade_shutdown.dita) . 
+You are now ready to [Shutdown Services]({{< ref upgrade_shutdown.md >}}) . 

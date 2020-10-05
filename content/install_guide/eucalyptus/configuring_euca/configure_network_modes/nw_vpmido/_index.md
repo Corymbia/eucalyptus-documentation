@@ -12,9 +12,10 @@ If you are not using VPCMIDO mode with , you can skip this topic. See .
 {{% /notice %}}
 
 
-To configure VPCMIDO mode parameters, you must create a `network.json` configuration file. Later in the installation process you will [](nw_json_upload.dita#nw_edge_json_upload) to the CLC. 
+To configure VPCMIDO mode parameters, you must create a `network.json` configuration file. Later in the installation process you will []({{< ref nw_json_upload.md >}}) to the CLC. 
 
 Create the network JSON file. Open a text editor. Create a file similar to the following structure. This example demonstrates two gateways and two BGP peers (sections relevant to VPCMIDO are shown here). Useful to ensure JSON is valid: http://jsonparseronline.com/ 
+
     {
         "Mido": {
             "BgpAsn": "64512",
@@ -51,6 +52,7 @@ Create the network JSON file. Open a text editor. Create a file similar to the f
     }
 
 Save the `network.json` file. The following example demonstrates a gateway with static routing configuration. This configuration might be used for a Proof of Concept (POC) environment; however, it is not recommended for production. 
+
 
 
     {

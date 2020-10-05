@@ -8,6 +8,7 @@ This topic describes the process for creating an account using the command line 
 To create an account, run the following command: 
 
 
+
     euare-accountcreate -a account_name
 
 When an account is created by `euare-accountcreate` command, an "admin" user is created by default. 

@@ -6,6 +6,7 @@ weight = 10
 This topic contains information about Walrus-related problems and solutions.
 Walrus decryption failed.
  On Ubuntu 10.04 LTS, kernel version 2.6.32-31 includes a bug that prevents Walrus from decrypting images. This can be determined from the following line in cloud-output.log 
+
     javax.crypto.
     BadPaddingException: pad block corrupted
 

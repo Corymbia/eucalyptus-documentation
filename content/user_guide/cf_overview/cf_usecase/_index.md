@@ -6,6 +6,7 @@ weight = 10
 This topic describes a use case for creating a stack, checking the stack progress, and deleting the stack.For this use case, we will use the following template: 
 
 
+
     {
       "Parameters": {
         "MyImageId": {
@@ -54,9 +55,11 @@ The steps to run this template through the system are explained in the following
 These steps require that you have an available image (run to verify) and that the CloudFormation service is running (run to verify). 
 {{% /notice %}}
 Verify connectivity to the CloudFormation service. 
+
     euform-describe-stacks
 
 You should not see anything returned, including any errors. Create a file called *ex_template.json* that contains the following content: 
+
     {
       "Parameters": {
         "MyImageId": {
@@ -97,31 +100,39 @@ You should not see anything returned, including any errors. Create a file called
     }
 
 Create a keypair. 
+
     euca-create-keypair myKey > myKey.pem
 
 Set the permissions on the keypair. 
+
     chmod 0600 myKey.pem
 
 Find what resources have been created., run the command and the euca-describe-groups commands. Make note of the output for later. Run: 
+
     euca-describe-instances
 
 Note the output for later use. Run: 
+
     euca-describe-groups
 
 Note the output for later use. Create the stack. 
+
     euform-create-stack --template-file ex_template.json -p  MyImageId=<image_id>, MyKeyPair=
      myKey MyStack
 
 Eucalyptus returns output similar to the following: 
+
     arn:aws:cloudformation::299958418681:stack/MyStack/28fd422b-0836-4374-ade2-eddab2fab3e3
 
 Run the checks you want on your stack. Check the status of the stack. 
+
 
 
     euform-describe-stack
      STACK    MyStack    CREATE_COMPLETE    Complete!   2014-05-30T18:45:54.695Z
 
 Check the stack at any time to see all the events that have occurred during the stack lifecycle. 
+
 
 
     euform-describe-stack-events MyStack
@@ -152,6 +163,7 @@ Check the stack at any time to see all the events that have occurred during the 
 Run `euca-describe-instances` and `euca-describe-groups` to make sure the new resources have been created. 
 
 
+
     euca-describe-instances
     RESERVATION    r-4ed04891   299958418681   MyStack-MySecurityGroup-PSLNKQK0BGY9A
     INSTANCE    i-d141ae0a    emi-db0b2276   
@@ -168,6 +180,7 @@ Run `euca-describe-instances` and `euca-describe-groups` to make sure the new re
     22    22    FROM    CIDR    0.0.0.0/0    ingress
 
 Try to SSH into the instance. 
+
     ssh -i myKey.pem root@10.111.101.87
 
 
@@ -175,6 +188,7 @@ Try to SSH into the instance.
 Username might depend on the instance type, and might be root or ubuntu or ec2-user. 
 {{% /notice %}}
 Delete the stack. 
+
     euform-delete-stack MyStack
 
 You can run `euca-describe-stacks` and all the other describe commands to check the progress until the delete is complete. Make sure the instance is terminated and that the security group no longer exists. 

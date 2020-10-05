@@ -22,5 +22,5 @@ You can override the default instance termination policy for your Auto Scaling g
 
 You can have more than one termination policy per Auto Scaling group. The termination policies are executed in the order they were created. 
 
-For more information, go to [Configuring an Instance Termination Policy](autoscaling_examples_instance_termination_policy.dita) . 
+For more information, go to [Configuring an Instance Termination Policy]({{< ref autoscaling_examples_instance_termination_policy.md >}}) . 
 

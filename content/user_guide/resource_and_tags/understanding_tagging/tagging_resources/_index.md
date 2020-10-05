@@ -9,7 +9,7 @@ To help you manage your cloud's instances, images, and other Eucalyptus resource
 ## Tagging Overview
 A tag consists of a key and an optional value for that key. You define both the key and the value for each tag. For example, you can define a tag for your instances that helps you track each instance's owner and stack level. 
 
-Tags let you categorize your cloud resources in various ways. For example, you can tag resources based on their purpose, their owner, or their environment. We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. For more information about filtering, see [](resource_filtering.dita) . 
+Tags let you categorize your cloud resources in various ways. For example, you can tag resources based on their purpose, their owner, or their environment. We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. For more information about filtering, see [Filtering Resources]({{< ref resource_filtering.md >}}) . 
 
 Eucalyptus doesn't apply any semantic meaning to your tags. Instead, Eucalyptus interprets your tags simply as strings of characters. Eucalyptus doesn't automatically assign any tags on resources. 
 
@@ -29,7 +29,7 @@ The following restrictions apply to tags:
 | Unavailable prefixes | You can't use either euca: or aws: as a prefix to either a tag name or value. These are reserved by Eucalyptus. | 
 | Case sensitivity | Tag keys and values are case sensitive. | 
 
-You can't terminate, stop, or delete a resource based solely on its tags. You must specify the resource identifier. For example, to delete snapshots that you tagged with a tag key called `temporary` , you must first get a list of those snapshots using euca-describe-snapshots with a filter that specifies the tag. Then you use euca-delete-snapshots with the IDs of the snapshots (for example, snap-1A2B3C4D). You can't call euca-delete-snapshots with a filter that specified the tag. For more information about using filters when listing your resources, see [](resource_filtering.dita) . 
+You can't terminate, stop, or delete a resource based solely on its tags. You must specify the resource identifier. For example, to delete snapshots that you tagged with a tag key called `temporary` , you must first get a list of those snapshots using euca-describe-snapshots with a filter that specifies the tag. Then you use euca-delete-snapshots with the IDs of the snapshots (for example, snap-1A2B3C4D). You can't call euca-delete-snapshots with a filter that specified the tag. For more information about using filters when listing your resources, see [Filtering Resources]({{< ref resource_filtering.md >}}) . 
 
 
 ## Available Resources

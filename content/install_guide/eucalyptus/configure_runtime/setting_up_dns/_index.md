@@ -14,9 +14,11 @@ The DNS service will automatically try to bind to port 53. If port 53 cannot be 
 Before using the DNS service, configure the DNS subdomain name that you want Eucalyptus to handle using the steps that follow. 
 
 Log in to the CLC and enter the following: 
+
     euctl system.dns.dnsdomain=mycloud.example.com
 
 You can configure the load balancer DNS subdomain. To do so, log in to the CLC and enter the following: 
+
     euctl services.loadbalancing.dns_subdomain=lb
 
 
@@ -24,6 +26,7 @@ You can configure the load balancer DNS subdomain. To do so, log in to the CLC a
 To enable mapping of instance IPs to DNS host names: 
 
 Enter the following command on the CLC: 
+
     euctl bootstrap.webservices.use_instance_dns=true
 
 When this option is enabled, public and private DNS entries are created for each launched instance in Eucalyptus . This also enables virtual hosting for Walrus. Buckets created in Walrus can be accessed as hosts. For example, the bucket `mybucket` is accessible as `mybucket.objectstorage.mycloud.example.com` . 
@@ -31,6 +34,7 @@ When this option is enabled, public and private DNS entries are created for each
 Instance IP addresses will be mapped as `euca-A-B-C-D.eucalyptus.mycloud.example.com` , where `A-B-C-D` is the IP address (or addresses) assigned to your instance. 
 
 If you want to modify the subdomain that is reported as part of the instance DNS name, enter the following command: 
+
     euctl cloud.vmstate.instance_subdomain=.custom-dns-subdomain
 
 When this value is modified, the public and private DNS names reported for each instance will contain the specified custom DNS subdomain name, instead of the default value, which is `eucalyptus` . For example, if this value is set to `foobar` , the instance DNS names will appear as `euca-A-B-C-D.foobar.mycloud.example.com` . 
@@ -48,6 +52,7 @@ For example, if the IP address of the CLC is `192.0.2.5` , and the IP address of
 To enable DNS delegation: 
 
 Enter the following command on the CLC: 
+
     euctl bootstrap.webservices.use_dns_delegation=true
 
 
@@ -57,6 +62,7 @@ Set up your master DNS server to delegate the Eucalyptus subdomain to the UFS ho
 The following example shows how the Linux name server `bind` is set up to delegate the Eucalyptus subdomain. 
 
 Open */etc/named.conf* and set up the `example.com` zone. For example, your */etc/named.conf* may look like the following: 
+
     zone "example.com" IN {
     	      type master;
     	      file "/etc/bind/db.example.com";
@@ -64,6 +70,7 @@ Open */etc/named.conf* and set up the `example.com` zone. For example, your */et
     	    
 
 Create */etc/bind/db.example.com* if it does not exist. If your master DNS is already set up for `example.com` , you will need to add a name server entry for UFS host machines. For example: 
+
     $ORIGIN example.com.
     $TTL 604800
     
@@ -84,6 +91,7 @@ To enable any of the DNS resolvers, set `dns.enabled` to `true` . To enable the 
 You can configure instances to use AWS region FQDNs for service endpoints by enabling DNS spoofing. 
 
 Set up a Eucalyptus cloud with Eucalyptus DNS and HTTPS endpoints. When creating CSR, make sure and add Subject Alternative Names for all the supported AWS services for the given region that’s being tested. For example: 
+
     $ openssl req -in wildcard.c-06.autoqa.qa1.eucalyptus-systems.com.csr 
     						-noout -text | less X509v3 Subject Alternative Name:
          DNS:ec2.us-east-1.amazonaws.com, DNS:autoscaling.us-east-1.amazonaws.com, 
@@ -92,6 +100,7 @@ Set up a Eucalyptus cloud with Eucalyptus DNS and HTTPS endpoints. When creating
          DNS:sts.us-east-1.amazonaws.com
 
 Set DNS spoofing: 
+
     [root@d-17 ~]#  euctl dns.spoof_regions --region euca-admin@future
     dns.spoof_regions.enabled = true
     dns.spoof_regions.region_name =
@@ -99,11 +108,13 @@ Set DNS spoofing:
     dns.spoof_regions.spoof_aws_regions = true
 
 Launch an instance, and allow SSH access. SSH into the instance and install AWS CLI. 
+
     ubuntu@euca-172-31-12-59:~$ sudo apt-get install -y python-pip
     ubuntu@euca-172-31-12-59:~$ sudo -H pip install --upgrade pip
     ubuntu@euca-172-31-12-59:~$ sudo -H pip install --upgrade awscli
 
 Run `aws configure` and set access and secret key information if not using instance profile. Confirm AWS CLI works with HTTPS Eucalyptus service endpoint: 
+
     ubuntu@euca-172-31-12-59:~$ aws --ca-bundle euca-ca-0.crt 
     --endpoint-url https://ec2.c-06.autoqa.qa1.eucalyptus-systems.com/ ec2 describe-key-pairs
     {
@@ -116,6 +127,7 @@ Run `aws configure` and set access and secret key information if not using insta
     }
 
 Test against AWS FQDN service endpoint that matches one of the SANs in the signed certificate: 
+
     ubuntu@euca-172-31-12-59:~$ aws --ca-bundle euca-ca-0.crt 
     --endpoint-url https://ec2.us-east-1.amazonaws.com ec2 describe-key-pairs{
         "KeyPairs": [

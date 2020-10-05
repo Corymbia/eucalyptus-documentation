@@ -6,6 +6,7 @@ weight = 10
 The first task for creating a Windows image is installing a base Windows operating system (OS). To install a base Windows OS using KVM: 
 
 Log in to the stopped NC server or a host that runs the same hypervisor as the NCs. Create a blank disk file. Specify your Windows VM image name using the parameter `of` . 
+
     dd if=/dev/zero of=windows.<image_name>.img bs=1M count=1 seek=16999
 
 
@@ -13,20 +14,24 @@ Log in to the stopped NC server or a host that runs the same hypervisor as the N
 Your image name must start with the word, (all lower-case). 
 {{% /notice %}}
 Create a floppy and secondary blank disk to be attached to the image later, in order to test paravirtualization drivers 
+
     dd if=/dev/zero of=floppy.img \
     	bs=1k count=1474
     	dd if=/dev/zero of=secondary.img \
     	bs=1M count=1 seek=1000
 
 Copy all of the .img and .iso files to the */var/lib/libvirt/images/* directory. Copy the *libvirt-kvm-windows-example.xml* file to your working directory and rename it to *libvirt-kvm-windows.xml* . 
+
      cp /usr/share/eucalyptus/doc/libvirt-kvm-windows-example.xml /var/lib/libvirt/images/libvirt-kvm-windows.xml 
 
 or 
 
 
+
      cp /usr/share/eucalyptus/doc/libvirt-xen-windows-example.xml /var/lib/libvirt/images/libvirt-xen-windows.xml 
 
 Open the new *libvirt-kvm-windows.xml* file and provide fully qualified paths to the VM image file and iso. Make sure that the name of the bridge is the same as the one used by the hypervisor on which you are creating the Windows image. Your file should look similar to the following example: 
+
 
 
     <domain type='kvm'>
@@ -72,10 +77,12 @@ Open the new *libvirt-kvm-windows.xml* file and provide fully qualified paths to
     </domain>
 
 Start the VM. 
+
     cd /var/lib/libvirt/images
     virsh create libvirt-kvm-windows.xml
 
 Connect to the virtual console using the VNC client of your choice. On the NC, check the display number that has been allocated by looking at the process table ( `ps axw | grep vnc` ). For example, if the display number is 0, then connect to the NC using the VNC client: 
+
     vinagre <machine-hosting-vm>:0
 
 Follow the standard Windows installation procedure until the VM has completed installing Windows. 
@@ -83,5 +90,6 @@ Follow the standard Windows installation procedure until the VM has completed in
 On some hosts, the VNC’s display number will change when an image restarts. Use to find the current number. 
 {{% /notice %}}
 Run `virsh list` to display the domain name. Shut down the Windows VM you have just created. The easiest way to shutdown your VM is to use the `virsh destroy` command, as shown: 
+
     virsh destroy <domain_name>
 

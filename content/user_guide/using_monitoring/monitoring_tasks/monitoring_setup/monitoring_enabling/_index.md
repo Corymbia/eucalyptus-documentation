@@ -8,9 +8,11 @@ This section describes steps for enabling monitoring on your cloud resources.To 
 
 ## Enable monitoring for an instance
 To enable monitoring for a running instance, enter the following command: 
+
     euca-monitor-instances [instance_id]
 
 To enable monitoring when you launch an instance, enter the following command: 
+
     euca-run-instances [image_id] -k gsg-keypair --monitor
 
 

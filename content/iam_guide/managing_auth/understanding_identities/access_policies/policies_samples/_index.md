@@ -14,6 +14,7 @@ For more information about JSON syntax used with AWS resources, go to .
 The following policy allows a user to only run instances and describe things. 
 
 
+
     {
        "Statement":[{
           "Effect":"Allow",
@@ -24,6 +25,7 @@ The following policy allows a user to only run instances and describe things.
        }
 
 The following policy allows a user to only list things: 
+
 
 
     {
@@ -40,6 +42,7 @@ The following policy allows a user to only list things:
       }
 
 The following policy grants a generic basic user permission for running instances and describing things. 
+
 
 
     {
@@ -78,6 +81,7 @@ The following policy grants a generic basic user permission for running instance
 The following policy allows a user to do anything but delete. 
 
 
+
     {
       "Statement": [
         {
@@ -91,6 +95,7 @@ The following policy allows a user to do anything but delete.
       }
 
 The following policy denies a user from creating other users. 
+
 
 
     {
@@ -109,6 +114,7 @@ The following policy denies a user from creating other users.
 
 ## Examples: Specifying Time Limits
 The following policy allows a user to run instances within a specific time. 
+
 
 
     {
@@ -132,6 +138,7 @@ The following policy allows a user to run instances within a specific time.
 The following policy blocks users from running instances at a specific time. 
 
 
+
     {
       "Statement": [
         {
@@ -153,6 +160,7 @@ The following policy blocks users from running instances at a specific time.
 The following policy keeps alive an instance for 1,000 hours (60,000 minutes). 
 
 
+
     {
       "Statement": [
         {
@@ -165,6 +173,7 @@ The following policy keeps alive an instance for 1,000 hours (60,000 minutes).
       }
 
 The following policy sets an expiration date on running instances. 
+
 
 
     {
@@ -183,6 +192,7 @@ The following policy sets an expiration date on running instances.
 The following policy allows users to only launch instances with a large image type. 
 
 
+
     {
       "Statement": [
         {
@@ -196,6 +206,7 @@ The following policy allows users to only launch instances with a large image ty
       }
 
 The following policy restricts users from launching instances with a specific image ID. 
+
 
 
     {
@@ -213,6 +224,7 @@ The following policy restricts users from launching instances with a specific im
 The following policy restricts users from allocating addresses to a specific elastic IP address. 
 
 
+
     {
       "Statement": [
         {
@@ -225,6 +237,7 @@ The following policy restricts users from allocating addresses to a specific ela
       }
 
 The following policy denies volume access. 
+
 
 
     {

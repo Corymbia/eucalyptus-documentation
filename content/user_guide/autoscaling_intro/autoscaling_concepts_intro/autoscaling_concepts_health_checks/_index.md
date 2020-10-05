@@ -11,5 +11,5 @@ Auto scaling determines an instance is unhealthy if the calls to either Eucalypt
 
 If there are multiple elastic load balancers associated with your Auto Scaling group, Auto Scaling will make health check calls to each load balancer. If any of the health check calls return any state other than  `InService` , that instance will be marked as unhealthy. After Auto Scaling marks an instance as unhealthy, it will remain marked in that state, even if subsequent calls from other load balancers return an  `InService`  state for the same instance. 
 
-For more information, go to [Configuring Health Checks](autoscaling_examples_health_checks.dita) . 
+For more information, go to [Configuring Health Checks]({{< ref autoscaling_examples_health_checks.md >}}) . 
 

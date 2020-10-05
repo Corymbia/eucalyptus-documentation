@@ -8,6 +8,7 @@ CloudWatch allows you to publish your own metrics, such as application performan
 To publish a single data point for a new or existing metric, call euwatch-put-data with one value and time stamp. For example, the following actions each publish one data point: 
 
 
+
     euwatch-put-data --metric-name PageViewCount --namespace "TestService" --value 2 --timestamp 2011-03-14T12:00:00.000Z
     euwatch-put-data --metric-name PageViewCount --namespace "TestService" --value 4 --timestamp 2011-03-14T12:00:01.000Z
     euwatch-put-data --metric-name PageViewCount --namespace "TestService" --value 5 --timestamp 2011-03-14T12:00:02.000Z
@@ -19,6 +20,7 @@ CloudWatch uses 60-second boundaries when aggregating data points. For example, 
 
 ## Publish statistic sets
 You can also aggregate your data before you publish to CloudWatch. When you have multiple data points per minute, aggregating data minimizes the number of calls to euwatch-put-data . For example, instead of calling euwatch-put-data multiple times for three data points that are within three seconds of each other, you can aggregate the data into a statistic set that you publish with one call: 
+
 
 
     euwatch-put-data --metric-name PageViewCount --namespace "TestService" -s "Sum=11,Minimum=2,Maximum=5,SampleCount=3" --timestamp 2011-03-14T12:00:00.000

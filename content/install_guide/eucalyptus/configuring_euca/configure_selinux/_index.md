@@ -8,11 +8,13 @@ We recommend enabling SELinux on host systems running Eucalyptus 4.4 services to
 You need to set boolean values on Storage Controller (SC) and Management Console host machines. If your network mode is VPCMIDO, you also set a boolean value on the Cloud Controller (CLC) host machines. **To configure SELinux on Eucalyptus 4.4 :** 
 
 On each Storage Controller (SC) host machine, run the following command: 
+
     setsebool -P eucalyptus_storage_controller 1
 
 This allows Eucalyptus to manage EBS volumes. 
 
 On each Management Console host machine, run the following command: 
+
     setsebool -P httpd_can_network_connect 1
 
 This allows the Management Console's HTTP proxy to access the back end. 
@@ -24,6 +26,7 @@ If you can't access the console after starting it, this KB article might help: .
 
 
 If your cloud uses VPCMIDO networking mode, on the Cloud Controller (CLC), run the following command: 
+
     setsebool -P httpd_can_network_connect 1
 
 This allows the CLC's HTTP proxy to access the back end. 

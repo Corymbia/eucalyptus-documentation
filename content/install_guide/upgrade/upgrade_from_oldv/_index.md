@@ -6,6 +6,7 @@ weight = 10
 This topic describes how to update the service images after the Eucalyptus software upgrade.As of Eucalyptus 4.2.0, service images are templates for imaging workers, load balancers, and database images, all using the same service image. 
 
 Install the imaging worker image. Run the following command on the machine where you installed the Eucalyptus imaging worker image: 
+
     esi-install-image --install-default
 
 

@@ -4,14 +4,12 @@ weight = 10
 +++
 
 You can run CloudFormation using Euca2ools, the AWS SDK for Java, the AWS command line interface, and Boto.
-## Euca2ools
-For information about Euca2ools CloudFormation commands, see [](../euca2ools-guide/euform.dita) . 
-
 
 ## AWS SDK for Java
 The AWS SDK has data types and command structures that are generally a one-to-one match to what is defined in the AWS API documentation. For more information about the SDK API, go to the [AWS SDK for Java API Reference](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html) . 
 
 The following is an example of a describe stacks call. 
+
 
 
     import com.amazonaws.services.cloudformation.AmazonCloudFormationClient;
@@ -94,9 +92,11 @@ For more information about the AWS SDK for Java, go to [http://aws.amazon.com/sd
 You can use the AWS command line interface (CLI) with Eucalyptus CloudFormation. For example, the following command describes a stack: 
 
 
+
     aws --endpoint http://10.111.1.134:8773/services/CloudFormation cloudformation describe-stacks
 
 Credential information is either also passed using flags or stored in a file referenced by the `AWS_CONFIG_FILE` environment variable. Results from the previous command are in JSON: 
+
 
 
     {
@@ -128,6 +128,7 @@ For more information about the AWS CLI, go to [http://docs.aws.amazon.com/cli/la
 
 ## Boto
 Boto is a Python API that calls the AWS web service API, and is well documented. The following snippet accesses the base CloudFormation "cf" object: 
+
 
 
     import boto

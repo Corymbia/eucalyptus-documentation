@@ -6,6 +6,7 @@ weight = 10
 This topic describes how to add and edit ELB security policies.Default ELB policies are stored as JSON files in the `/etc/eucalyptus/cloud.d/elb-security-policy` directory. You can add or edit policy files here, and the changes will take effect when the CLC is restarted. 
 
 Copy one of the ELB policy files to a new file and edit the file. You must change the `PolicyName` attribute to a new name, with the name ending in a date. For example: `ELBSecurityPolicy-2015-09` The policy file with the most recent date appended to the name will be used as the default policy when users create HTTPS/SSL listeners. The following is an example of an ELB policy file. You can modify this file and save it with a new filename in the `/etc/eucalyptus/cloud.d/elb-security-policy` directory. 
+
     {
         "PolicyAttributeDescriptions": [
             {
@@ -392,6 +393,7 @@ Copy one of the ELB policy files to a new file and edit the file. You must chang
 Using a text editor, change the `PolicyName` attribute. For example: `"PolicyName": "ELBSecurityPolicy-2015-05"` Once you've edited and saved the JSON file, restart the CLC. Once the CLC has restarted, use the `eulb-describe-lb-policies` command to verify that your new policy is listed. For example: 
 
 
+
     POLICY	ELBSample-AppCookieStickinessPolicy	AppCookieStickinessPolicyType
     POLICY	ELBSample-LBCookieStickinessPolicy	LBCookieStickinessPolicyType
     POLICY	ELBSecurityPolicy-2014-10	SSLNegotiationPolicyType
@@ -401,4 +403,4 @@ Using a text editor, change the `PolicyName` attribute. For example: `"PolicyNam
     POLICY	ELBSecurityPolicy-2014-01	SSLNegotiationPolicyType
     POLICY	MyNewELBSecurityPolicy-2015-09	SSLNegotiationPolicyType
 
-You can now use your new security policy using the `eulb-create-lb-policy` command. For more information, see [](elb_examples_ssl_negotiation.dita) . 
+You can now use your new security policy using the `eulb-create-lb-policy` command. For more information, see [Updating the SSL Negotiation Configuration]({{< ref elb_examples_ssl_negotiation.md >}}) . 

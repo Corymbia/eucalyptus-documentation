@@ -6,6 +6,7 @@ weight = 10
 This topic details templates that have been tested with Eucalyptus.
 ## AccessKeys.template
 
+
     {
       "AWSTemplateFormatVersion":"2010-09-09",
       "Parameters":{
@@ -50,6 +51,7 @@ This topic details templates that have been tested with Eucalyptus.
 
 
 ## AutoscalingGroupsAndCloudWatchAlarm.template
+
 
     {
       "AWSTemplateFormatVersion":"2010-09-09",
@@ -143,6 +145,7 @@ This topic details templates that have been tested with Eucalyptus.
 
 ## BlockDeviceMappings.template
 
+
     {
       "AWSTemplateFormatVersion":"2010-09-09",
       "Description":"Create an EC2 instance running a specified EMI with block device mappings.",
@@ -194,6 +197,7 @@ This topic details templates that have been tested with Eucalyptus.
 
 
 ## ConditionsAndFunctions.template
+
 
     {
       "Mappings":{
@@ -318,7 +322,8 @@ This topic details templates that have been tested with Eucalyptus.
 
 
 ## ElasticIP.template
-This template attaches an [elastic IP](../shared/glossary.dita#elasticips) to a new and existing instance. You must pass along the existing instance ID. 
+This template attaches an Elastic IP to a new and existing instance. You must pass along the existing instance ID. 
+
 
 
     {
@@ -370,6 +375,7 @@ This template attaches an [elastic IP](../shared/glossary.dita#elasticips) to a 
 
 ## ElasticLoadBalancer.template
 There is a hard-coded image ID in the `Mapping` section here to test `FindInMap` . Change the value to an instance that exists in your cloud. 
+
 
 
     {
@@ -507,6 +513,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 ## IAMGroup.template
 
+
     {
       "AWSTemplateFormatVersion":"2010-09-09",
       "Resources":{
@@ -539,6 +546,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 
 ## IAMRole.template
+
 
     {
       "AWSTemplateFormatVersion":"2010-09-09",
@@ -590,6 +598,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 
 ## IAM_Users_Groups_and_Policies.template
+
 
     {
       "AWSTemplateFormatVersion":"2010-09-09",
@@ -699,6 +708,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 ## IAMUser.template
 
+
     {
       "AWSTemplateFormatVersion":"2010-09-09",
       "Parameters":{
@@ -752,6 +762,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 ## SecurityGroupRule.template
 
+
     {
     "AWSTemplateFormatVersion":"2010-09-09",
       "Description":"Create an EC2 instance running a specified EMI, a security group, and an ingress rule.",
@@ -799,6 +810,7 @@ There is a hard-coded image ID in the `Mapping` section here to test `FindInMap`
 
 
 ## Volumes.template
+
 
     {
       "AWSTemplateFormatVersion":"2010-09-09",

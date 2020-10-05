@@ -34,6 +34,7 @@ You must configure the OSG to use one of the backend provider options.
 If OSG has been registered but not yet properly configured, it will be listed in the state when listed with the euserv-describe-services command. For example: 
 {{% /notice %}}
 
+
     [root@g-26-03 ~]# euserv-describe-services --show-headers --filter service-type=objectstorage
     SERVICE  TYPE              	ZONE    	NAME                   	  STATE	
     SERVICE  objectstorage      user-api-1  user-api-1.objectstorage  broken

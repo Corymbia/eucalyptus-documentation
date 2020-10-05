@@ -10,7 +10,7 @@ This section helps you get started using your Eucalyptus cloud, and covers setti
 
 
 {{% notice note %}}
-This section primarily deals with using the Eucalyptus command line. For complete documentation on using web-based the Eucalyptus Console, see [](../shared/console_login.dita) . 
+This section primarily deals with using the Eucalyptus command line. For complete documentation on using web-based the Eucalyptus Console, see [Console Login]({{< ref console_login.md >}}) . 
 
 
 {{% /notice %}}

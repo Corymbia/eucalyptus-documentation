@@ -17,6 +17,7 @@ For more information on Ceph-RGW, see the [Ceph-RGW documentation](http://docs.c
 
 {{% /notice %}}
 **To configure Ceph-RGW object storage for the OSG** Configure `objectstorage.providerclient` to ceph-rgw: 
+
     euctl objectstorage.providerclient=ceph-rgw
 
 Configure `objectstorage.s3provider.s3endpoint` to the ip:port of the host running the ceph-radosgw service: 
@@ -24,10 +25,13 @@ Configure `objectstorage.s3provider.s3endpoint` to the ip:port of the host runni
 Depending on the front end web server used by ceph-radosgw service, the default port is 80 for apache and 7480 for civetweb. 
 {{% /notice %}}
 
+
     euctl objectstorage.s3provider.s3endpoint=<radosgw-host-ip>:<radosgw-webserver-port>
 
 Configure `objectstorage.s3provider.s3accesskey` and `objectstorage.s3provider.s3secretkey` with the radosgw user credentials: 
+
     euctl objectstorage.s3provider.s3accesskey=<radosgw-user-accesskey>
+
 
 
     euctl objectstorage.s3provider.s3secretkey=<radosgw-user-secretkey>

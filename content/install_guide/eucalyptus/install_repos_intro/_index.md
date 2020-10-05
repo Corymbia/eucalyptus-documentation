@@ -6,7 +6,7 @@ chapter = true
 
 
 # Install Repositories
-This section guides you through installing Eucalyptus from RPM package downloads.The first step to installing Eucalyptus is to download the RPM packages. When you're ready, continue to [](installing_euca_software_signing.dita#installing_software_signing) . 
+This section guides you through installing Eucalyptus from RPM package downloads.The first step to installing Eucalyptus is to download the RPM packages. When you're ready, continue to []({{< ref installing_euca_software_signing.md >}}) . 
 
 The following *terminology* might help you as you proceed through this section. 
 

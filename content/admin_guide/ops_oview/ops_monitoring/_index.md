@@ -15,5 +15,3 @@ This topic includes details about which resources you should monitor.
 | Node Controller (NC) | eucalyptus-node, httpd, dhcpd, eucanetd (EDGE mode), qemu-kvm / 1 per instance | 
 | Management Console | eucaconsole | 
 
-For port information, see [](../install-guide/preparing_firewalls.dita#preparing_firewalls) . 
-

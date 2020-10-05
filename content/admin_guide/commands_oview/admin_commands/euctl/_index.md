@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euctl [-Anr] [-d | -s] NAME ...
     euctl [-nq] NAME=VALUE ...
     euctl [-nq] NAME=@FILE ...
@@ -43,11 +44,13 @@ weight = 10
 When retrieving a variable, a subset of the MIB name may be specified to retrieve a list of variables in that subset. For example, to list all the dns variables: 
 
 
+
     euctl dns
 
 This replaces `euca-describe-properties` . 
 
 When setting a variable, the MIB name should be followed by an equal sign and the new value: 
+
 
 
     euctl dns.enabled=true
@@ -57,11 +60,13 @@ This replaces `euca-modify-property -p` .
 To write variables using the contents of the files as their new values rather than typing them into the command line, follow them with `=@` and those file names: 
 
 
+
     euctl authentication.ldap_integration_configuration=@ldap.lic
 
 This replaces `euca-modify-property -f` . 
 
 Specify a filename to read the values from a file: 
+
     myproperty=@myvaluefile
 
 
@@ -69,9 +74,11 @@ Specify a filename to read the values from a file:
 It is possible to read or write more than one variable in a single invocation of `euctl` . Just separate them with spaces: 
 
 
+
     euctl one=1 two=2 three four=@4.txt five
 
 In all of these cases, `euctl` will generally output each variable named on its command line, along with its current (and potentially just-changed) value. For example, the output of the command above could be: 
+
     one = 1 
     two = 2
     three = 3
@@ -79,6 +86,7 @@ In all of these cases, `euctl` will generally output each variable named on its 
     five = 5
 
 To reset a variable to its default value, specify the -r option: 
+
 
 
     euctl -r dns.enabled

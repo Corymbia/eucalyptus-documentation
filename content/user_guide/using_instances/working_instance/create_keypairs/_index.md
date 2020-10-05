@@ -12,21 +12,26 @@ From the main dashboard screen, click the Key Pairs icon. The Key Pairs page ope
 Keep your private key file in a safe place. If you lose it, you will be unable to access instances created with the key pair. 
 {{% /notice %}}
 Change file permissions to enable access to the private key file in the local directory. For example, on a Linux or Mac OS X system: 
+
     chmod 0600 <keypair_name>.private
 
 
 ## Create Key Pairs with the Command Line
 Enter the following command: 
+
     euca-create-keypair <keypair_name> -f <keypair_name>.private
 
 where `<keypair_name>` is a unique name for your keypair. For example: 
 
 
+
     euca-create-keypair alice-keypair -f alice-keypair.private 
 
 The private key is saved to a file in your local directory. Query the system to view the public key: 
+
     euca-describe-keypairs
 
 The command returns output similar to the following: 
+
     KEYPAIR alice-keypair ad:0d:fc:6a:00:a7:e7:b2:bc:67:8e:31:12:22:c1:8a:77:8c:f9:c4
 

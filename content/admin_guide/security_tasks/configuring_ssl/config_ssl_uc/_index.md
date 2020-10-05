@@ -6,6 +6,7 @@ weight = 10
 You can use secure HTTP for your console.To run your console over Secure HTTP: 
 
 Install nginx on your console server with the following command: `yum install nginx` Overwrite the default `nginx.conf` file with the template provided in `/usr/share/doc/eucaconsole-/nginx.conf.` `cp /usr/share/doc/eucaconsole-/nginx.conf /etc/nginx/nginx.conf` Uncomment the 'listen' directive and uncomment/modify the SSL certificate paths in `/etc/nginx/nginx.conf` (search for "SSL configuration"). For example: 
+
     # SSL configuration
     listen 443 ssl;
     # ssl_certificate /path/to/ssl/pem_file;
@@ -21,6 +22,7 @@ Install nginx on your console server with the following command: `yum install ng
 For more information on generating self-signed SSL certificates, go to . 
 {{% /notice %}}
 Restart nginx using the following command: `systemctl restart nginx.service` Edit the `/etc/eucaconsole/console.ini` file, locate the `session.secure = false` parameter, change `false` to `true` , then add the `sslcert` and `sslkey` lines immediately following, per this example: 
+
     session.secure = true
     sslcert=/etc/eucaconsole/eucalyptus.com.chained.crt
     sslkey=/etc/eucaconsole/eucalyptus.com.key

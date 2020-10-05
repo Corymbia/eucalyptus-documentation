@@ -7,5 +7,5 @@ An Auto Scaling group is the central component of Auto Scaling. An Auto Scaling 
 
 In addition to instance and capacity definitions, each Auto Scaling group must specify one (and only one) launch configuration. 
 
-For more information, see [](autoscaling_examples_basic_config.dita) . 
+For more information, see [Creating a Basic Auto Scaling Configuration]({{< ref autoscaling_examples_basic_config.md >}}) . 
 

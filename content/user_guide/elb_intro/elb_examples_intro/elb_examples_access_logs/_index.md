@@ -10,6 +10,7 @@ Before enabling the access logs, update the access control of your S3 (Eucalyptu
 If your cloud is using VPCMIDO networking mode, use the command in the next step. 
 {{% /notice %}}
 
+
     eulb-describe-lbs --show-long --region devops-admin@region-1
     LOAD_BALANCER myloadbalancer	
     myloadbalancer-000476918024.lb.a-18.autoqa.qa1.eucalyptus-systems.com			
@@ -31,6 +32,7 @@ To obtain the canonical ID of the load balancing service in VPCMIDO networking m
 If your cloud is not using VPCMIDO networking mode, use the command in the previous step. 
 {{% /notice %}}
 
+
     euserv-describe-services --filter service-type=loadbalancing --expert
     SERVICE arn:euca:bootstrap:API_10.111.1.19:loadbalancing:API_10.111.1.19.loadbalancing/ enabled 25 
     http://10.111.1.19:8773/services/LoadBalancing 
@@ -43,13 +45,16 @@ Save the number at the end of the output to update the bucket's ACL in .
 
 
 Use any S3 client tools to update the bucket’s ACL. For example: 
+
     # aws --endpoint-url http://objectstorage.a-18.autoqa.qa1.eucalyptus-systems.com:8773/ s3 s3://webserverlog
     # aws --endpoint-url http://objectstorage.a-18.autoqa.qa1.eucalyptus-systems.com:8773/ s3api put-bucket-acl --grant-write "id=000865102303" --bucket s3://webserverlog
 
 Modify your load balancer’s attributes to enable the access logs. For example: 
+
     eulb-modify-lb-attributes myloadbalancer AccessLog.Enabled=true AccessLog.S3BucketName=webserverlog AccessLog.EmitInterval=5 AccessLog.S3BucketPrefix=myprefix
 
 Check that the attribute has been updated correctly by using the `eulb-describe-lb-attributes` command: 
+
     eulb-describe-lb-attributes myloadbalancer
     AccessLog.EmitInterval  5
     AccessLog.Enabled true

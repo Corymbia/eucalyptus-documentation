@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-describe-events [-s] [-f FORMAT]
 
 
@@ -55,6 +56,7 @@ There are several built-in formats, and you can define additional formats using 
 
 yaml
  This outputs block-style YAML designed to be easily readable. Tags that are empty or not defined do not appear in this output at all. 
+
     events:
                 - timestamp: {timestamp}
                 severity: {severity}
@@ -71,17 +73,20 @@ yaml
 
 oneline
  This output is designed to be as compact as possible. 
+
     {timestamp} {severity} {subject-type} {subject-name} {message}
 
 
 format:string
  The `format:` *string* format allows you to specify which information you want to show using placeholders enclosed in curly braces to indicate where to show the tags for each event. For example: 
+
     euserv-describe-events -f "format:{timestamp} {subject-name} {message}"
 
 
 
 ## Example
 To output a list of service-affecting events in the `oneline` format: 
+
 
 
     euserv-describe-events --format oneline

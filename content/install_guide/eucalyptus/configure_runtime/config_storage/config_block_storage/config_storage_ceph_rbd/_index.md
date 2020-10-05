@@ -15,15 +15,19 @@ This topic describes how to configure Ceph-RBD as the block storage backend prov
 * Ceph user credentials with the following privileges are available to SCs and NCs (different user credentials can be used for the SCs and NCs). 
 * Hypervisor support for Ceph-RBD on NCs. Node Controllers (NCs) are designed to communicate with the Ceph cluster via libvirt. This interaction requires a hypervisor that supports Ceph-RBD. See to satisfy this prerequisite. 
 **To configure Ceph-RBD block storage for the zone, run the following commands on the CLC** Configure the SC to use Ceph-RBD for EBS. 
+
     euctl ZONE.storage.blockstoragemanager=ceph-rbd
 
 The output of the command should be similar to: 
+
     one.storage.blockstoragemanager=ceph-rbd
 
 Verify that the property value is now `ceph-rbd` : 
+
     euctl ZONE.storage.blockstoragemanager
 
 Check the SC to be sure that it has transitioned out of the `BROKEN` state and is in the `NOTREADY` , `DISABLED` or `ENABLED` state before configuring the rest of the properties for the SC. The ceph-rbd provider will assume defaults for the following properties for the SC: 
+
     euctl ZONE.storage.ceph
      
     PROPERTY        one.storage.cephconfigfile  /etc/ceph/ceph.conf
@@ -42,9 +46,11 @@ Check the SC to be sure that it has transitioned out of the `BROKEN` state and i
     DESCRIPTION     one.storage.cephvolumepools Ceph storage pool(s) made available to  for EBS volumes. Use a comma separated list for configuring multiple pools. Default value is 'rbd'
 
 The following steps are optional if the default values do not work for your cloud: To set the Ceph username (the default value for Eucalyptus is 'eucalyptus'): 
+
     euctl ZONE.storage.cephuser=myuser
 
 To set the absolute path to keyring file containing the key for the 'eucalyptus' user (the default value is '/etc/ceph/ceph.client.eucalyptus.keyring'): 
+
     euctl ZONE.storage.cephkeyringfile='/etc/ceph/ceph.client.myuser.keyring'
 
 
@@ -52,12 +58,15 @@ To set the absolute path to keyring file containing the key for the 'eucalyptus'
 If cephuser was modified, ensure that cephkeyringfile is also updated with the location to the keyring for the specific cephuser: 
 {{% /notice %}}
 To set the absolute path to ceph.conf file (default value is '/etc/ceph/ceph.conf'): 
+
     euctl ZONE.storage.cephconfigfile=/path/to/ceph.conf
 
 To change the comma-delimited list of Ceph pools assigned to Eucalyptus for managing EBS volumes (default value is 'rbd') : 
+
     euctl ZONE.storage.cephvolumepools=rbd,myvolumes
 
 To change the comma-delimited list of Ceph pools assigned to Eucalyptus for managing EBS snapshots (default value is 'rbd') : 
+
     euctl ZONE.storage.cephsnapshotpools=mysnapshots
 
 If you want to enable snapshot deltas for your Ceph backend: 
@@ -69,9 +78,11 @@ Snapshot deltas are supported only on Ceph-RBD.
 
 {{% /notice %}}
 Verify that snapshots are enabled: 
+
     euctl ZONE.storage.shouldtransfersnapshots=true
 
 Set the maximum number of deltas to be created before creating a new full snapshot: 
+
     euctl ZONE.storage.maxsnapshotdeltas=NON_ZERO_INTEGER
 
 
@@ -83,11 +94,13 @@ This variable applies to all Ceph volumes.
 If you need to create a non-Ceph volume from a Ceph snapshot, this value would need to be set to zero (at least temporarily). 
 {{% /notice %}}
 Every NC will assume the following defaults: 
+
     CEPH_USER_NAME="eucalyptus"
     CEPH_KEYRING_PATH="/etc/ceph/ceph.client.eucalyptus.keyring"
     CEPH_CONFIG_PATH="/etc/ceph/ceph.conf"
 
 To override the above defaults, add/edit the following properties in the `/etc/eucalyptus/eucalyptus.conf` on the specific NC file: 
+
     CEPH_USER_NAME="ceph-username-for-use-by-this-NC"
     CEPH_KEYRING_PATH="path-to-keyring-file-for-ceph-username"
     CEPH_CONFIG_PATH="path-to-ceph.conf-file"

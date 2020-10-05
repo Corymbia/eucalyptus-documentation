@@ -15,12 +15,15 @@ This topic describes how to configure the NetApp 7-mode SAN block storage backen
 * Administrator account credentials for NetApp Filer must be available to be configured in . 
 * You must execute the steps below as a administrator. 
 **To configure NetApp 7-mode SAN block storage for the zone, run the following commands on the CLC** Configure the SC to use the Netapp for EBS. 
+
     euctl ZONE.storage.blockstoragemanager=netapp
 
 The output of the command should be similar to: 
+
     ZONE.storage.blockstoragemanager=netapp
 
 Verify that the property value is now: 'netapp' 
+
     euctl ZONE.storage.blockstoragemanager
 
 Wait for the SC to transition to the 'notready' or 'disabled' state. On the CLC, enable NetApp SAN support in Eucalyptus by entering the Filer's hostname or IP address, the username and password of the administrator account, and CHAP username. 
@@ -32,6 +35,7 @@ uses Challenge Handshake Authentication Protocol (CHAP) for disk operations. The
 CHAP support for NetApp was added in 3.3. An SC will not transition to ENABLED state until the CHAP username is conﬁgured. 
 {{% /notice %}}
 
+
     euctl ZONE.storage.sanhost=Filer_IP_address 
     euctl ZONE.storage.sanuser=Filer_admin_username
     euctl ZONE.storage.sanpassword=Filer_admin_password 
@@ -42,9 +46,11 @@ Wait for the SC to transition to the ENABLED state.
 The SC must be in the ENABLED state before configuring the following properties. 
 {{% /notice %}}
 If no aggregate is set, Eucalyptus will query the NetApp Filer for all available aggregates and use the one that has the highest capacity (free space) by default. To make Eucalyptus use specific aggregate(s) configure the following property: 
+
     euctl ZONE.storage.aggregate=aggregate_1_name,aggregate_2_name,...
 
 If you want Eucalyptus to use the smallest aggregate first configure the following property: 
+
 
 
     euctl ZONE.storage.uselargestaggregate=false
@@ -58,6 +64,7 @@ Filer IP address can be used as the data port IP. If this is not set, will autom
 does not support Multipath I/O for NetApp 7-mode Filers. 
 {{% /notice %}}
 
+
     euctl ZONE.storage.ncpaths=IP
 
 Set the iSCSI data IP on the ENABLED CLC. This IP is used by the SC to perform disk operations on the Filer. The SC connects to the Filer in order to transfer snapshots to objectstorage during snapshot operations. 
@@ -68,6 +75,7 @@ The Filer IP address can be used as the data port IP. If this is not set, will a
 {{% notice note %}}
 does not support Multipath I/O for NetApp 7-mode Filers. 
 {{% /notice %}}
+
 
     euctl ZONE.storage.scpaths=IP
 

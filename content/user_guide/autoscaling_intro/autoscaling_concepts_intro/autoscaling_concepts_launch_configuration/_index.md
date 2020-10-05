@@ -7,5 +7,5 @@ The launch configuration defines the settings used by the Eucalyptus instances l
 
 Once you've created a launch configuration, you can't change it; you must create a new launch configuration and then associate it with an Auto Scaling group. After you've created and attached a new launch configuration to an Auto Scaling group, any new instances will be launched using parameters defined in the new launch configuration; existing instances in the Auto Scaling group are not affected. 
 
-For more information, see [](autoscaling_examples_basic_config.dita) . 
+For more information, see [Creating a Basic Auto Scaling Configuration]({{< ref autoscaling_examples_basic_config.md >}}) . 
 

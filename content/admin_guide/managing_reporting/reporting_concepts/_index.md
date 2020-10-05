@@ -18,7 +18,7 @@ Eucalyptus lets you generate reports to monitor cloud resource use. Each type of
 * The capacity report provides overall information about your cloud's resources, including instance types and storage. Use this report to determine if your resources are being used adequately, and whether you need to scale up or down. 
 You can generate reports in either CSV or HTML formats for use with external tools. 
 
-If you want to use the data warehouse for your reports, see [](setting_up_dw.dita) . 
+If you want to use the data warehouse for your reports, see [Set Up the Data Warehouse]({{< ref setting_up_dw.md >}}) . 
 
 
 ## Understanding the Report Format

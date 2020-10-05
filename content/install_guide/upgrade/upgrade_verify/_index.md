@@ -8,40 +8,49 @@ This topic describes how to verify all the services after upgrading.Verify that 
 To verify that all services are enabled: 
 
 Verify the Eucalyptus versions. For example: 
+
     # euca-version
     euca2ools 
     eucalyptus 
 
 If you are using the Walrus backend for object storage, verify your Walrus backend service: 
+
     euserv-describe-services --filter service-type=walrusbackend
 
 Eucalyptus returns a result, as in the following example. 
 
 
+
     SERVICE walrusbackend walrus enabled
 
 Verify your CCs: 
+
     euserv-describe-services --filter service-type=cluster
 
 Eucalyptus returns a list, as in the following example. 
+
 
 
     SERVICE cluster one one-cc enabled
     SERVICE cluster two two-cc enabled
 
 Verify your SCs: 
+
     euserv-describe-services --filter service-type=storage
 
 Eucalyptus returns a list, as in the following example. 
+
 
 
     SERVICE storage one one-sc enabled
     SERVICE storage one one-sc enabled
 
 Make sure that NCs are presenting available resources to the CC. 
+
     euca-describe-instance-types --show-capacity --by-zone
 
 The returned output should a non-zero number in the `Total` column, as in the following example. 
+
 
 
     AVAILABILITYZONE        test00
@@ -63,4 +72,4 @@ The returned output should a non-zero number in the `Total` column, as in the fo
     INSTANCETYPE	m1.xlarge       2          1024          10     4     0 /     2      0%
     INSTANCETYPE	c1.xlarge       2          2048          10     4     0 /     2      0%
 
-You are now ready to [](upgrade_from_oldv.dita) . 
+You are now ready to [Update the Service Images]({{< ref upgrade_from_oldv.md >}}) . 

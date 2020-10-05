@@ -30,11 +30,13 @@ You must edit `eucalyptus.conf` on the Cluster Controller (CC) and Node Controll
 
 ## CC Configuration
 Log in to the CC and open the */etc/eucalyptus/eucalyptus.conf* file. Go to the **Network Configuration** section, uncomment and set the following: 
+
     VNET_MODE="EDGE"
 
 Save the file. Repeat on each CC in your cloud. 
 ## NC Configuration
 Log into an NC machine and open the */etc/eucalyptus/eucalyptus.conf* file. Go to the **Network Configuration** section, uncomment and set the following parameters: 
+
     VNET_MODE
     VNET_PRIVINTERFACE
     VNET_PUBINTERFACE"
@@ -42,6 +44,7 @@ Log into an NC machine and open the */etc/eucalyptus/eucalyptus.conf* file. Go t
     VNET_DHCPDAEMON
 
 For example: 
+
 
 
     VNET_MODE="EDGE"
@@ -52,9 +55,10 @@ For example:
 
 Save the file. Repeat on each NC. 
 ## JSON Configuration
-To configure the rest of the EDGE mode parameters, you must create a `network.json` configuration file. Later in the installation process you will [](nw_json_upload.dita#nw_edge_json_upload) to the CLC. 
+To configure the rest of the EDGE mode parameters, you must create a `network.json` configuration file. Later in the installation process you will []({{< ref nw_json_upload.md >}}) to the CLC. 
 
 Create the network JSON file. Open a text editor. Create a file similar to the following structure. Substitute comments for your system settings. See examples at the end of this topic. Useful to ensure JSON is valid: http://jsonparseronline.com/ 
+
     {
       "InstanceDnsDomain": ""
         "_comment": "Internal DNS domain used for instance private DNS names"
@@ -99,6 +103,7 @@ Create the network JSON file. Open a text editor. Create a file similar to the f
 Save the `network.json` file. The following example is for a setup with one cluster (AZ), called PARTI00, with a flat network topology. 
 
 
+
     {
         "InstanceDnsDomain": "eucalyptus.internal",
         "InstanceDnsServers": ["10.1.1.254"],
@@ -129,6 +134,7 @@ Save the `network.json` file. The following example is for a setup with one clus
     }
 
 For a multi-cluster deployment, add an additional cluster to your configuration for each cluster you have. The following example has an two clusters, PARTI00 and PARTI01. 
+
 
 
     {

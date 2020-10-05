@@ -10,7 +10,8 @@ Following the AWS specification, all Query interface requests containing the Tim
 When checking the timestamps for expiration, Eucalyptus allows up to 20 seconds of clock drift between the machines. This is a default setting. You can change this value for the CLC at runtime by setting the `bootstrap.webservices.clock_skew_sec` property as follows: 
 
 
+
     euctl bootstrap.webservices.clock_skew_sec=<new_value_in_seconds>
 
-For additional protection from the message replay attacks, the CLC implements a replay detection algorithm and rejects messages with the same signatures received within 15 minutes. Replay detection parameters can be tuned as described in [Configure Replay Protection](../security-guide/security_task_replays.dita#security_task_replays) . 
+For additional protection from the message replay attacks, the CLC implements a replay detection algorithm and rejects messages with the same signatures received within 15 minutes. Replay detection parameters can be tuned as described in [Configure Replay Protection]({{< ref security_task_replays.md >}}) . 
 

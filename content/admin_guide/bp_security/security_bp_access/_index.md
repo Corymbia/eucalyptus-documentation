@@ -7,7 +7,7 @@ This topic describes best practices for Identity and Access Management and the a
 ## Identity and Access Management
 Eucalyptus manages access control through an authentication, authorization, and accounting system. This system manages user identities, enforces access controls over resources, and provides reporting on resource usage as a basis for auditing and managing cloud activities. The user identity organizational model and the scheme of authorizations used to access resources are based on and compatible with the AWS Identity and Access Management (IAM) system, with some Eucalyptus extensions provided that support ease-of-use in a private cloud environment. 
 
-For a general introduction to IAM in Eucalyptus, see [](../iam-guide/concepts_eiam.dita) in the IAM Guide. For information about using IAM quotas to enforce limits on resource usage by users and accounts in Eucalyptus, see the [](../iam-guide/access_policy_quota.dita) section in the IAM Guide. 
+For a general introduction to IAM in Eucalyptus, see [Access Concepts]({{< ref concepts_eiam.md >}}) in the IAM Guide. For information about using IAM quotas to enforce limits on resource usage by users and accounts in Eucalyptus, see the [Quotas]({{< ref access_policy_quota.md >}}) section in the IAM Guide. 
 
 The [Amazon Web Services IAM Best Practices](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html) are also generally applicable to Eucalyptus. 
 
@@ -29,5 +29,5 @@ The `eucalyptus` account is a super-privileged account in Eucalyptus. It has acc
 
 For all unprivileged operations, use regular accounts. If you require super-privileged access (for example, management of resources across accounts and cloud setup administration), we recommend that you use one of the predefined privileged roles. 
 
-The Account, Infrastructure, and Resource Administrator [roles](../iam-guide/access_roles.dita) provide a more secure way to gain super privileges in the cloud. Credentials returned by an assume-role operation are short-lived (unlike regular user credentials). Privileges available to each role are limited in scope and can be revoked easily by modifying the trust or access policy for the role. 
+The Account, Infrastructure, and Resource Administrator [roles]({{< ref access_roles.md >}}) provide a more secure way to gain super privileges in the cloud. Credentials returned by an assume-role operation are short-lived (unlike regular user credentials). Privileges available to each role are limited in scope and can be revoked easily by modifying the trust or access policy for the role. 
 

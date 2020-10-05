@@ -22,6 +22,7 @@ If you plan on using virtio networking for instances (via USE_VIRTIO_NET option 
 Your finished file should look similar to the following example: 
 
 
+
     <domain type="kvm">
     	  <name>eucalyptus-windows</name>
         <os>
@@ -65,6 +66,7 @@ Your finished file should look similar to the following example:
     </domain>
 
 Start the VM. 
+
     cd /var/lib/libvirt/images/
     virsh create libvirt-kvm-windows-example.xml
 

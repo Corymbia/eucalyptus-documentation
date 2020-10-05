@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-describe-node-controllers [--ec2-url URL] [--show-headers]
     
        [--show-empty-fields] [-U URL]
@@ -24,6 +25,7 @@ weight = 10
 
 ## Output
 Eucalyptus returns information about the node controller and its instances, for example: 
+
     NODE  one  10.111.1.53  enabled    
     INSTANCE  i-162a8f09      
     INSTANCE  i-2b6cdd10      
@@ -34,6 +36,7 @@ Eucalyptus returns information about the node controller and its instances, for 
 
 
 ## Example
+
 
     euserv-describe-node-controllers --region localhost
 

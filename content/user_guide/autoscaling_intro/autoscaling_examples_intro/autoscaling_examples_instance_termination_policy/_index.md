@@ -19,9 +19,11 @@ You can control how Auto Scaling determines which instances to terminate. You ca
 To configure an instance termination policy: 
 
 Specify the --termination-policies parameter when creating or updating the Auto Scaling group. For example: 
+
     euscale-update-auto-scaling-group MyScalingGroup --termination-policies "NewestInstance"
 
 Verify that your Auto Scaling group has updated the termination policy by running the following command: `euscale-describe-auto-scaling-groups MyScalingGroup` This command should return output similar to the following: 
+
 
 
     AUTO-SCALING-GROUP	MyScalingGroup	MyLaunchConfig	PARTI00		2	5	2	NewestInstance

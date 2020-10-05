@@ -8,6 +8,7 @@ Eucalyptus extends the IAM policy in order to meet the needs of enterprise custo
 In IAM, you cannot specify EC2 resources in a policy statement except a wildcard, `“*”` . So, you can't restrict a permission to specific EC2 entities. For example, you can't restrict a user to run instances on a specific image or VM type. To solve that, Eucalyptus created the EC2 resource for the policy language. The following example shows the ARN of an EC2 resource. 
 
 
+
     arn:aws:ec2::<account_id>:<resource_type>/<resource_id>
 
 Where account id is optional. 
@@ -26,6 +27,7 @@ Eucalyptus supports the following resource types for EC2:
 * snapshot 
 * vmtype 
 The following example specifies permission to launch instances with only an m1.small VM type: 
+
 
 
     {
@@ -67,6 +69,7 @@ Eucalyptus extends the policy keys by adding the following to the lifetime of an
 For more information about policy keys, see the AWS documentation, [IAM Policy Elements Reference](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) . 
 
 The following example restricts an instance running time to 24 hours: 
+
 
 
     {

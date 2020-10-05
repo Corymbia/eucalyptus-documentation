@@ -12,6 +12,7 @@ This topic describes how to register the Walrus Backend service with the Cloud C
 This task is not necessary if you are using Riak CS instead of Walrus. 
 {{% /notice %}}
 On the CLC host machine, run the following command: 
+
     euserv-register-service -t walrusbackend -h IP SVCINSTANCE
 
 where: 
@@ -23,17 +24,21 @@ where:
 For example: 
 
 
+
     euserv-register-service -t walrusbackend -h 10.111.5.182 walrus-10.111.5.182
 
 Copy the security credentials from the CLC to each machine running a Walrus Backend service. Run this command on the CLC host machine: 
+
     clcadmin-copy-keys HOST [HOST ...]
 
 For example: 
 
 
+
     clcadmin-copy-keys 10.111.5.182
 
 Verify that the Walrus Backend service is registered with the following command: 
+
     euserv-describe-services SVCINSTANCE
 
 The registered Walrus Backend service is now ready for your cloud. 

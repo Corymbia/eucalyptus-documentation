@@ -6,9 +6,11 @@ weight = 10
 You can list available metrics via Euca2ools.**To list available metrics:** 
 
 Enter the following command. 
+
     euwatch-list-metrics
 
 Eucalyptus returns a listing of all metrics, as shown in the following partial example output: 
+
     Metric Name         Namespace  Dimensions
     CPUUtilization      AWS/EC2    {InstanceId=i-5431413d}
     CPUUtilization      AWS/EC2    {InstanceType=m1.medium}

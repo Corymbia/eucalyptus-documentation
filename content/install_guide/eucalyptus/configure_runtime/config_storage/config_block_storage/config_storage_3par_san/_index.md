@@ -24,15 +24,19 @@ This topic describes how to configure the HP 3PAR SAN as the block storage backe
 
 * You must execute the steps below as a administrator. 
 **To configure HP 3PAR SAN block storage for the zone, run the following commands on the CLC** Configure the SC to use the 3PAR for EBS. 
+
     euctl ZONE.storage.blockstoragemanager=threepar
 
 The output of the command should be similar to: 
+
     one.storage.blockstoragemanager=threepar
 
 Verify that the property value is now: 'threepar' 
+
     euctl ZONE.storage.blockstoragemanager
 
 On the CLC, enable SAN support in Eucalyptus by entering your SAN's hostname or IP address, the username, password, and the paths: 
+
     euctl ZONE.storage.sanhost=3PAR_IP_address 
     euctl ZONE.storage.sanuser=3PAR_admin_user_name 
     euctl ZONE.storage.sanpassword=3PAR_admin_password 
@@ -42,15 +46,19 @@ On the CLC, enable SAN support in Eucalyptus by entering your SAN's hostname or 
 If you have multiple management IP addresses for the SAN adapter, provide a comma-delimited list of IP addresses to the `ZONE.storage.sanhost` property. 
 
 Assign any string to the `chap_username` property. 
+
     euctl ZONE.storage.chapuser=chap_username
 
 Assign the 3PAR CPG that should be used for creating virtual volumes to the `threeparusercpg` property. 
+
     euctl ZONE.storage.threeparusercpg=3PAR_user_cpg
 
 Assign the 3PAR CPG that should be used for creating virtual volume snapshot space to the `threeparcopycpg` property. 
+
     euctl ZONE.storage.threeparcopycpg=3PAR_copy_cpg
 
 (Optional) These properties are available for advanced configuration. 
+
     euctl ZONE.storage.threepar
     PROPERTY        one.storage.threepardomain     {}
     DESCRIPTION     one.storage.threepardomain     Name of the virtual domain containing threeparusercpg and threeparcopycpg. If threeparusercpg and threeparcopycpg don't belong to a specific virtual domain leave this property unset
@@ -73,7 +81,7 @@ Assign the 3PAR CPG that should be used for creating virtual volume snapshot spa
     PROPERTY        one.storage.threeparvluncachesize     10000
     DESCRIPTION     one.storage.threeparvluncachesize     Maximum number of VLUNs that can be cached by the provider. Default value is 10000
 
-For more information about the `threeparoptimizesnaptovol` property, and how to configure it, see [About Operation Mode Optimization](../install-guide/config_storage_3par_op_modes.dita#op_modes) . 
+For more information about the `threeparoptimizesnaptovol` property, and how to configure it, see [About Operation Mode Optimization]({{< ref config_storage_3par_op_modes.md >}}) . 
 
 Your 3PAR SAN backend is now ready to use with Eucalyptus . 
 

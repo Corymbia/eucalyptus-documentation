@@ -8,6 +8,7 @@ The Eucalyptus Integration service lets an enterprise with existing Active Direc
 Because AD technology is tightly integrated with domain name service (DNS), the default name server contacted by the instance must be able to resolve the AD address as a proper domain controller. You can do this for all networking modes except System, by configuring the following line the CC’s eucalyptus.conf file: 
 
 
+
     VNET_DNS=<domain_controller_IP_address>
 
 If there is no such pre-existing DNS set-up or your networking mode is System, you might need to change the VM’s network interface so that the preferred DNS server points to the domain controller. 

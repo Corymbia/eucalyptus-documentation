@@ -8,6 +8,7 @@ This section describes steps for disabling monitoring on your cloud resources.To
 
 ## Disable monitoring for an instance
 To disable monitoring for a running instance, enter the following command: 
+
     euca-unmonitor-instances [instance_id]
 
 

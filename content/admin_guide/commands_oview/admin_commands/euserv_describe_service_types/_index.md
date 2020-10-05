@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-describe-service-types [-a] [--show-headers]
     
     [--show-empty-fields] [-U URL]
@@ -27,6 +28,7 @@ Eucalyptus returns a list of service types.
 
 
 ## Example
+
 
     euserv-describe-service-types 
     SVCTYPE  arbitrator                The Arbitrator service                                      

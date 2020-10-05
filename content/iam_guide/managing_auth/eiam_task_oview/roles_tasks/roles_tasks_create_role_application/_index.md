@@ -14,6 +14,7 @@ You can create trust policies in two ways:
 
 ## Create trust policy using a file
 Create a trust policy file with the contents below and save it in a text file called `role-trust-policy.json` : 
+
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -26,6 +27,7 @@ Create a trust policy file with the contents below and save it in a text file ca
     }
 
 Create the role using the `euare-rolecreate` command, specifying the trust policy file that was previously created: 
+
     
     # euare-rolecreate --role-name describe-instances -f role-trust-policy.json
     # euare-rolelistbypath 
@@ -34,6 +36,7 @@ Create the role using the `euare-rolecreate` command, specifying the trust polic
 Proceed with applying an access policy to a role. 
 ## Create trust policy using the command line
 The other way to create the role is to use the command line options to specify the trust policy:Issue the following string on the command line: 
+
     
     # euare-rolecreate --role-name describe-instances --service http://compute.acme.eucalyptus-systems.com:8773/
     # euare-rolelistbypath 
@@ -42,6 +45,7 @@ The other way to create the role is to use the command line options to specify t
 Proceed with applying an access policy to a role. 
 ## Create and apply an access policy to a role
 Create a policy and save it in a text file with a `.json` extension. The following example shows a policy that allows listing the contents of an S3 bucket called "mybucket": 
+
     {
       "Statement": [
         {

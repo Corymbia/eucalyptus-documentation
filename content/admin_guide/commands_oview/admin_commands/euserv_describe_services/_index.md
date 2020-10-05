@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-describe-services [-a]
     
            [--group-by-type | --group-by-zone | --group-by-host | --expert]
@@ -43,6 +44,7 @@ Eucalyptus returns information about the services you specified.
 
 ## Example
 Verify that you are looking at the cloud controllers view of the service state by explicitly running against that host: 
+
 
 
     euserv-describe-services --filter service-type=storage -U http://localhost:8773/services/Empyrean

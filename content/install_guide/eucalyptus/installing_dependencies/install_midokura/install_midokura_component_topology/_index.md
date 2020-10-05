@@ -27,6 +27,7 @@ This 4.3 version of the VPCMIDO file is still accepted, however we strongly enco
 The following Eucalyptus 4.3 network JSON template file shows a sample VPCMIDO mode configuration: 
 
 Useful to ensure JSON is valid: http://jsonparseronline.com/ 
+
     
     {
       "InstanceDnsServers": [

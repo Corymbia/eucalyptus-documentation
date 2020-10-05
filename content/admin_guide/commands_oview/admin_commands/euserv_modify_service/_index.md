@@ -6,6 +6,7 @@ weight = 10
 
 ## Syntax
 
+
     euserv-modify-service -s STATE [-U URL] [--region USER@REGION]
     
        [-I KEY_ID] [-S KEY] [--security-token TOKEN]
@@ -34,6 +35,7 @@ No output is given. You can run the `euserv-describe-services` command to verify
 
 ## Example
 To modify the state of a storage controller service named "two-sc-1" to stopped: 
+
 
 
     euserv-modify-service -s stopped two-sc-1
