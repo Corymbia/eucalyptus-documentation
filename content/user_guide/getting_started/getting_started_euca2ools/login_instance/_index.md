@@ -33,26 +33,3 @@ Use SSH to log into the instance, using your private key and the external IP add
 You are now logged in to your Linux instance. 
 ## Using SSH to Connect via PuTTY
 If you are a Windows user and want to securely connect to instances via PuTTY, you must first have a key pair.If you don't have a key pair, you can create one through the Management Console or the command line. For the key pair to be used with PuTTY, convert your .pem file to a .ppk file by performing the last step in the [Creating SSH Credentials for the Master Node: Modify Your PEM File](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-ssh.html) procedure. 
-## For a Windows Instance:
-Log into Windows VM instances using a Remote Desktop Protocol (RDP) client. An RDP prompts you for a login name and password. By default, Windows VM instances are configured with a single user (named Administrator ) and a random password generated at boot time. So, before you can log into a Windows VM instance via RDP, you must retrieve the random password generated at boot time using the `euca-get-password` command. 
-
-To log into a Windows instance: 
-
-Use `euca-describe-groups` to make sure the port for remote desktop (3389) is authorized in your security group. The response from this command will look like the following example. 
-
-
-
-    GROUP	955340183797	default	default group
-    PERMISSION	955340183797	default	ALLOWS	tcp	3389	3389	FROM	CIDR	0.0.0.0/0
-
-Enter the `euca-get-password` command followed by the unique id tag of the Windows VM instance and the `-k` option with the name of private key file that corresponds to your credential keypair. In the following example we retrieve the password for a Windows VM instance with id tag `i-5176095D` and private key file name `mykey.private` . 
-
-    euca-get-password i-5176095D -k mykey.private
-
-Log into the RDP client using the public (external) IP address associated with the running Windows VM instance. Enter the following command to view the IP addresses of your instance: 
-
-    euca-describe-instances
-
-At the Log On to Windows prompt, prepend the user name Administrator to the public IP address of the instance, and enter the password that you retrieved with `euca-get-password` , as shown: 
-![image]({{< ref "/" >}}images/win_login.png)
-You are now logged in and ready to use your Windows instance. 
