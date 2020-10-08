@@ -3,7 +3,7 @@ title = "Eucalyptus Overview"
 weight = 10
 +++
 
-Eucalyptus is open source software for building AWS-compatible private and hybrid clouds. As an Infrastructure as a Service product, Eucalyptus allows you to flexibly provision your own collections of resources (both compute and storage), on an as-needed basis.Whether you're looking for an on-premise complement to your public cloud setup, or already have a virtual data center and now want to move into a private or hybrid cloud setup, Eucalyptus can help you get started today. Download Faststart and have your cloud up and running in half an hour, or take advantage of Eucalyptus' seamless interoperation with Amazon Web Services’ EC2 and S3 public cloud services, for an enterprise-grade hybrid cloud platform out of the box. 
+Eucalyptus is open source software for building AWS-compatible private and hybrid clouds. As an Infrastructure as a Service product, Eucalyptus allows you to flexibly provision your own collections of resources (both compute and storage), on an as-needed basis.
 
 
 ## Who Should Read this Guide?
