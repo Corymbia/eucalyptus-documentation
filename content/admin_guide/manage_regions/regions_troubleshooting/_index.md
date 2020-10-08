@@ -32,9 +32,6 @@ This section is presented in a Q&A format to provide a quick reference to the mo
 1. If a user uploads an object to an Object Storage Gateway in one region, will copies show up in other regions (similar to the behavior on AWS)? **A.** No, this is currently unsupported. 
 
 
-1. Is LDAP/AD integration supported once Eucalyptus clouds have been federated? **A.** No, this feature is not supported. 
-
-
 1. Do federated Eucalyptus clouds follow the same globally? **A.** No, Eucalyptus IAM limitations are regionally scoped. 
 
 

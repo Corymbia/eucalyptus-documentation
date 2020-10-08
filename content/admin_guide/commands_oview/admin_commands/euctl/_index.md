@@ -59,9 +59,7 @@ This replaces `euca-modify-property -p` .
 
 To write variables using the contents of the files as their new values rather than typing them into the command line, follow them with `=@` and those file names: 
 
-
-
-    euctl authentication.ldap_integration_configuration=@ldap.lic
+    euctl cloud.network.network_configuration=@/etc/eucalyptus/network.yaml
 
 This replaces `euca-modify-property -f` . 
 
@@ -69,11 +67,7 @@ Specify a filename to read the values from a file:
 
     myproperty=@myvaluefile
 
-
-
 It is possible to read or write more than one variable in a single invocation of `euctl` . Just separate them with spaces: 
-
-
 
     euctl one=1 two=2 three four=@4.txt five
 
