@@ -3,11 +3,12 @@ title = "Image Overview"
 weight = 10
 +++
 
-An image defines what will run on a guest instance in your Eucalyptus cloud. An image contains everything necessary to boot and run an operating system: either one of the Linux distributions – CentOS, Fedora, Ubuntu, Debian, etc – or one of the supported Windows server versions.Images of two types are supported by Eucalyptus: 
+An image defines what will run on a guest instance in your Eucalyptus cloud. An image contains everything necessary to boot and run an operating system, e.g. a Linux distribution – CentOS, Fedora, Ubuntu, Debian, etc.
 
-* are raw disks that can boot independently. They can contain Linux or Windows operating systems. HVM stands for Hardware-assisted Virtual Machine because such images can only run efficiently on hardware that supports virtualization. When an HVM image is uploaded and registered, it becomes a Eucalyptus Machine Image (EMI) of type "hvm", with a unique ID. 
-* are Linux images that can boot if they are paired with a kernel and ramdisk that are compatible with the host's hypervisor. Currently only root file system images are supported (on AWS, a paravirtual image can be a file system or a full disk). When a paravirtual image is uploaded and registered, it also becomes an EMI of "paravirtual" type, which needs to be paired with a kernel (EKI) and ramdisk (ERI) images to be usable. EKI contains a kernel (i.e., the ‘vmlinuz’ file typically found in the /boot directory of a Linux system). ERI contains the kernel modules (i.e., the ‘initrd’ file from the /boot directory). 
+Images of two types are supported by Eucalyptus: 
 
+* HVM images are raw disks that can boot independently. HVM stands for Hardware-assisted Virtual Machine because such images can only run efficiently on hardware that supports virtualization. When an HVM image is uploaded and registered, it becomes a Eucalyptus Machine Image (EMI) of type "hvm", with a unique ID.
+* Paravirtual images are Linux images that can boot if they are paired with a kernel and ramdisk that are compatible with the host's hypervisor. Currently only root file system images are supported (on AWS, a paravirtual image can be a file system or a full disk). When a paravirtual image is uploaded and registered, it also becomes an EMI of "paravirtual" type, which needs to be paired with a kernel (EKI) and ramdisk (ERI) images to be usable. EKI contains a kernel (i.e., the ‘vmlinuz’ file typically found in the /boot directory of a Linux system). ERI contains the kernel modules (i.e., the ‘initrd’ file from the /boot directory). 
 
 Depending on the method used for upload, an instance's disk will reside on one of two types of storage: 
 

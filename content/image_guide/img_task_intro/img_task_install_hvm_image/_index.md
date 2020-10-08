@@ -11,9 +11,8 @@ At run time, HVM images can be deployed to disks local to the hypervisor (so-cal
 ## Install an HVM image as an Instance Store EMI
 Bundle, upload, and register the HVM image. All of this can be accomplished with a single command. For Linux images, the required options are: 
 
-`euca-install-image -i /path/to/hvm-image -n name-of-the-image -r x86_64 --virtualization-type hvm -b bucket-name-for-image` When installing a Windows image, an additional flag is necessary: 
+`euca-install-image -i /path/to/hvm-image -n name-of-the-image -r x86_64 --virtualization-type hvm -b bucket-name-for-image`
 
-`euca-install-image -i /path/to/hvm-image -n name-of-the-image -r x86_64 --virtualization-type hvm -b bucket-name-for-image --platform=windows` 
 ## Install an HVM image as an EBS-Backed EMI
 An EBS-backed image (sometimes referred to as a "bfEBS" image) is an image with a root device that is an EBS volume created from an EBS snapshot. An EBS-backed image has a number of advantages (over an Instance Store image), including: 
 
