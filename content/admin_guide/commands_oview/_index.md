@@ -6,6 +6,6 @@ chapter = true
 
 
 # Eucalyptus Commands
-This section contains reference information for Eucalyptus administration and reporting commands.
+This section contains reference information for Eucalyptus administration commands.
 
 {{% children %}}

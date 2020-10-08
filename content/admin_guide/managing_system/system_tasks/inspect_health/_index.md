@@ -15,7 +15,7 @@ Use the `euserv-describe-services` command to view the service state. The output
 * Current view of service state 
 * Last reported epoch (this can be safely ignored) 
 * Service URI 
-* Fully qualified name of the service (This is needed for manipulating services that did not get unique names during registration. For example: internal services like reporting or DNS) 
+* Fully qualified name of the service (This is needed for manipulating services that did not get unique names during registration. For example: internal services like DNS) 
 The default output includes the services that are registered during configuration, as well as information about the DNS service, if present. You can obtain additional service state information, such as internal services, by providing the `-a` flag. 
 
 You can also make requests to retrieve service information that is filtered by either: 

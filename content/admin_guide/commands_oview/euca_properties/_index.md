@@ -261,12 +261,6 @@ The following table contains a list of common Eucalyptus cloud variables.
 | region.region_ssl_default_cas | Use default CAs for region SSL connections. | 
 | region.region_ssl_protocols | Protocols to use for region SSL | 
 | region.region_ssl_verify_hostnames | Verify hostnames for region SSL connections. | 
-| reporting.data_collection_enabled | Set this to false to stop reporting from populating new data. | 
-| reporting.default_size_time_size_unit | Default size-time size unit (GB-days, etc) | 
-| reporting.default_size_time_time_unit | Default size-time time unit (GB-days, etc) | 
-| reporting.default_size_unit | Default size unit | 
-| reporting.default_time_unit | Default time unit | 
-| reporting.default_write_interval_mins | How often the reporting system requests information from the Cluster Controller | 
 | services.database.appendonlyhost | host address of the backend database for append-only data | 
 | services.database.appendonlypassword | password of the backend database for append-only data | 
 | services.database.appendonlyport | port number of the backend database for append-only data | 

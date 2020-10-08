@@ -16,7 +16,7 @@ This section describes the most commonly applied post-install customizations and
 
 * Over-subscription 
 * Networking changes (EDGE and Managed modes) 
-* Reporting / CloudWatch tweaks/customizations 
+* CloudWatch tweaks/customizations 
 * Capacity changes 
 
 ## Over-subscription
@@ -29,13 +29,12 @@ You can modify the default by adding network IPs to your cloud or changing your 
 To add network IPs:In EDGE mode, adding or changing the IP involves creating a JSON file and uploading it the Cloud Controller (CLC). See [Configure for Edge Mode]({{< ref nw_edge.md >}}) for more details. No restart needed, changes apply automatically. 
 ## Change Modes
 You can modify the default network from Managed to EDGE networking mode.See [Eucalyptus Migration to Edge Networking Mode]({{< ref moving_to_edge.md >}}) for more details. 
-## Change Reporting/CloudWatch Properties
-You can change the following reporting and CloudWatch properties:
+## Change CloudWatch Properties
+You can change the following CloudWatch properties:
 
-| Reporting Property | Description | 
+| Property | Description | 
 |  :---- |  :---- | 
 | cloud.monitor.default_poll_interval_mins | This is how often the CLC sends a request to the CC for sensor data. Default value is 5 minutes. If you set it to 0 = no reporting. The more often you poll, the more hit on system performance. | 
-| reporting.default_write_interval_mins | How often polled data is written to the database. | 
 | cloud.monitor.history_size | This is how many data value samples are sent in each sensor data request. The default value is 5. How many samples per poll interval. | 
 | cloudwatch.disable_cloudwatch_service | Disables CloudWatch when set to true. | 
 
