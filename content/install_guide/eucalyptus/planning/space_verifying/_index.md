@@ -15,7 +15,7 @@ We recommend that you use LVM (Logical Volume Manager). If you run out of disk s
 |  :---- |  :---- |  :---- | 
 | Cloud Controller (CLC)CLC logging | /var/lib/eucalyptus/db/var/log/eucalyptus | 20GB2GB | 
 | WalrusWalrus logging | /var/lib/eucalyptus/bukkits/var/log/eucalyptus | 250GB2GB | 
-| Storage Controller (SC) (EBS storage) This disk space on the SC is only required if you are not using a SAN driver or if you are using Direct Attached Storage (DAS). For more information, see . | /var/lib/eucalyptus/volumes/var/log/eucalyptus | 250GB | 
+| Storage Controller (SC) (EBS storage) This disk space on the SC is only required if you are not using Ceph. For DAS the space must not be used by an existing filesystem.  | /var/lib/eucalyptus/volumes/var/log/eucalyptus | 250GB | 
 | User-Facing Services (UFS)UFS logging | /var/lib/eucalyptus/var/log/eucalyptus | 5GB 2GB | 
 | Management ConsoleConsole logging | /var/log/eucalyptus-console | 5GB 2GB | 
 | Cluster Controller (CC)CC logging | /var/lib/eucalyptus/CC/var/log/eucalyptus | 5GB2GB | 

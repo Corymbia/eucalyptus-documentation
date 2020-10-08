@@ -38,9 +38,9 @@ Things to consider for SC placement:
 * The SC host machine must always have TCP/IP connectivity to the CLC and be able use multicast to the CLC. 
 * The SC must have TCP/IP connectivity to the UFS/OSG hosts for uploading snapshots into the object store. (The SC does not require connectivity directly to users, it is an internal component and does not serve user EBS API requests; that job is done by the UFS.) 
 * The SC must be reachable via TCP/IP from all NCs in the zone within which the SC is registered. The SC and NC exchange tokens to authorize volume attachment, so they must be able to directly communicate. The SC provides the NCs with network access to the dynamic block volumes on the SC's storage (if the SC is configured for overlay local filesystem or DAS-JBOD). 
-* If you are a subscriber and use one of the -provided SAN integration drivers, the SC must also have TCP/IP connectivity to the SAN device. The SC sends control messages to the SAN and acts as a proxy to upload snapshots from the SAN to the UFS/OSG. 
+* IF using Ceph the SC must also have TCP/IP connectivity to the Ceph cluster.
 * If you are going to use overlay local filesystem or DAS-JBOD configurations to export local SC storage for EBS, then SC storage should consist of a fast, reliable disk pool (either local file-system or block-attached storage) so that the SC can create and maintain volumes for the NCs. The capacity of the disk pool should be sufficient to provide the NCs with enough space to accommodate all dynamic block volumes requests from end users. 
 
 ## Node Services
-The Node Controllers are the services that comprise the Eucalyptus backend. All NCs must have network connectivity to whatever machine hosts their EBS volumes. This host is either a SAN or the SC. 
+The Node Controllers are the services that comprise the Eucalyptus backend. All NCs must have network connectivity to whatever machine(s) host their EBS volumes. Hosts are either a Ceph deployment or the SC.
 

@@ -24,15 +24,11 @@ Enter `y` when prompted to install this package.
 
 Configure the EPEL package repository on each host machine that will run a Eucalyptus service or Euca2ools: For RHEL/CentOS 7.3 
 
-
-
     yum install 
 
 Enter `y` when prompted to install this package. 
 
 For RHEL/CentOS 7.4 and higher 
-
-
 
     yum install epel-release
 
@@ -49,13 +45,9 @@ Remove the default libvirt network. This step allows the eucanetd dhcpd server t
 
 Check that the KVM device node has proper permissions. Run the following command: 
 
-
-
     ls -l /dev/kvm
 
 Verify the output shows that the device node is owned by user root and group kvm. 
-
-
 
     crw-rw-rw- 1 root kvm 10, 232 Nov 30 10:27 /dev/kvm
 
@@ -81,40 +73,6 @@ The Management Console can run on any host machine, even one that does not have 
 
     yum install eucalyptus-cluster eucalyptus-sc eucalyptus-walrus
 
-This installs the cloud controller (CC), storage controller (SC), and Walrus Backend services. (Optional) If you are a subscriber and use a SAN, run the appropriate command for your device on each CLC host machine: For HP 3PAR SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-threepar-libs
-
-For NetApp SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-netapp-libs
-
-For Dell EqualLogic SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-equallogic-libs
-
-(Optional) If you are a subscriber and use a SAN, run the appropriate command for your device on each SC host machine: For HP 3PAR SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-threepar
-
-For NetApp SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-netapp
-
-For Dell EqualLogic SAN: 
-
-
-
-    yum install eucalyptus-enterprise-storage-san-equallogic
+This installs the cloud controller (CC), storage controller (SC), and Walrus Backend (Optional) services.
 
 Your package installation is complete. You are now ready to [Configure Eucalyptus]({{< ref configuring_euca.md >}}) . 
