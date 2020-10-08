@@ -9,20 +9,11 @@ A security group is a set of networking rules applied to instances associated wi
 
 To authorize a security group, use euca-authorize with the name of the security group, and the options of the network rules you want to apply. 
 
-
-
     euca-authorize <security_group>
 
 Use the following command to grant unlimited network access using SSH (TCP, port 22) and VNC (TCP, ports 5900 to 5910) to the security group `default` : 
 
-
-
     euca-authorize -P tcp -p 22 -s 0.0.0.0/0 default
     euca-authorize -P tcp -p 5900-5910 -s 0.0.0.0/0 default
 
-Use the following command to grant unlimited network access using Windows Remote Desktop (TCP, port 3389) to the security group `windows` : 
-
-
-
-    euca-authorize -P tcp -p 3389 -s 0.0.0.0/0 windows
 

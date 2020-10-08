@@ -34,33 +34,37 @@ This guide contains instructions for users of the Eucalyptus cloud platform. Whi
 ## Eucalyptus Features
 Eucalyptus offers ways to implement, manage, and maintain your own collection of virtual resources (machines, network, and storage). The following is an overview of these features. 
 
+### AWS API compatibility
+Eucalyptus provides API compatibility with Amazon Web Services, to allow you to use familiar tools and commands to provision your cloud. 
 
-AWS API compatibility
- Eucalyptus provides API compatibility with Amazon Web Services, to allow you to use familiar tools and commands to provision your cloud. 
-Block- and bucket-based storage abstractions
- Eucalyptus provides storage options compatible with Amazon's EBS (block-based) and S3 (bucket-based) storage products. 
-Self-service capabilities
- Eucalyptus offers a Management Console, allowing your users to request the resources they need, and automatically provisioning those resources where available. 
-Web-based Interface
- The Eucalyptus Management Console is accessible from any device via a browser. The Console initial page provides a Dashboard view of components available to you to manage, configure, provision, and generate various reports. 
+### Block- and bucket-based storage abstractions
+Eucalyptus provides storage options compatible with Amazon's EBS (block-based) and S3 (bucket-based) storage products. 
+
+### Self-service capabilities
+Eucalyptus offers a Management Console, allowing your users to request the resources they need, and automatically provisioning those resources where available. 
+
+### Web-based Interface
+The Eucalyptus Management Console is accessible from any device via a browser. The Console initial page provides a Dashboard view of components available to you to manage, configure, provision, and generate various reports. 
+
 
 ## Resource Management
 Eucalyptus offers tools to seamlessly manage a variety of virtual resources. The following is an overview of the types of resources your cloud platform. 
 
+### SSH Key Management
+Eucalyptus employs public and private keypairs to validate your identity when you log into VMs using SSH. You can add, describe, and delete keypairs. 
 
-SSH Key Management
- Eucalyptus employs public and private keypairs to validate your identity when you log into VMs using SSH. You can add, describe, and delete keypairs. 
-Image Management
- Before running instances, someone must prepare VM images for use in the cloud. This can be an administrator or a user. Eucalyptus allows you to bundle, upload, register, describe, download, unbundle, and deregister VM images. 
-Linux Guest OS Support
- Eucalyptus lets you run your own VMs in the cloud. You can run, describe, terminate, and reboot a wide variety of Linux-based VMs that were prepared using image management commands. 
-Windows Guest OS Support
- Eucalyptus allows you to run, describe, terminate, reboot, and bundle instances of Windows VMs. 
-IP Address Management
- Eucalyptus can allocate, associate, disassociate, describe, and release IP addresses. Depending on the networking mode, you might have access to public IP addresses that are not statically associated with a VM ( Elastic IPs ). Eucalyptus provides tools to allow users to reserve and dynamically associate these elastic IPs with virtual machines. 
-Security Group Management
- Security groups are sets of firewall rules applied to VMs associated with the group. Eucalyptus lets you create, describe, delete, authorize, and revoke security groups. How much of these things can a typical user actually do? 
-Volume and Snapshot Management
- Eucalyptus allows you to create dynamic block volumes. A dynamic block volume is similar to a raw block storage device that can be used with virtual machines. You can create, attach, detach, describe, bundle, and delete volumes. You can also create and delete snapshots of volumes and create new volumes from snapshots. 
-Document version: @BUILD_VERSION_STRING@ 
+### Image Management
+Before running instances, someone must prepare VM images for use in the cloud. This can be an administrator or a user. Eucalyptus allows you to bundle, upload, register, describe, download, unbundle, and deregister VM images. 
+
+### Linux Guest OS Support
+Eucalyptus lets you run your own VMs in the cloud. You can run, describe, terminate, and reboot a wide variety of Linux-based VMs that were prepared using image management commands. 
+
+### IP Address Management
+Eucalyptus can allocate, associate, disassociate, describe, and release IP addresses. Depending on the networking mode, you might have access to public IP addresses that are not statically associated with a VM ( Elastic IPs ). Eucalyptus provides tools to allow users to reserve and dynamically associate these elastic IPs with virtual machines. 
+
+### Security Group Management
+Security groups are sets of firewall rules applied to VMs associated with the group. Eucalyptus lets you create, describe, delete, authorize, and revoke security groups. How much of these things can a typical user actually do? 
+
+### Volume and Snapshot Management
+Eucalyptus allows you to create dynamic block volumes. A dynamic block volume is similar to a raw block storage device that can be used with virtual machines. You can create, attach, detach, describe, bundle, and delete volumes. You can also create and delete snapshots of volumes and create new volumes from snapshots. 
 
