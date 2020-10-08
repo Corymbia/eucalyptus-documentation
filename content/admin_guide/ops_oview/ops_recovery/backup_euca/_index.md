@@ -21,7 +21,6 @@ This section explains what you need to back up and protect your cloud data.We re
 * Management Console config files in should be backed up. Typical files: 
 * Ensure you have your instances' so you can access the instances later. 
 * and LVM snapshots 
-* SAN technologies vary, so see the backup documentation for your SAN. 
 Users are responsible for volume backups using EBS snapshots on their defined schedules. 
 
 

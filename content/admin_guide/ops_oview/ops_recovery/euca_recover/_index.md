@@ -27,9 +27,7 @@ We recommend that you recover the following data:
 * Management Console config files you backed up from should be restored. Typical files: 
 * Ensure you have your instances' so you can access the instances. 
 * and LVM snapshots 
-* SAN technologies vary, so see the restore documentation for your SAN. 
 Users are responsible for volume restore using EBS snapshots. 
-
 
 
 {{% children %}}
