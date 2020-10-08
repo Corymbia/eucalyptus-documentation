@@ -21,11 +21,9 @@ Note the error above: `SC blockstoragemanager not configured. Found empty or uns
 
 This indicates that the SC is not yet configured. It can be configured by setting the `ZONE.storage.blockstoragemanager` property to 'das', 'overlay', or 'ceph'. 
 
-If you have installed the (paid) Eucalyptus Enterprise packages for your EBS adapter, you will also see additional options in the output line above, and can set the block storage manager to 'netapp', 'equallogic', or 'threepar' as appropriate. 
-
-You can verify that the SC block storage manager is unset using: 
+You can verify that the configured SC block storage manager using: 
 
     euctl ZONE.storage.blockstoragemanager
 
-
+to show the current value.
 

@@ -8,27 +8,17 @@ To install Eucalyptus from release packages, perform the tasks listed in this to
 * The prerequisite hardware and software should be in place and available to . 
 **To install Eucalyptus from release packages** Configure the Eucalyptus package repository on each host machine that will run a Eucalyptus service: 
 
-    yum install 
+    yum install http://downloads.eucalyptus.cloud/software/eucalyptus/snapshot/5/rhel/7/x86_64/eucalyptus-release-5-1.10.as.el7.noarch.rpm # 5.0 snapshot pre-releases
 
 Enter `y` when prompted to install this package. 
-
-(Optional) If you are a Eucalyptus subscriber, you will receive two RPM package files containing your license for subscription-only services. Install these packages on each host machine that will run a Eucalyptus service. Install the license files to access the enterprise repository. 
-
-    yum install eucalyptus-enterprise-license*.noarch.rpm 
 
 Configure the Euca2ools package repository on each host machine that will run a Eucalyptus service or Euca2ools: 
 
-    yum install 
+    yum install http://downloads.eucalyptus.cloud/software/euca2ools/3.4/rhel/7/x86_64/euca2ools-release-3.4-2.2.as.el7.noarch.rpm
 
 Enter `y` when prompted to install this package. 
 
-Configure the EPEL package repository on each host machine that will run a Eucalyptus service or Euca2ools: For RHEL/CentOS 7.3 
-
-    yum install 
-
-Enter `y` when prompted to install this package. 
-
-For RHEL/CentOS 7.4 and higher 
+Configure the EPEL package repository on each host machine that will run a Eucalyptus service or Euca2ools:
 
     yum install epel-release
 
@@ -69,7 +59,7 @@ This installs worker images for both the load balancer and imaging services. On 
 
     yum install eucaconsole
 
-The Management Console can run on any host machine, even one that does not have other Eucalyptus services . Install the software for the remaining Eucalyptus services. The following example shows services being installed on the same host machine. We recommend that you use a different host machine for each service, when possible: 
+The Management Console can run on any host machine, even one that does not have other Eucalyptus services . Install the software for the remaining Eucalyptus services. The following example shows services being installed on the same host machine.
 
     yum install eucalyptus-cluster eucalyptus-sc eucalyptus-walrus
 
