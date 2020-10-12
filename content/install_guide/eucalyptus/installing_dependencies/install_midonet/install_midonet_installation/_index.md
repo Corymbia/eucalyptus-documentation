@@ -10,7 +10,7 @@ This topic describes how to install the MidoNet Cluster. MidoNet Cluster service
 
 **To install the MidoNet Cluster on the CLC** 
 
-Add the MidoNet repo file as described in [Prerequisites]({{< ref install_midokura_prereqs.md >}}) . Install MidoNet Cluster packages. 
+Add the MidoNet repo file as described in [Prerequisites]({{< ref install_midonet_prereqs.md >}}) . Install MidoNet Cluster packages. 
 
     yum install midonet-cluster python-midonetclient
 
