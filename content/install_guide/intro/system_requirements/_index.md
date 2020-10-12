@@ -25,7 +25,7 @@ The specific requirements of your deployment, including the number of physical m
 
 ## Network Requirements
 
-* For VPCMIDO, Eucalyptus needs Midokura MidoNet to be installed. 
+* For VPCMIDO, Eucalyptus needs MidoNet to be installed. 
 * The network connecting machines that host components (except the CC and NC) must support UDP multicast for IP address 239.193.7.3. Note that UDP multicast is not used over the network that connects the CC to the NCs.
 
 Once you are satisfied that your systems requirements are met, you are ready to plan your Eucalyptus installation. 

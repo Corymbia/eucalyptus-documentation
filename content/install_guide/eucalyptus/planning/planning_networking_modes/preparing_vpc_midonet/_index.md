@@ -3,7 +3,7 @@ title = "Understanding VPCMIDO and MidoNet"
 weight = 10
 +++
 
-This topic describes MidoNet components and their Eucalyptus deployment options, which provide support for VPC on Eucalyptus .Eucalyptus VPCMIDO mode resembles the Amazon Virtual Private Cloud (VPC) product wherein the network is fully configurable by users. In Eucalyptus , it is implemented with a Software-Defined Networking (SDN) technology developed by Midokura, called MidoNet. Midokura Enterprise MidoNet is a network virtualization platform for Infrastructure-as-a-Service (IaaS) clouds that implements and exposes virtual network components as software abstractions, enabling programmatic provisioning of virtual networks. 
+This topic describes MidoNet components and their Eucalyptus deployment options, which provide support for VPC on Eucalyptus. Eucalyptus VPCMIDO mode resembles the Amazon Virtual Private Cloud (VPC) product wherein the network is fully configurable by users. In Eucalyptus, it is implemented with a Software-Defined Networking (SDN) technology called MidoNet. MidoNet is a network virtualization platform for Infrastructure-as-a-Service (IaaS) clouds that implements and exposes virtual network components as software abstractions, enabling programmatic provisioning of virtual networks. 
 
 This network mode requires configuration of MidoNet in order to make cloud networking functional. It offers the most advanced networking capabilities and therefore it is recommended to be used on all new Eucalyptus installations. 
 
@@ -17,47 +17,33 @@ A MidoNet deployment consists of four types of nodes (according to their logical
 
 Node types: 
 
-
-
 * MidoNet Network State Database (NSDB): consists of a cluster of ZooKeeper and Cassandra. All MidoNet nodes must have IP connectivity with NSDB. 
 * MidoNet API: consists of MidoNet web app. Exposes MidoNet REST APIs. 
 * Hypervisor: MidoNet agent (Midolman) are required in all Hypervisors to enable VMs to be connected via MidoNet overlay networks/SDN. 
 * Gateway: Gateway nodes are connected to the public network, and enable the network flow from MidoNet overlays to the public network. 
-Physical Networks 
 
-
+Physical Networks: 
 
 * NSDB: IP network that connects all nodes that participate in MidoNet. While NSDB and Tunnel Zone networks can be the same, it is recommended to have an isolated (physical or VLAN) segment. 
 * API: in deployments only eucanetd/CLC needs access to the API network. Only "special hosts/processes" should have access to this network. The use of "localhost" network on the node running CLC/eucanetd is sufficient and recommended in deployments. 
 * Tunnel Zone: IP network that transports the MidoNet overlay traffic ( VM traffic), which is not "visible" on the physical network. 
 * Public network: network with access to the Internet (or corporate/enterprise) network. 
 
+
 ## MidoNet Deployment Scale
-Three reference architectures are presented in this document, ordered by complexity and size: 
+Three reference architectures are presented in this document, ordered by complexity and size:
+
+* Proof-of-Concept (PoC)
+* Production: Small
+* Production: Large
+
+Production: Large reference architecture represents the most complete and recommended deployment model of MidoNet for Eucalyptus. Whenever possible (such as when resources are available), deployments should closely match with the Production: Large reference architecture (even on small scale clouds).
+
+All MidoNet components are designed and implemented to horizontally scale. Therefore, it is possible to start small and add resources as they become available.
 
 
-
-* Proof-of-Concept (PoC) 
-* Production: Small 
-* Production: Large 
-Production: Large reference architecture represents the most complete and recommended deployment model of MidoNet for Eucalyptus . Whenever possible (such as when resources are available), deployments should closely match with the Production: Large reference architecture (even on small scale clouds). 
-
-All MidoNet components are designed and implemented to horizontally scale. Therefore, it is possible to start small and add resources as they become available. 
-
-
-## MidoNet Software
-Eucalyptus has been tested with Midokura Enterprise MidoNet (commercial version with 24/7 support - 30 day evaluation available). 
-
-
-{{% notice note %}}
-
-{{% /notice %}}
-
-
-
-## with MidoNet
+## Eucalyptus with MidoNet
 A Eucalyptus with MidoNet deployment consists of the following components: 
-
 
 ![image]({{< ref "/" >}}images/euca_mido_2.png)
 *Figure 2: Logical view of a Eucalyptus with MidoNet deployment. VM private network is created/virtualized by MidoNet, and 'software-defined' by eucanetd. Ideally, each component and network should have its own set of independent resources. In practice, components are grouped and consolidated into a set of servers, as detailed in different reference architectures.* 
@@ -72,30 +58,25 @@ The PoC reference architecture is designed for very small and transient workload
 
 Servers: 
 
-
-
 * Four (4) or more modern Intel cores or AMD modules - exclude logical cores that share CPU resources from the count (Hyperthreads and AMD cores within a module) 
 * 2GB of RAM reserved for MidoNet Agent (when applicable) 
 * 4GB of RAM reserved for MidoNet NSDB (when applicable) 
 * 4GB of RAM reserved for MidoNet API (when applicable) 
 * 30GB of free disk space for NSDB (when applicable) 
+
 Physical Network: 
-
-
 
 * One (1) 1Gbps IP Network 
 * A range or list of public IP addresses (Euca_public_IPs) 
 * Internet Gateway 
+
 Limits: 
-
-
 
 * Ten (10) MidoNet agents (i.e., 1 Gateway node, 1 CLC, and 8 NCs) 
 * One (1) MidoNet Gateway 
 * No fail over, fault tolerance, and/or network load balancing/sharing 
+
 **Deployment Topology** 
-
-
 
 * Single server with all MidoNet components (NSDB, API, and Midolman), and with CLC/eucanetd 
 * A server acting as MidoNet Gateway - when BGP terminated links are used, this node must not be co-located with CLC/eucanetd (in a proxy_arp setup described below, it is possible to consolidate CLC/eucanetd with MidoNet Gateway). This is due to incompatibilities in CentOS/RHEL7 netns (used by eucanetd), and bgpd (started by Midolman when BGP links are configured). 
@@ -140,8 +121,6 @@ Border Gateway Protocol (BGP) terminated uplinks are recommended for production 
 
 Servers: 
 
-
-
 * Four (4) or more modern Intel cores or AMD modules - exclude logical cores that share CPU resources from the count (Hyperthreads and AMD cores within a module) - for gateway nodes, 4 or more cores should be dedicated to MidoNet agent (Midolman) 
 * 4GB of RAM reserved for MidoNet Agent (when applicable), 8GB for Gateway nodes 
 * 4GB of free RAM reserved for MidoNet NSDB (when applicable) 
@@ -150,26 +129,23 @@ Servers:
 * Two (2) 10Gbps NICs per server 
 * Three (3) servers dedicated to MidoNet NSDB 
 * Two (2) servers as MidoNet Gateways 
+
 Physical Network: 
-
-
 
 * One (1) 10Gbps IP Network for public network (if upstream links are 1Gbps, this could be 1Gbps) 
 * One (1) 10Gbps IP Network for Tunnel Zone and NSDB 
 * Public Classless Inter-Domain Routing (CIDR) block (Euca_public_IPs) 
 * Two (2) BGP terminated uplinks 
+
 Limits: 
-
-
 
 * Thirty two (32) MidoNet agents (i.e., 2 Gateway nodes and 30 Hypervisors) 
 * Two (2) MidoNet Gateways 
 * Tolerate 1 NSDB server failure 
 * Tolerate 1 MidoNet Gateway/uplink failure 
 * Limited uplinks load sharing/balancing 
+
 **Deployment Topology** 
-
-
 
 * A 3-node cluster for NSDB (co-located ZooKeeper and Cassandra) 
 * eucanetd co-located with MidoNet API Server 
@@ -188,22 +164,19 @@ Limits:
 
 **NSDB Data Replication** 
 
-
-
 * NSDB is deployed in a cluster of 3 nodes 
 * ZooKeeper and Cassandra both have built-in data replication 
 * One server failure is tolerated 
+
 **MidoNet Gateway Failover** 
 
-
-
 * Two paths are available to and from MidoNet, and failover is handled by BGP 
+
 **MidoNet Gateway Load Balancing and Sharing** 
-
-
 
 * Load Balancing from MidoNet is implemented by MidoNet agents (Midolman): ports in a stateful port group with default routes out are used in a round-robin fashion. 
 * Partial load sharing from the Customer's router to MidoNet can be accomplished by: 
+
 
 ## Production: Large
 The Production:Large reference architecture is designed for large scale (500 to 600 MidoNet agents) production quality deployments. It supports MidoNet NSDB fault tolerance (partial failures), and MidoNet Gateway failover and load balancing/sharing. 
@@ -211,8 +184,6 @@ The Production:Large reference architecture is designed for large scale (500 to 
 Border Gateway Protocol (BGP) terminated uplinks are required. Each uplink should come from an independent router. 
 
 **Requirements:** 
-
-
 
 * Eight (8) or more modern Intel cores or AMD modules - exclude logical cores that share CPU resources from the count (Hyperthreads and AMD cores within a module) - for gateway nodes, 8 or more cores should be dedicated to MidoNet agent (Midolman) 
 * 4GB of RAM reserved for MidoNet Agent (when applicable), 16GB for Gateway nodes 
@@ -222,9 +193,8 @@ Border Gateway Protocol (BGP) terminated uplinks are required. Each uplink shoul
 * One 1Gbps and 2 10Gbps NICs per server 
 * Five (5) servers dedicated to MidoNet NSDB 
 * Three (3) servers as MidoNet Gateways 
+
 Physical Network: 
-
-
 
 * One 1Gbps IP Network for NSDB 
 * One 10Gbps IP Network for public network (if upstream links are 1Gbps, this could be 1Gbps) 
@@ -232,17 +202,15 @@ Physical Network:
 * Public Classless Inter-Domain Routing (CIDR) block (Euca_public_IPs) 
 * Three (3) BGP terminated uplinks, each of which coming from an independent router 
 * ZooKeeper performance recommendations: 
+
 Limits: 
-
-
 
 * 500 to 600 MidoNet agents 
 * Three (3) MidoNet Gateways 
 * Tolerate 1 to 2 NSDB server failures 
 * Tolerate 1 to 2 MidoNet Gateway/uplink failures 
+
 **Deployment Topology** 
-
-
 
 * A 5-node cluster for NSDB (co-located ZooKeeper and Cassandra) 
 * eucanetd co-located with MidoNet API Server 
@@ -258,19 +226,15 @@ Limits:
 
 **NSDB Data Replication** 
 
-
-
 * NSDB is deployed in a cluster of 5 nodes 
 * ZooKeeper and Cassandra both have built-in data replication 
 * Up to 2 server failures tolerated 
+
 **MidoNet Gateway Failover** 
 
-
-
 * Three paths are available to and from MidoNet, and failover is handled by BGP 
+
 **MidoNet Gateway Load Balancing/Sharing** 
 
-
-
 * Load Balancing from MidoNet is implemented by MidoNet agents (Midolman): ports in a stateful port group with default routes out are used in a round-robin fashion. 
-* The customer AS should handle multi path routing in order to support load sharing/balancing to MidoNet; for example, Equal Cost Multi Path (ECMP). 
+* The customer AS should handle multi path routing in order to support load sharing/balancing to MidoNet; for example, Equal Cost Multi Path (ECMP).

@@ -1,21 +1,21 @@
 +++
-title = "Install Midokura Enterprise MidoNet"
+title = "Install MidoNet"
 weight = 5
 chapter = true
 +++
 
 
-# Install Midokura Enterprise MidoNet
-Eucalyptus requires MidoNet to enable VPC functionality. This section describes how to install Midokura Enterprise MidoNet for use with Eucalyptus .
+# Install MidoNet
+Eucalyptus requires MidoNet for VPC functionality. This section describes how to install MidoNet for use with Eucalyptus.
+
 {{% notice note %}}
-If you are not using VPC with , you do not need to install Midokura Enterprise MidoNet. See . 
+If you are not using VPC with Eucalyptus, you do not need to install MidoNet. See [Configure EDGE Network Mode]({{< ref nw_edge.md >}}).
 {{% /notice %}}
+
 **Before you begin:** 
 
-Check MidoNet version # and doc paths each release - match the compat matrix for the release! NOTE that Midokura changes doc repo frequently. GLOBAL SEARCH on "docs.midokura.com" across all docs. 
-
-* See the section of the guide to create a map of how MidoNet / will be deployed into your environment. 
-* See the to become familiar with the general Midokura Enterprise MidoNet installation procedure and concepts. 
+* See the [Planning your Network]({{< ref planning_networking_modes.md >}}) section of the guide to create a map of how MidoNet / will be deployed into your environment.
+* See the [MidoNet Installation Guide](https://docs.midonet.org/docs/latest-en/quick-start-guide/rhel-7_newton-rdo/content/_midonet_installation.html) to become familiar with the general MidoNet installation procedure and concepts.
 
 
 {{% children %}}

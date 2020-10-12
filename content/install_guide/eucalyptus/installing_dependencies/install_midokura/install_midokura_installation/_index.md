@@ -1,11 +1,12 @@
 +++
 title = "Install MidoNet for Eucalyptus"
-weight = 10
+weight = 30
 +++
 
-This topic shows how to install Midokura Enterprise MidoNet for use in your Eucalyptus cloud.
+This topic shows how to install MidoNet for use in your Eucalyptus cloud.
+
 ## Install the MidoNet Cluster on the Cloud Controller (CLC)
-This topic describes how to install the MidoNet Cluster.MidoNet Cluster services provide a means to manage MidoNet functions that MidoNet agents (Midolman) are unable to perform on their own. MidoNet Cluster services include state synchronization of VxLAN gateways and the MidoNet REST API. A MidoNet v5 deployment requires at least one MidoNet cluster node, and since it replaces the MidoNet API webapp (which was hosted by tomcat in MidoNet v1 series), it must be co-located on the CLC host machine in Eucalyptus deployments. For security reasons, the MidoNet REST API is accessed only on the CLC (localhost interface). 
+This topic describes how to install the MidoNet Cluster. MidoNet Cluster services provide a means to manage MidoNet functions that MidoNet agents (Midolman) are unable to perform on their own. MidoNet Cluster services include state synchronization of VxLAN gateways and the MidoNet REST API. A MidoNet v5 deployment requires at least one MidoNet cluster node, and it must be co-located on the CLC host machine in Eucalyptus deployments. For security reasons, the MidoNet REST API is accessed only on the CLC (localhost interface).
 
 **To install the MidoNet Cluster on the CLC** 
 
@@ -28,7 +29,7 @@ Configure cloud-wide access to the NSDB services:
     cassandra {
       servers = “CASSANDRA_HOST"
     }
-    EOF               
+    EOF
 
 Enable and start the MidoNet Cluster: 
 
@@ -44,9 +45,10 @@ Restart the Midonet Cluster so the rest_api parameters take effect:
 
     systemctl restart midonet-cluster.service
 
-
 ## Install Midolman on components
-This topic describes how to install the Midolman agent.Midolman is the MidoNet Agent, which is a daemon that runs on all hosts where traffic enters and leaves MidoNet. The Midolman agent is required on the Cloud Controller (CLC), Node Controllers (NCs), and any host that is a MidoNet Gateway node (e.g., UFS). **To install Midolman agent** 
+This topic describes how to install the Midolman agent. Midolman is the MidoNet Agent, which is a daemon that runs on all hosts where traffic enters and leaves MidoNet. The Midolman agent is required on the Cloud Controller (CLC), Node Controllers (NCs), and any host that is a MidoNet Gateway node (e.g., UFS).
+
+**To install Midolman agent** 
 
 Edit the `/etc/midolman/midolman.conf` file to set the ZooKeeper host IP(s). Replace ZOOKEEPER_HOST_IP in the following example: 
 
@@ -60,15 +62,13 @@ Enable and start Midolman:
 
 Configure a Midolman resource usage template. For large Eucalyptus clouds, use the agent-compute-large template. For standard (small or medium) Eucalyptus clouds, use the default template. For gateway nodes, use the agent-gateway templates. 
 
-
 {{% notice note %}}
 For production environments, large templates are recommended. 
 {{% /notice %}}
 
+See the [Midolman Installation documentation](https://docs.midonet.org/docs/v5.2/en/quick-start-guide/rhel-7_mitaka-rdo/content/_midolman_installation.html) for more information. 
 
-See the [Midolman Installation documentation](http://docs.midokura.com/docs/v5.2/en/quick-start-guide/rhel-7_kilo-rdo/content/_midolman_installation.html) for more information. 
-
-Check MidoNet version # and doc paths each release - match the compat matrix for the release! NOTE that Midokura changes doc repo frequently. GLOBAL SEARCH on "docs.midokura.com" across all docs. Choose the Midolman resource usage template name, based on the size and type of installation: 
+Choose the Midolman resource usage template name, based on the size and type of installation: 
 
     agent-compute-large
     agent-compute-medium
@@ -80,17 +80,17 @@ Run this command, replacing `TEMPLATE_NAME` with your chosen template:
 
     mn-conf template-set -h local -t TEMPLATE_NAME
 
-
 ## Create a tunnel zone in MidoNet and add hosts
-This topic describes how to create a MidoNet tunnel zone.In MidoNet, a tunnel zone is an isolation zone for hosts. Physical hosts that are members of a given tunnel zone communicate directly with one another and establish network tunnels as needed, and on demand. These network tunnels are used to transport overlay traffic (e.g., inter-VM communication) and isolate the underlay physical network communication (i.e., inter-physical hosts communication). On a Eucalyptus deployment, one MidoNet tunnel zone is expected with the IP address on the physical network designated to carry VM traffic being used when configuring its members. Eucalyptus accepts the following tunnel zone names: 
+This topic describes how to create a MidoNet tunnel zone. In MidoNet, a tunnel zone is an isolation zone for hosts. Physical hosts that are members of a given tunnel zone communicate directly with one another and establish network tunnels as needed, and on demand. These network tunnels are used to transport overlay traffic (e.g., inter-VM communication) and isolate the underlay physical network communication (i.e., inter-physical hosts communication). On a Eucalyptus deployment, one MidoNet tunnel zone is expected with the IP address on the physical network designated to carry VM traffic being used when configuring its members. Eucalyptus accepts the following tunnel zone names: 
 
 * eucatz 
 * euca-tz 
 * midotz 
 * mido-tz 
-For more information, see [What are Tunnel Zones?](http://docs.midokura.com/docs/v5.2/en/operations-guide/content/tunnel_zones.html) 
 
-Note to WRITER: Yep, it's "underlay physical network" https://docs.midonet.org/docs/v5.2/en/reference-architecture/content/underlay_network.html (not "underlying physical network") **To create a tunnel zone in MidoNet** 
+For more information, see [What are Tunnel Zones?](https://docs.midonet.org/docs/v5.2/en/operations-guide/content/tunnel_zones.html) 
+
+**To create a tunnel zone in MidoNet**
 
 Log into the MidoNet shell. For example: 
 
@@ -115,12 +115,13 @@ After verifying all your hosts are listed, add each host to your tunnel zone as 
     midonet> tunnel-zone tzone0 add member host host1 address HOST_1_IP
     midonet> tunnel-zone tzone0 add member host host2 address HOST_2_IP
 
-You are now ready to install and configure Eucalyptus to use this MidoNet installation. 
+You are now ready to install and configure Eucalyptus to use this MidoNet installation.
+
 ## Additional ZooKeeper Configuration
-Ongoing data directory cleanup is required for ZooKeeper.This should be moved to the Admin Guide when networking docs are rearranged further. The following parameters should be added in */etc/zookeeper/zoo.cfg* for automatic purging of the snapshots and corresponding transaction logs: 
+Ongoing data directory cleanup is required for ZooKeeper. The following parameters should be added in */etc/zookeeper/zoo.cfg* for automatic purging of the snapshots and corresponding transaction logs: 
 
     autopurge.snapRetainCount=3  # The number of snapshots to retain in dataDir
     autopurge.purgeInterval=1  # Purge task interval in hours
 
-Check ZooKeeper version # and doc paths each release - match the compat matrix for the release! For more information, see [ZooKeeper Admin Guide, Ongoing Data Directory Cleanup](http://zookeeper.apache.org/doc/r3.4.8/zookeeperAdmin.html#Ongoing+Data+Directory+Cleanup) . 
+For more information, see [ZooKeeper Admin Guide, Ongoing Data Directory Cleanup](http://zookeeper.apache.org/doc/r3.4.8/zookeeperAdmin.html#Ongoing+Data+Directory+Cleanup).
 
