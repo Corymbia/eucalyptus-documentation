@@ -4,6 +4,7 @@ weight = 10
 +++
 
 This topic addresses networking in the Eucalyptus cloud.
+
 ## Networking Modes
 Eucalyptus offers different modes to provide you with a cloud that will fit in your current network. For information what each networking mode has to offer, see [Plan Networking Modes]({{< ref planning_networking_modes.md >}}) . 
 
@@ -15,13 +16,3 @@ Eucalyptus EDGE networking mode supports EC2-Classic networking. Your instances 
 ## EC2-VPC Networking
 Eucalyptus VPCMIDO networking mode resembles the Amazon Virtual Private Cloud (VPC) product wherein the network is fully configurable by users. For more information about EC2-VPC networking, see [Differences Between Instances in EC2-Classic and EC2-VPC](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html#differences-ec2-classic-vpc) . 
 
-
-## More Information
-For more information about networking, go to the following resources: 
-
-
-
-* (introductory for how Eucalyptus is using networking) 
-* AWS VPC Support in Eucalyptus: Midokura + Eucalyptus 
-* in Eucalyptus cloud 
-* (this PDF is high-level and good for introductory material but not for troubleshooting) 
