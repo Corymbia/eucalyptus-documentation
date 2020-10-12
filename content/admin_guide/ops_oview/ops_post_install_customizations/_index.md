@@ -5,30 +5,32 @@ weight = 10
 
 Managed mode references should be deleted in 5.0. DOC-1888 For most production deployments, we recommend that you use a configuration management tool. Customers have been successful deploying using the following: 
 
-
-
 * Chef 
 * Puppet F-Secure 
 * Anisible 
+
 This section describes the most commonly applied post-install customizations and the issues they pose: 
-
-
 
 * Over-subscription 
 * Networking changes (EDGE and Managed modes) 
 * CloudWatch tweaks/customizations 
 * Capacity changes 
 
+
 ## Over-subscription
 Over-subscription refers to the practice of expanding your computer beyond its limits. Over-subscription applies only to node controllers. You may modify disks and cores to allow enough usage buffer for your instance.Navigate to `/etc/eucalyptus/` and locate the `eucalyptus.conf` file. Edit the following values to define the appropriate size buffers for your instances: `NC_WORK_SIZE` Defines the amount of disk space available for instances to be run. Defaults to 1/3 of the currently available disk space on the NC, and NC_CACHE_SIZE defaults to the other 2/3. 
 
 `NC_CACHE_SIZE` Defines how much disk space is needed for images to be cached. `MAX_CORES` Defines the maximum number of cores that can be provided to VMs on each NC. If it is 0 or not present, then the only limit on the number of instances is the number of cores available on the NC. If it is present, any value greater than 256 is treated as 256. In order for these changes to take effect, you must restart the NC. 
+
+
 ## Networking Changes (EDGE and Managed modes)
 You can modify the default by adding network IPs to your cloud or changing your network from Managed to EDGE mode. Changing these values do not require shutting down the whole system.
+
+
 ## Add Network IPs
 To add network IPs:In EDGE mode, adding or changing the IP involves creating a JSON file and uploading it the Cloud Controller (CLC). See [Configure for Edge Mode]({{< ref nw_edge.md >}}) for more details. No restart needed, changes apply automatically. 
-## Change Modes
-You can modify the default network from Managed to EDGE networking mode.See [Eucalyptus Migration to Edge Networking Mode]({{< ref moving_to_edge.md >}}) for more details. 
+
+
 ## Change CloudWatch Properties
 You can change the following CloudWatch properties:
 
