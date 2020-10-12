@@ -13,7 +13,7 @@ Documentation for Eucalyptus Cloud.
 
 The documentation consists of the following guides:
 
-{{% children %}}
+{{% chil dren %}}
 
 ---
 Copyright for portions of this documentation are held by Ent. Services Development Corporation LP, 2017. All other copyright for this documentation is held by AppScale Systems, Inc 2020 
