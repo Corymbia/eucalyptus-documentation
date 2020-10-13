@@ -1,6 +1,6 @@
 +++
 title = "Eucalyptus Components"
-weight = 10
+weight = 20
 +++
 
 This topic describes the various components that comprise a Eucalyptus cloud.The following image shows a high-level architecture of Eucalyptus with its main components. 

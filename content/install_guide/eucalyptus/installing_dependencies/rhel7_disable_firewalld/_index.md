@@ -1,6 +1,6 @@
 +++
 title = "Disable FirewallD on RHEL 7"
-weight = 10
+weight = 20
 +++
 
 This topic describes how to stop and disable FirewallD on RHEL 7.**Prerequisites** 

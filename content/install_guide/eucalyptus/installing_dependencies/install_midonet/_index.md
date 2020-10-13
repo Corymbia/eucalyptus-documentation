@@ -1,6 +1,6 @@
 +++
 title = "Install MidoNet"
-weight = 5
+weight = 60
 chapter = true
 +++
 

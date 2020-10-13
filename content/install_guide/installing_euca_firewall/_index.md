@@ -1,6 +1,6 @@
 +++
 title = "Install Eucalyptus from a Local Package Repository"
-weight = 10
+weight = 40
 +++
 
 This topic describes downloading and installing Eucalyptus from a local repository.In certain situations, you might need to install Eucalyptus from a local repository. For example if: 

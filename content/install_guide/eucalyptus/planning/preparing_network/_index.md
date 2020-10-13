@@ -1,6 +1,6 @@
 +++
 title = "Prepare the Network"
-weight = 5
+weight = 70
 chapter = true
 +++
 

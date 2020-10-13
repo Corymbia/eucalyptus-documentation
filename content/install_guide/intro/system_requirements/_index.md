@@ -1,6 +1,6 @@
 +++
 title = "System Requirements"
-weight = 10
+weight = 30
 +++
 
 To install Eucalyptus, your system must meet the baseline requirements described in this topic.

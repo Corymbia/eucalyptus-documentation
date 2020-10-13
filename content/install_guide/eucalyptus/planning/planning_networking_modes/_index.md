@@ -1,6 +1,6 @@
 +++
 title = "Plan Networking Modes"
-weight = 5
+weight = 60
 chapter = true
 +++
 

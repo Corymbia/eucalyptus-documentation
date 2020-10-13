@@ -1,6 +1,6 @@
 +++
 title = "Install Repositories"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -20,4 +20,4 @@ EPEL software — EPEL (Extra Packages for Enterprise Linux) are free, open sour
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

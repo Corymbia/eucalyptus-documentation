@@ -1,6 +1,6 @@
 +++
 title = "Introduction to Eucalyptus"
-weight = 5
+weight = 20
 chapter = true
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Plan Your Installation"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -21,5 +21,4 @@ This section describes how to evaluate each tradeoff to determine the best choic
 By the end of this section, you should be able to specify how you will deploy Eucalyptus in your environment, any tradeoffs between feature set and flexibility, and where your deployment will integrate with existing infrastructure systems. 
 
 
-
-{{% children %}}
+{{% children sort="weight" %}}

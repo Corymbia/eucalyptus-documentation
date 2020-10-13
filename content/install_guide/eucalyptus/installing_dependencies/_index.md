@@ -1,6 +1,6 @@
 +++
 title = "Configure Dependencies"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Configure Dependencies
 Before you install Eucalyptus , ensure you have the appropriate dependencies installed and configured.
 
-{{% children %}}
+{{% children sort="weight" %}}
