@@ -1,6 +1,6 @@
 +++
 title = "Troubleshooting"
-weight = 10
+weight = 50
 +++
 
 This section is presented in a Q&A format to provide a quick reference to the most frequently asked questions. 

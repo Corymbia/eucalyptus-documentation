@@ -1,9 +1,9 @@
 +++
 title = "Disable CloudWatch"
-weight = 10
+weight = 90
 +++
 
 To disable CloudWatch, run the following command.
 
-    euctl <partition>.cloudwatch.disable_cloudwatch_service=true
+    euctl cloudwatch.enable_cloudwatch_service=true
 

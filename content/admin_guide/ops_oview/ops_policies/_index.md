@@ -1,6 +1,6 @@
 +++
 title = "Managing Policies"
-weight = 10
+weight = 50
 +++
 
 This topic details best practices for managing your cloud policies.

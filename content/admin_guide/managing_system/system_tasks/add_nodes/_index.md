@@ -1,6 +1,6 @@
 +++
 title = "Add a Node Controller"
-weight = 10
+weight = 40
 +++
 
 If you want to increase your system’s capacity, you’ll want to add more Node Controllers (NCs).To add an NC, perform the following tasks: 

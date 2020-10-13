@@ -1,6 +1,6 @@
 +++
 title = "Change Network Configuration"
-weight = 5
+weight = 30
 chapter = true
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Common Problems"
-weight = 5
+weight = 30
 chapter = true
 +++
 

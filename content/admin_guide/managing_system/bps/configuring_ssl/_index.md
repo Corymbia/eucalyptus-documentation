@@ -1,6 +1,6 @@
 +++
 title = "Configure SSL"
-weight = 10
+weight = 20
 +++
 
 In order to connect to Eucalyptus using SSL, you must have a valid certificate for the Cloud Controller (CLC). You must also be running the Cloud Controller and Cluster Controller (CC) on separate machines.

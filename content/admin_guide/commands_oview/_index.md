@@ -1,6 +1,6 @@
 +++
 title = "Eucalyptus Commands"
-weight = 5
+weight = 70
 chapter = true
 +++
 

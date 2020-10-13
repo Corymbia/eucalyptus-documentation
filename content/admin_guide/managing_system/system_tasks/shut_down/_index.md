@@ -1,6 +1,6 @@
 +++
 title = "Shut Down Eucalyptus"
-weight = 5
+weight = 80
 chapter = true
 +++
 
@@ -14,4 +14,4 @@ Before you shut Eucalyptus down, we recommend that you notify all users that you
 {{% /notice %}}
 
 
-{{% children %}}
+{{% children sort="weight" %}}

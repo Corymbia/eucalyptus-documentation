@@ -1,6 +1,6 @@
 +++
 title = "Restart Walrus"
-weight = 10
+weight = 30
 +++
 
 Log in to Walrus and enter the following command: 

@@ -1,6 +1,6 @@
 +++
 title = "Restart the SC"
-weight = 10
+weight = 50
 +++
 
 Log in to the SC and enter the following command: 

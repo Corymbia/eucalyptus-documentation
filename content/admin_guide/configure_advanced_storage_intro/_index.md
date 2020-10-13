@@ -1,6 +1,6 @@
 +++
 title = "Advanced Storage Configuration"
-weight = 5
+weight = 80
 chapter = true
 +++
 

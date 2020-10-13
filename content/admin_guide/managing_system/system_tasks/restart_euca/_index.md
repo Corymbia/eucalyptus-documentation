@@ -1,6 +1,6 @@
 +++
 title = "Restart Eucalyptus"
-weight = 5
+weight = 70
 chapter = true
 +++
 
@@ -14,4 +14,4 @@ Before you restart Eucalyptus, we recommend that you notify all users that you a
 {{% /notice %}}
 
 
-{{% children %}}
+{{% children sort="weight" %}}

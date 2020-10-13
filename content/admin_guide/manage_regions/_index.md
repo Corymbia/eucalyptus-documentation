@@ -1,6 +1,6 @@
 +++
 title = "Manage Regions"
-weight = 5
+weight = 50
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Manage Regions
 This section provides information about regions and identity federation.
 
-{{% children %}}
+{{% children sort="weight" %}}
