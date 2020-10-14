@@ -1,6 +1,6 @@
 +++
 title = "Using CloudWatch"
-weight = 5
+weight = 100
 chapter = true
 +++
 
@@ -14,4 +14,4 @@ To find out how to use CloudWatch, see [CloudWatch Tasks]({{< ref monitoring_tas
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

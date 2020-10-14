@@ -1,6 +1,6 @@
 +++
 title = "Subnets and IP Addressing"
-weight = 10
+weight = 20
 +++
 
 A virtual private cloud (VPC) is a virtual network that is logically isolated from other virtual networks in your Eucalyptus cloud. 

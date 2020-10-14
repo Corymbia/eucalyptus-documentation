@@ -1,6 +1,6 @@
 +++
 title = "Uploading SSL Certificates for Elastic Load Balancing"
-weight = 10
+weight = 60
 +++
 
 You must install an X.509 certificate on your load balancer in order to use HTTPS or SSL termination. The X.509 certificate is issued by a central Certificate Authority (CA) and contains identifying information, including a digital signature. X.509 certificates have a validity period. Once an X.509 certificate expires, you must create and install a new certificate.

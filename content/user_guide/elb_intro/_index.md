@@ -1,6 +1,6 @@
 +++
 title = "Using Elastic Load Balancing"
-weight = 5
+weight = 90
 chapter = true
 +++
 

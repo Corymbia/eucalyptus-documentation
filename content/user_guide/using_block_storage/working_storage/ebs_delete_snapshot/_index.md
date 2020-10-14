@@ -1,6 +1,6 @@
 +++
 title = "Delete a Snapshot"
-weight = 10
+weight = 60
 +++
 
 The following example shows how to delete a snapshot. 

@@ -1,6 +1,6 @@
 +++
 title = "Using Tags and Filters"
-weight = 5
+weight = 50
 chapter = true
 +++
 

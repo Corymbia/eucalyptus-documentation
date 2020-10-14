@@ -1,6 +1,6 @@
 +++
 title = "List Available Snapshots"
-weight = 10
+weight = 50
 +++
 
 You can use the Eucalyptus command line tools to list available snapshots and retrieve information about a specific snapshot. 

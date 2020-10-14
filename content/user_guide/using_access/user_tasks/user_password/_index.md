@@ -1,6 +1,6 @@
 +++
 title = "Change User Password"
-weight = 10
+weight = 50
 +++
 
 To change a user's password using the CLI: 

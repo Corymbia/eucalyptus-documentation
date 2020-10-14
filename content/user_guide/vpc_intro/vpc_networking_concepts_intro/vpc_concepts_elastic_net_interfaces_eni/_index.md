@@ -1,6 +1,6 @@
 +++
 title = "Elastic Network Interfaces (ENIs)"
-weight = 10
+weight = 20
 +++
 
 In Eucalyptus VPC, networking to instances (VMs) is delivered in the form of Elastic Network Interfaces (ENIs). ENIs are virtual network interfaces that can be attached to and/or detached from instances in a VPC. 

@@ -1,6 +1,6 @@
 +++
 title = "Namespaces, Metrics, and Dimensions"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Namespaces, Metrics, and Dimensions
 This section discusses the namespaces, metrics, and dimensions that CloudWatch supports for Eucalyptus services.
 
-{{% children %}}
+{{% children sort="weight" %}}

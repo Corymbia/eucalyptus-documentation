@@ -1,6 +1,6 @@
 +++
 title = "EBS EMI Creation Overview"
-weight = 5
+weight = 40
 chapter = true
 +++
 

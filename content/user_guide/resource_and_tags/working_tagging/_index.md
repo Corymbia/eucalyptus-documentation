@@ -10,14 +10,11 @@ This section details the tasks that you can with tagging and filtering. You can 
 
 Eucalyptus supports three commands for tagging: 
 
-
-
 * euca-create-tags 
 * euca-describe-tags 
-* euca-delete-tags 
+* euca-delete-tags
+ 
 Eucalyptus supports the following commands for filtering: 
-
-
 
 * euca-describe-addresses 
 * euca-describe-availability-zones 
@@ -32,4 +29,4 @@ Eucalyptus supports the following commands for filtering:
 * euca-describe-volumes 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

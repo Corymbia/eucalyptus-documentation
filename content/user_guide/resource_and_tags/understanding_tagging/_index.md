@@ -10,4 +10,4 @@ This section describes what tagging is, its restrictions, and how tagging relate
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

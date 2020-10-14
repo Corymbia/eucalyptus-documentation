@@ -1,6 +1,6 @@
 +++
 title = "EBS-Backed Instances"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -16,4 +16,4 @@ Linux boot-from-EBS instances do not require EKI and ERI images like paravirtual
 
 ![image]({{< ref "/" >}}images/EBS-Backed-Instances.png)
 
-{{% children %}}
+{{% children sort="weight" %}}

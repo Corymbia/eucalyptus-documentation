@@ -1,6 +1,6 @@
 +++
 title = "Internet Gateways"
-weight = 10
+weight = 40
 +++
 
 An Internet gateway is an object that runs inside of your VPC and provides communication between VPC instances and the Internet. 

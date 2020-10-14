@@ -1,6 +1,6 @@
 +++
 title = "Terminate an Instance with the Management Console"
-weight = 10
+weight = 50
 +++
 
 

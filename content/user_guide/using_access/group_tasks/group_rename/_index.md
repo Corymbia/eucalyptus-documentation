@@ -1,6 +1,6 @@
 +++
 title = "Modify a Group"
-weight = 10
+weight = 30
 +++
 
 To modify a group perform the steps listed in this topic.Modifying a group is similar to a "move" operation. Whoever wants to modify the group must have permission to do it on both sides of the move. That is, you need permission to remove the group from its current path or name, and put that group in the new path or name. 

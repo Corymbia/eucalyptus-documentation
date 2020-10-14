@@ -1,6 +1,6 @@
 +++
 title = "Disable Monitoring"
-weight = 10
+weight = 20
 +++
 
 This section describes steps for disabling monitoring on your cloud resources.To disable monitoring on your resources, following the steps for your resource. 

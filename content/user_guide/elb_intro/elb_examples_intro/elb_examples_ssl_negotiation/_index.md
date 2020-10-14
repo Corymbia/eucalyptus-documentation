@@ -1,6 +1,6 @@
 +++
 title = "Updating the SSL Negotiation Configuration"
-weight = 10
+weight = 80
 +++
 
 Eucalyptus Elastic Load Balancing (ELB) uses SSL negotiation configurations to determine how SSL connections to your load balancer behave. This topic shows how to update an existing load balancer with an SSL negotiation configuration. 

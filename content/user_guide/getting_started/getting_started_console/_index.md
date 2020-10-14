@@ -1,6 +1,6 @@
 +++
 title = "Getting Started with the Eucalyptus Management Console"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section helps you get started using your Eucalyptus cloud with the Eucalypt
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

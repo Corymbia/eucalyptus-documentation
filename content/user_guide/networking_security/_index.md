@@ -1,6 +1,6 @@
 +++
 title = "Using VM Networking and Security"
-weight = 5
+weight = 70
 chapter = true
 +++
 
@@ -11,4 +11,4 @@ The Eucalyptus networking mode used, and it's configuration, determine the featu
 Euca2ools or the AWS CLI provide means for users to interact with these features with commands for allocating and associating IP addresses, as well as creating, deleting, and modifying security groups. 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

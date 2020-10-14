@@ -1,6 +1,6 @@
 +++
 title = "CloudWatch Overview"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -28,4 +28,4 @@ Another use for CloudWatch is to diagnose problems by looking at system performa
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

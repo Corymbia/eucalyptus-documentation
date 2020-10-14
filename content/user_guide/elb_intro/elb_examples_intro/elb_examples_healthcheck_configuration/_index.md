@@ -1,6 +1,6 @@
 +++
 title = "Configuring the Health Check"
-weight = 10
+weight = 30
 +++
 
 To determine which instances are healthy, the load balancer periodically polls the registered instances. You can use the command as described in this topic.Perform the following step to configure how the instances should be polled, how long to wait for a response, and how many consecutive successes or failures are required to mark an instance as healthy or unhealthy. 

@@ -1,6 +1,6 @@
 +++
 title = "Understanding Instance Termination Policies"
-weight = 10
+weight = 50
 +++
 
 Before Auto Scaling selects an instance to terminate, it first identifies the availability zone used by the group that contains the most instances. If all availability zones have the same number of instances, Auto Scaling selects a random availability zone, and then uses the termination policy to select the instance within that randomly selected availability zone for termination. 

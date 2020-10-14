@@ -1,6 +1,6 @@
 +++
 title = "Auto Scaling Metrics and Dimensions"
-weight = 10
+weight = 40
 +++
 
 This section discusses the Auto Scaling metrics and dimensions available to CloudWatch. 

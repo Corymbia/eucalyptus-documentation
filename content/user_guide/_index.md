@@ -1,6 +1,6 @@
 +++
 title = "User Guide"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This User Guide instructs you how to use a Eucalyptus private cloud. As a cloud 
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

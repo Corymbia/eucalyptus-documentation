@@ -1,6 +1,6 @@
 +++
 title = "Using EBS"
-weight = 5
+weight = 40
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Using EBS
 This section details what you need to know about Eucalyptus Elastic Block Storage (EBS).
 
-{{% children %}}
+{{% children sort="weight" %}}

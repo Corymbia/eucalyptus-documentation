@@ -1,6 +1,6 @@
 +++
 title = "Understanding VPC Networking Concepts"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -12,4 +12,4 @@ This documentation assumes that you have some knowledge of IP addressing, CIDR, 
 {{% /notice %}}
 
 
-{{% children %}}
+{{% children sort="weight" %}}
