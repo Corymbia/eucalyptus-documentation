@@ -1,6 +1,6 @@
 +++
 title = "Delete an Account"
-weight = 10
+weight = 40
 +++
 
 To delete an account perform the steps listed in this topic.

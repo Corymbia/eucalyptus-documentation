@@ -1,6 +1,6 @@
 +++
 title = "Add a Group Policy"
-weight = 10
+weight = 20
 +++
 
 To add a group policy perform the steps listed in this topic.Enter the following command: 
@@ -10,8 +10,6 @@ To add a group policy perform the steps listed in this topic.Enter the following
     						
 
 The optional `-o` parameter tells Eucalyptus to return the JSON policy, as in this example: 
-
-
 
     {"Version":"2008-10-17","Statement":[{"Effect":"Allow", "Action":["ec2:RunInstances"], "Resource":["*"]}]}
 

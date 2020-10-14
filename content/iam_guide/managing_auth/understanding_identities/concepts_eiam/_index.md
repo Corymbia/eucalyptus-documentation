@@ -1,6 +1,6 @@
 +++
 title = "Access Concepts"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Access Concepts
 This section describes what Eucalyptus access is and what you need to know about it so that you can configure access to your cloud.
 
-{{% children %}}
+{{% children sort="weight" %}}

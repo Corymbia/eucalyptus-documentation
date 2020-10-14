@@ -1,6 +1,6 @@
 +++
 title = "Policy Overview"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,15 +10,12 @@ Eucalyptus uses the policy language to specify user level permissions as AWS IAM
 
 A permission statement has the following components: 
 
-
-
 * Begins the decision that applies to all following components. Either: or 
 * Indicates service-specific and case-sensitive commands. For example: 
 * Indicates selected resources, each specified as an Amazon resource name (ARN). For example: 
 * Indicates additional constraints of the permission. For example: 
+
 The following policy example contains a statement that gives a user with full permission. This is the same access as the account administrator: 
-
-
 
     {
       "Version":"2011-04-01",
@@ -41,5 +38,4 @@ You can attach IAM policies to both users and groups. When attached to groups, a
 Do not attach IAM policies (except quota policies, a Eucalyptus extension) to account admins. At this point, doing so won’t result in a failure but may have unexpected consequences. 
 
 
-
-{{% children %}}
+{{% children sort="weight" %}}

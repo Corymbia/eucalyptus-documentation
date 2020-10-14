@@ -1,6 +1,6 @@
 +++
 title = "Special User Attributes"
-weight = 10
+weight = 50
 +++
 
 Eucalyptus extends the IAM model by providing the following extra attributes for a user.

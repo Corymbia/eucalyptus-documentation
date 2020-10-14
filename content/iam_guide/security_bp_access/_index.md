@@ -1,6 +1,6 @@
 +++
 title = "Authentication and Access Control Best Practices"
-weight = 10
+weight = 40
 +++
 
 This topic describes best practices for Identity and Access Management and the account.

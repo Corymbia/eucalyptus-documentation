@@ -1,6 +1,6 @@
 +++
 title = "Create a Login Profile"
-weight = 10
+weight = 30
 +++
 
 To create a login profile, perform the tasks in this topic.Enter the following command: 
