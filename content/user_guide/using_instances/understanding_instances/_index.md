@@ -10,4 +10,4 @@ An instance is a virtual machine (VM). Eucalyptus allows you to run instances fr
 
 The following sections describe instances in more detail. 
 
-{{% children %}}
+{{% children sort="weight" %}}

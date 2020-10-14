@@ -1,6 +1,6 @@
 +++
 title = "Use Case: Create a User"
-weight = 10
+weight = 20
 +++
 
 This use case details tasks needed to create a user with limited access. 
@@ -40,8 +40,6 @@ Enter the following command to create the user `sam` in the group `ebs-backup` a
     euare-usercreate -u sam -g ebs-backup -k
 
 Eucalyptus responds with the access key ID and the secret key, as in the following example: 
-
-
 
     AKIAJ25S6IJ5K53Y5GCA
     QLKyiCpfjWAvlo9pWqWCbuGB9L3T61w7nYYF057l

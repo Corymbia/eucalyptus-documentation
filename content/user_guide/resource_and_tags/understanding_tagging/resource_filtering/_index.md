@@ -1,6 +1,6 @@
 +++
 title = "Filtering Resources"
-weight = 10
+weight = 20
 +++
 
 You can search and filter resources based on the tags you use. For example, you can list a Eucalyptus Machine Image (EMI) using euca-describe-images, and you can list instances using euca-describe-instances .

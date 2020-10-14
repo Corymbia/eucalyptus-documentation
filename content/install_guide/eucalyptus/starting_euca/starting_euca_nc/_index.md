@@ -1,6 +1,6 @@
 +++
 title = "Start the NC"
-weight = 10
+weight = 60
 +++
 
 **Prerequisites** You should have installed and configured Eucalyptus before starting the NC. 

@@ -1,6 +1,6 @@
 +++
 title = "Viewing and Publishing Metrics"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Viewing and Publishing Metrics
 This section describes how to view Eucalyptus metrics as well as how to publish your own metrics.
 
-{{% children %}}
+{{% children sort="weight" %}}

@@ -1,6 +1,6 @@
 +++
 title = "Configuring an Instance Termination Policy"
-weight = 10
+weight = 40
 +++
 
 You can control how Auto Scaling determines which instances to terminate. You can specify a termination policy when you create an Auto Scaling group, and you can change the termination policy at any time using the command.You can override the default instance termination policy for your Auto Scaling group with one of the following options: 

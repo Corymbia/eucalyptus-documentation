@@ -1,6 +1,6 @@
 +++
 title = "Plan Eucalyptus Features"
-weight = 5
+weight = 50
 chapter = true
 +++
 

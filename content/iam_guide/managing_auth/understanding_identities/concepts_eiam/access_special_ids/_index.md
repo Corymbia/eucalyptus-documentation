@@ -1,6 +1,6 @@
 +++
 title = "Special Identities"
-weight = 10
+weight = 20
 +++
 
 Eucalyptus has two special identities for the convenience of administration and use of the system.

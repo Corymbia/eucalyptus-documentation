@@ -1,6 +1,6 @@
 +++
 title = "Cloud Tasks"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Cloud Tasks
 This section contains a listing of your Eucalyptus cloud-related tasks.
 
-{{% children %}}
+{{% children sort="weight" %}}

@@ -1,14 +1,16 @@
 +++
 title = "Start Walrus"
-weight = 10
+weight = 30
 +++
 
-**Prerequisites** You should have installed and configured Eucalyptus before starting the Walrus Backend. 
+**Prerequisites** 
 
+You should have installed and configured Eucalyptus before starting the Walrus Backend. 
 
 {{% notice note %}}
 If you not using Walrus as your object storage backend, or if you installed Walrus on the same host as the CLC, you can skip this. 
 {{% /notice %}}
+
 **To start the Walrus** 
 
 If you want the Walrus Backend service to start at each boot-time, run this command: 

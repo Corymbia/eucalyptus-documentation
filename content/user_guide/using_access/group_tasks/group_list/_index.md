@@ -1,6 +1,6 @@
 +++
 title = "List Groups"
-weight = 10
+weight = 60
 +++
 
 To list groups perform the steps listed in this topic.Enter the following command: 

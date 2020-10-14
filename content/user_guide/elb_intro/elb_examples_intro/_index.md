@@ -1,6 +1,6 @@
 +++
 title = "Eucalyptus Load Balancing Usage Examples"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section contains examples of common usage scenarios for Eucalyptus Load Bal
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

@@ -1,6 +1,6 @@
 +++
 title = "Installation Guide"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Installation Guide
 This section describes concepts and tasks you need to successfully install Eucalyptus.
 
-{{% children %}}
+{{% children sort="weight" %}}

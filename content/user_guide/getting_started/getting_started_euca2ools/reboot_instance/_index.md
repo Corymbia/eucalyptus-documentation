@@ -1,6 +1,6 @@
 +++
 title = "Reboot an Instance"
-weight = 10
+weight = 70
 +++
 
 Rebooting preserves the root filesystem of an instance across restarts. To reboot an instance: 

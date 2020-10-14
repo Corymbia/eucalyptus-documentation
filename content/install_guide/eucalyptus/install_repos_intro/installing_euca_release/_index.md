@@ -1,6 +1,6 @@
 +++
 title = "Install Eucalyptus Release Packages"
-weight = 10
+weight = 20
 +++
 
 To install Eucalyptus from release packages, perform the tasks listed in this topic.**Prerequisites** 

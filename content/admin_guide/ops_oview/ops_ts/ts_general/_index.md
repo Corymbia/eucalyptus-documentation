@@ -1,6 +1,6 @@
 +++
 title = "Component Workarounds"
-weight = 5
+weight = 40
 chapter = true
 +++
 

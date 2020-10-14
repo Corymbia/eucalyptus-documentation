@@ -1,6 +1,6 @@
 +++
 title = "Reboot an Instance with the Management Console"
-weight = 10
+weight = 40
 +++
 
 Rebooting preserves the root filesystem of an instance across restarts. To reboot an instance: 

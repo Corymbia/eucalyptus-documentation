@@ -1,6 +1,6 @@
 +++
 title = "Configuring a Demand-Based Scaling Policy"
-weight = 10
+weight = 20
 +++
 
 An Auto Scaling group needs a scaling policy to determine when to perform scaling activities. Auto scaling policies work with CloudWatch to identify metrics and set alarms, which are triggered when the metrics fall outside of a specified value range. To configure a scale-based policy, you need to create the policy, and then create CloudWatch alarms to associate with the policy.In the following example, we will create a demand-based scaling policy. 

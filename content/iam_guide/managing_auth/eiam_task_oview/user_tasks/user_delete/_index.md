@@ -1,6 +1,6 @@
 +++
 title = "Delete a User"
-weight = 10
+weight = 80
 +++
 
 To delete a user, perform the tasks in this topic.Enter the following command 

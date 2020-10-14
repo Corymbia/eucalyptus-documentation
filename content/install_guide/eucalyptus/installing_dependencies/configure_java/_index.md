@@ -1,6 +1,6 @@
 +++
 title = "Configure Java"
-weight = 10
+weight = 40
 +++
 
 For the supported version of the Java Virtual Machine (JVM), see the Compatibility Matrix in the Release Notes . 

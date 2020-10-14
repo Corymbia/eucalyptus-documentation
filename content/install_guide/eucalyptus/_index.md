@@ -1,6 +1,6 @@
 +++
 title = "Eucalyptus Installation"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section details steps to install Eucalyptus .To install Eucalyptus , perfor
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

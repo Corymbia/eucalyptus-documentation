@@ -1,6 +1,6 @@
 +++
 title = "Configure VPCMIDO Network Mode"
-weight = 5
+weight = 20
 chapter = true
 +++
 

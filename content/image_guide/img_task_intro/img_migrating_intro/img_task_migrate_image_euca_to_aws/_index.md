@@ -1,6 +1,6 @@
 +++
 title = "Migrate a Linux Image from Eucalyptus to AWS"
-weight = 10
+weight = 50
 +++
 
 This topic describes how to migrate an image from Eucalyptus to AWS.

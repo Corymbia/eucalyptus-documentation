@@ -1,6 +1,6 @@
 +++
 title = "Restart the CC"
-weight = 10
+weight = 40
 +++
 
 Log in to the CC and enter the following command: 

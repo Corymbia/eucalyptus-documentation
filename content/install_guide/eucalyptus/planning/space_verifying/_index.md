@@ -1,6 +1,6 @@
 +++
 title = "Plan Disk Space"
-weight = 10
+weight = 40
 +++
 
 We recommend that you choose a disk for the Walrus that is large enough to hold all objects and buckets you ever expect to have, including all images that will ever be registered to your system, plus any Amazon S3 application data. For heavy S3 usage, Riak CS is a better choice for object storage. 

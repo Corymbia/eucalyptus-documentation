@@ -1,6 +1,6 @@
 +++
 title = "Best Practices"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This topic contains recommendations for hardening your Eucalyptus cloud.
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

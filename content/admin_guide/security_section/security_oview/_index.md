@@ -7,8 +7,6 @@ This topic is intended for people who are currently using Eucalyptus and who wan
 
 This topic covers available controls and best practices for securing your Eucalyptus cloud. Cloud security depends on security across many layers of infrastructure and technology: 
 
-
-
 * Security of the physical infrastructure and hosts 
 * Security of the virtual infrastructure 
 * Security of instances 

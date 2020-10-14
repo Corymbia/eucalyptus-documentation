@@ -1,6 +1,6 @@
 +++
 title = "Configure NTP"
-weight = 10
+weight = 30
 +++
 
 

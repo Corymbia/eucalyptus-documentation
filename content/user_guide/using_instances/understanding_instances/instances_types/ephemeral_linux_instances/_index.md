@@ -1,6 +1,6 @@
 +++
 title = "Ephemeral Linux Instances"
-weight = 10
+weight = 20
 +++
 
 Instance store-backed instances are ephemeral instances. This means that any changes made to a running instance are lost if the instance is either purposely or accidentally terminated. Applications running in ephemeral instances should write their data to persistent storage for safe keeping. Persistent storage available to instances includes Storage Controller volumes and the Walrus. 

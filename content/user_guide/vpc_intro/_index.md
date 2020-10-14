@@ -1,6 +1,6 @@
 +++
 title = "Using Virtual Private Cloud"
-weight = 5
+weight = 130
 chapter = true
 +++
 
@@ -12,4 +12,4 @@ For more information about Amazon Virtual Private Cloud, see the .
 {{% /notice %}}
 
 
-{{% children %}}
+{{% children sort="weight" %}}

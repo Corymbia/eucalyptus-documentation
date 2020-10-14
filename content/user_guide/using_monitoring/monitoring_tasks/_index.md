@@ -1,6 +1,6 @@
 +++
 title = "CloudWatch Tasks"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section details the tasks you can perform using CloudWatch.This section exp
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

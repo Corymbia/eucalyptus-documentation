@@ -1,6 +1,6 @@
 +++
 title = "EBS Tasks"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section contains examples of the most common Eucalyptus EBS tasks.
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

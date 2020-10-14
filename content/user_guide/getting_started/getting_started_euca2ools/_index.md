@@ -1,6 +1,6 @@
 +++
 title = "Getting Started with Euca2ools"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -11,11 +11,9 @@ This section helps you get started using your Eucalyptus cloud, and covers setti
 
 {{% notice note %}}
 This section primarily deals with using the Eucalyptus command line. For complete documentation on using web-based the Eucalyptus Console, see [Console Login]({{< ref console_login.md >}}) . 
-
-
 {{% /notice %}}
+
 To access Eucalyptus via the command line tools, you need keys for Euca2ools. To access Eucalyptus with the Management Console, you'll need a password for the Management Console. Talk to your cloud administrator to get your keys and passwords. 
 
 
-
-{{% children %}}
+{{% children sort="weight" %}}

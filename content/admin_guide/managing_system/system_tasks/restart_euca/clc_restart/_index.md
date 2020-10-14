@@ -1,6 +1,6 @@
 +++
 title = "Restart the CLC"
-weight = 10
+weight = 20
 +++
 
 Log in to the CLC and enter the following command: 

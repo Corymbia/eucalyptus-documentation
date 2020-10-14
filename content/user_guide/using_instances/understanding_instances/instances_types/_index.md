@@ -1,6 +1,6 @@
 +++
 title = "Instance Basics"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Instance Basics
 This section describes information to help you decide which type of instance you need.
 
-{{% children %}}
+{{% children sort="weight" %}}

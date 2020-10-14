@@ -1,6 +1,6 @@
 +++
 title = "Using CloudFormation"
-weight = 5
+weight = 120
 chapter = true
 +++
 
@@ -195,4 +195,4 @@ CloudFormation follows the same convention as the other user facing services.
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

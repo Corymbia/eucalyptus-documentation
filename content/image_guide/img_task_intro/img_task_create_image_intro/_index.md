@@ -1,6 +1,6 @@
 +++
 title = "Create an HVM Image"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Create an HVM Image
 This section covers how to create a new image for use in your Eucalyptus cloud.
 
-{{% children %}}
+{{% children sort="weight" %}}

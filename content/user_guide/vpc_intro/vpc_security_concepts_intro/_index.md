@@ -1,6 +1,6 @@
 +++
 title = "VPC Security Concepts"
-weight = 5
+weight = 30
 chapter = true
 +++
 

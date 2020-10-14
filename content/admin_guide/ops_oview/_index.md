@@ -1,6 +1,6 @@
 +++
 title = "Operations"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Operations
 This section contains concepts and tasks associated with operating your Eucalyptus cloud.
 
-{{% children %}}
+{{% children sort="weight" %}}

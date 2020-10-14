@@ -1,6 +1,6 @@
 +++
 title = "Monitoring"
-weight = 10
+weight = 70
 +++
 
 This topic includes details about which resources you should monitor.

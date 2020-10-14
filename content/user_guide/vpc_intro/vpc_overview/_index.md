@@ -1,6 +1,6 @@
 +++
 title = "How VPC Works"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ Eucalyptus Virtual Private Cloud (VPC) is an implementation of Amazon VPC that a
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

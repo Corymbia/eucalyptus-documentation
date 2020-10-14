@@ -1,9 +1,11 @@
 +++
 title = "Start the CC"
-weight = 10
+weight = 40
 +++
 
-**Prerequisites** You should have installed and configured Eucalyptus before starting the CC. 
+**Prerequisites** 
+
+You should have installed and configured Eucalyptus before starting the CC. 
 
 **To start the CC** 
 

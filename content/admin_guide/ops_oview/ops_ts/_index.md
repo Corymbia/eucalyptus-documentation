@@ -1,6 +1,6 @@
 +++
 title = "Troubleshooting"
-weight = 5
+weight = 90
 chapter = true
 +++
 
@@ -16,4 +16,4 @@ This topic details how to find information you need to troubleshoot most problem
 For most problems, the procedure for tracing problems is the same: start at the bottom to verify the bottom-most component, and then work your way up. If you do this, you can be assured that the base is solid. This applies to virtually all Eucalyptus components and also works for proactive, targeted monitoring. 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

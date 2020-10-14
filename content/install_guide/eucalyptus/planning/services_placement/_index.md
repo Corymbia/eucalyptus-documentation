@@ -1,6 +1,6 @@
 +++
 title = "Plan Your Hardware"
-weight = 10
+weight = 20
 +++
 
 This topic describes ways you can install Eucalyptus services on your physical servers.You can run Eucalyptus services in any combination on the various physical servers in a data center. For example, you can install the Cloud Controller (CLC), Walrus, CC, and SC on one host machine, and NCs on one or more host machines. Or you can install each service on an independent physical server. This gives each service its own local resources to work with. 

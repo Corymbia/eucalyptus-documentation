@@ -1,6 +1,6 @@
 +++
 title = "Accessing Load Balancer Logs"
-weight = 10
+weight = 120
 +++
 
 To help analyze an application’s performances or troubleshoot problems, you can capture detailed information for all requests coming through your load balancers. When enabled, such access logs will be captured and stored in the S3 bucket.To access ELB logs: 

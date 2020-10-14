@@ -1,6 +1,6 @@
 +++
 title = "Configuring Alarms"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Configuring Alarms
 This section describes how to create, test, and delete and alarm.
 
-{{% children %}}
+{{% children sort="weight" %}}

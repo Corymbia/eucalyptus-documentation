@@ -1,6 +1,6 @@
 +++
 title = "ELB Metrics and Dimensions"
-weight = 10
+weight = 50
 +++
 
 This section discusses the Elastic Load Balancing (ELB) metrics and dimensions available to CloudWatch. 

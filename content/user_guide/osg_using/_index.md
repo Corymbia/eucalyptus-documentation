@@ -1,6 +1,6 @@
 +++
 title = "Using Object Storage"
-weight = 5
+weight = 110
 chapter = true
 +++
 

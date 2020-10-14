@@ -1,6 +1,6 @@
 +++
 title = "Getting Started"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -12,4 +12,4 @@ To access Eucalyptus via the command line tools, you need keys for Euca2ools. To
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

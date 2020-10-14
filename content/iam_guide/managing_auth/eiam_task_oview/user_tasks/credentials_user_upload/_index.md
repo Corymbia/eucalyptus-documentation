@@ -1,6 +1,6 @@
 +++
 title = "Uploading a Certificate"
-weight = 10
+weight = 50
 +++
 
 To upload a certificate provided by a user: 

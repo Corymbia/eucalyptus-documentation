@@ -1,6 +1,6 @@
 +++
 title = "Configure Eucalyptus Storage"
-weight = 5
+weight = 40
 chapter = true
 +++
 

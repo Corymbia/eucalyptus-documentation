@@ -1,6 +1,6 @@
 +++
 title = "Configure Eucalyptus"
-weight = 5
+weight = 40
 chapter = true
 +++
 
@@ -16,4 +16,4 @@ Perform the following tasks after you install software, but before you start the
 {{% /notice %}}
 
 
-{{% children %}}
+{{% children sort="weight" %}}

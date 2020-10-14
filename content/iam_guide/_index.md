@@ -1,6 +1,6 @@
 +++
 title = "Identity and Access Management (IAM) Guide"
-weight = 5
+weight = 40
 chapter = true
 +++
 
@@ -10,4 +10,4 @@ This section contains concepts and tasks to help you securely control access to 
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

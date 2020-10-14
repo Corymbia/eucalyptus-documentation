@@ -1,6 +1,6 @@
 +++
 title = "Users"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -10,12 +10,9 @@ Users are subsets of accounts and are added to accounts by an appropriately cred
 
 When you need to add a new user to your Eucalyptus cloud, you'll go through the following process: 
 
+1. Create a user
+1. Add user to a group
+1. Give user a login profile
 
 
-| 1 | Create a user | 
-| 2 | Add user to a group | 
-| 3 | Give user a login profile | 
-
-
-
-{{% children %}}
+{{% children sort="weight" %}}

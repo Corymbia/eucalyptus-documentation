@@ -1,6 +1,6 @@
 +++
 title = "List Policies for a Group"
-weight = 10
+weight = 60
 +++
 
 To list policies for a group perform the steps listed in this topic.Enter the following command: 

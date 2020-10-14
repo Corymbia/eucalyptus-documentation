@@ -1,6 +1,6 @@
 +++
 title = "Groups"
-weight = 5
+weight = 10
 chapter = true
 +++
 
@@ -14,4 +14,4 @@ This section details tasks that can be performed on groups.
 
 
 
-{{% children %}}
+{{% children sort="weight" %}}

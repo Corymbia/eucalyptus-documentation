@@ -1,6 +1,6 @@
 +++
 title = "Networking"
-weight = 10
+weight = 60
 +++
 
 This topic addresses networking in the Eucalyptus cloud.

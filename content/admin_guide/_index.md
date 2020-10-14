@@ -1,6 +1,6 @@
 +++
 title = "Administration Guide"
-weight = 5
+weight = 20
 chapter = true
 +++
 
@@ -8,4 +8,4 @@ chapter = true
 # Administration Guide
 This section contains concepts and tasks to help you manage your Eucalyptus cloud.
 
-{{% children %}}
+{{% children sort="weight" %}}

@@ -1,6 +1,6 @@
 +++
 title = "Algorithms"
-weight = 10
+weight = 30
 +++
 
 This topic describes the algorithms used by Eucalyptus to determine access.
