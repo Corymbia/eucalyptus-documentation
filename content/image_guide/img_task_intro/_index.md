@@ -1,6 +1,6 @@
 +++
 title = "Image Tasks"
-weight = 5
+weight = 30
 chapter = true
 +++
 
@@ -13,4 +13,4 @@ An image is the basis for instances that you spin up for your computing needs. T
 * Migrate an image or an instance from another cloud, such as Amazon Web Services (AWS) or a virtualization platform.
 
 
-{{% children %}}
+{{% children sort="weight" %}}

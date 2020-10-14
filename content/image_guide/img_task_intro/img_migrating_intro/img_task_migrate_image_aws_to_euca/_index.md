@@ -1,6 +1,6 @@
 +++
 title = "Migrate a Linux Image from AWS to Eucalyptus"
-weight = 10
+weight = 40
 +++
 
 You can migrate an S3-backed image from AWS to Eucalyptus.
