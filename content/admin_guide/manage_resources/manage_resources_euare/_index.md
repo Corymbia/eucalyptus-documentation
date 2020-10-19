@@ -3,11 +3,15 @@ title = "Manage IAM Resources"
 weight = 10
 +++
 
-To manage Euare (IAM) resources on your Eucalyptus cloud, use the option with any command that describes, adds, deletes, or modifies resources. This option allows you to assume the role of the admin user for a given account. You can also use a policy to control and limit instances to specific availability zones.The following are some examples.
+To manage Euare (IAM) resources on your Eucalyptus cloud, use the option with any command that describes, adds, deletes, or modifies resources. This option allows you to assume the role of the admin user for a given account. You can also use a policy to control and limit instances to specific availability zones. The following are some examples.
 
 To list all groups in an account, enter the following command: 
 
     euare-grouplistbypath --as-account <account-name>
+
+{{% notice note %}}
+The *as-account* option is for the Euare service only. To run commands for an account with any service use the *clcadmin-impersonate-user* command.
+{{% /notice %}}
 
 To list all users in an account, enter the following command: 
 
