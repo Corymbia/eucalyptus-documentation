@@ -3,10 +3,15 @@ title = "Install Eucalyptus Release Packages"
 weight = 20
 +++
 
-To install Eucalyptus from release packages, perform the tasks listed in this topic.**Prerequisites** 
+To install Eucalyptus from release packages, perform the tasks listed in this topic.
 
-* The prerequisite hardware and software should be in place and available to . 
-**To install Eucalyptus from release packages** Configure the Eucalyptus package repository on each host machine that will run a Eucalyptus service: 
+**Prerequisites** 
+
+* The prerequisite hardware and software should be in place. 
+
+**To install Eucalyptus from release packages** 
+
+Configure the Eucalyptus package repository on each host machine that will run a Eucalyptus service: 
 
     yum install http://downloads.eucalyptus.cloud/software/eucalyptus/snapshot/5/rhel/7/x86_64/eucalyptus-release-5-1.10.as.el7.noarch.rpm # 5.0 snapshot pre-releases
 
@@ -24,7 +29,13 @@ Configure the EPEL package repository on each host machine that will run a Eucal
 
 Enter `y` when prompted to install this package. 
 
-If you are installing on RHEL 7, you must enable the Optional repository in Red Hat Network for each NC, as follows: Go to [http://rhn.redhat.com](http://rhn.redhat.com) and navigate to the system that will run the NC. Click Alter Channel Subscriptions . Make sure the RHEL Server Optional check-box is selected. Click Change Subscriptions . The following steps should be performed on each NC host machine. Install the Eucalyptus Node Controller software on each NC host: 
+If you are installing on RHEL 7, you must enable the Optional repository in Red Hat Network for each NC, as follows: Go to [http://rhn.redhat.com](http://rhn.redhat.com) and navigate to the system that will run the NC. Click Alter Channel Subscriptions . Make sure the RHEL Server Optional check-box is selected. Click Change Subscriptions . 
+
+On CentOS enable the QEMU Enterprise Virtualization repository for each NC:
+
+    yum install centos-release-qemu-ev
+
+The following steps should be performed on each NC host machine. Install the Eucalyptus Node Controller software on each NC host: 
 
     yum install eucalyptus-node
 
