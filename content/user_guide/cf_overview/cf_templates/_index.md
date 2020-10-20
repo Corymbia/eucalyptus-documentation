@@ -4,6 +4,11 @@ weight = 30
 +++
 
 This topic details templates that have been tested with Eucalyptus.
+
+{{% notice warning %}}
+These examples use the older JSON format, YAML format is recommended for Eucalyptus 5
+{{% /notice %}}
+
 ## AccessKeys.template
 
 
