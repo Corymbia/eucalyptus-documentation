@@ -3,34 +3,23 @@ title = "About Eucanetd"
 weight = 10
 +++
 
-The eucanetd service implements artifacts to manage and define Eucalyptus cloud networking. Eucanetd runs alongside the CLC, CC, and/or NC services, depending on the configured networking mode.Eucanetd manages network functionality. For example: 
+The eucanetd service implements artifacts to manage and define Eucalyptus cloud networking. Eucanetd runs alongside the CLC or NC services, depending on the configured networking mode. Eucanetd manages network functionality. For example: 
 
 * Installs network artifacts (iptables, ipsets, ebtables, dhcpd) 
 * Performs state management for the installed network artifacts 
-* Maintains the eucanetd.log file 
 * Updates network artifact configuration as needed 
 * In VPCMIDO mode: 
+  * Interacts with MidoNet via the MidoNet API
+  * Defines network artifacts in MidoNet
 
 
 
 ## Where to deploy eucanetd
-On a Eucalyptus 4.4 cloud: 
+Deploy *eucanetd* depending on the selected network mode: 
 
+| Host Machine | EDGE mode | VPCMIDO mode |
+|  :---- |  :---- |  :---- |
+| CLC | No | Yes |
+| NC | Yes | No |
 
-
-| Host Machine | EDGE mode | VPCMIDO mode | 
-|  :---- |  :---- |  :---- | 
-| CLC | No | Only on CLC | 
-| CC | No | No | 
-| NC | On each NC | No | 
-
-REMOVE THE FOLLOWING TABLE in 5.0. DOC-1888 On a Eucalyptus 4.3 cloud: 
-
-
-
-| Host Machine | EDGE mode | MANAGED modes (deprecated) | VPCMIDO mode | 
-|  :---- |  :---- |  :---- |  :---- | 
-| CLC | No | No | Only on CLC | 
-| CC | No | On each CC | No | 
-| NC | On each NC | On each NC | No | 
-
+When required for a mode *eucanetd* should be deployed on all hosts for that service.
