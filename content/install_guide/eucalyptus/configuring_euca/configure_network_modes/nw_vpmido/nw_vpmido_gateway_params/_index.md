@@ -4,9 +4,9 @@ weight = 10
 +++
 
 This topic provides detailed configuration parameter information for Eucalyptus VPCMIDO network mode.
+
 ## VPCMIDO Gateway Configuration
 The following table provides a list of VPCMIDO parameters. 
-
 
 
 | Parameter | Description | Validation | 
@@ -23,7 +23,5 @@ The following table provides a list of VPCMIDO parameters.
 | BgpAdRoutes | (Optional) BGP configuration * A list of CIDR blocks delegated to this VPCMIDO deployment. VPCMIDO BGP will be configured to advertise these routes. public IPs must be within these CIDR blocks. The same list can be used for all MidoGateways. The advantage of having a separate list per MidoGateway is that it allows different MidoGateways to be responsible for different CIDR blocks. If the same list of CIDR blocks is used for all MidoGateways, MidoNet built-in load sharing/balancing mechanism is used. | Each entry must be a valid CIDR block. | 
 | PublicIps | The public IP address ranges associated with VPCMIDO. | With BGP: Each public IP must be within one of the CIDR blocks in the union of all BgpAdRoutes entries.Must be a valid IP address range.Must not contain network or broadcast address of the CIDR blocks in the union of all BgpAdRoutes.Without BGP: On-premise infrastructure must route all PublicIps to one of the MidoGateways. | 
 
-* BGP parameters are optional but recommended for production. Static configuration can be used for a Proof of Concept (POC) environment; however, it is not recommended for production. 
-
-Gateways with BGP require `BgpPeerAsn` , `BgpAdRoutes` , and `BgpAsn` . If all gateways are static (no BGP), `BgpAsn` is optional. A gateway with BGP has `BgpPeerAsn` and `BgpAdRoutes` parameters; a static gateway does not. 
+Gateways with BGP require *BgpPeerAsn* , *BgpAdRoutes* , and *BgpAsn* . If all gateways are static (no BGP), *BgpAsn* is optional. A gateway with BGP has *BgpPeerAsn* and *BgpAdRoutes* parameters; a static gateway does not.
 
