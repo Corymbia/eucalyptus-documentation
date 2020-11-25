@@ -27,6 +27,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | authentication.credential_download_host_match | CIDR to match against for host address selection | 
 | authentication.credential_download_port | Port to use in service URLs when 'bootstrap.webservices.port' is not appropriate. | 
 | authentication.default_password_expiry | Default password expiry time | 
+| authentication.max_policy_attachments | Maximum number of attached managed policies |
 | authentication.max_policy_size | Maximum size for an IAM policy (bytes) | 
 | authentication.signing_certificates_limit | Limit for signing certificates per user | 
 | authentication.system_account_quota_enabled | Process quotas for system accounts | 
@@ -36,6 +37,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | autoscaling.activitytimeout | Timeout for a scaling activity. | 
 | autoscaling.maxlaunchincrement | Maximum instances to launch at one time. | 
 | autoscaling.maxregistrationretries | Number of times to attempt load balancer registration for each instance. | 
+| autoscaling.maxtags | Maximum number of user defined tags for a group |
 | autoscaling.pendinginstancetimeout | Timeout for a pending instance. | 
 | autoscaling.suspendedprocesses | Globally suspend scaling processes; a comma-delimited list of processes (Launch,Terminate,HealthCheck, ReplaceUnhealthy,AZRebalance, AlarmNotification,ScheduledActions, AddToLoadBalancer). Default is empty, meaning the processes are not suspended. | 
 | autoscaling.suspendedtasks | Suspended scaling tasks. | 
@@ -82,28 +84,29 @@ The following table contains a list of common Eucalyptus cloud variables.
 | bootstrap.webservices.channel_nodelay | Server socket TCP_NODELAY. | 
 | bootstrap.webservices.channel_reuse_address | Socket reuse address. | 
 | bootstrap.webservices.client_http_chunk_buffer_max | Server http chunk max. | 
-| bootstrap.webservices.client_idle_timeout_secs | Client idle timeout (secs). | 
+| bootstrap.webservices.client_http_pool_acquire_timeout | Client http pool acquire timeout |
+| bootstrap.webservices.client_internal_connect_timeout_millis | Client connection timeout (ms) |
+| bootstrap.webservices.client_internal_hmac_signature_enabled | Client HMAC signature version 4 enabled |
 | bootstrap.webservices.client_internal_timeout_secs | Client idle timeout (secs). | 
-| bootstrap.webservices.client_pool_max_mem_per_conn | Server worker thread pool max. | 
+| bootstrap.webservices.client_message_log_whitelist | Client message patterns to match for logging |
 | bootstrap.webservices.client_pool_max_threads | Server worker thread pool max. | 
-| bootstrap.webservices.client_pool_timeout_millis | Client socket select timeout (ms). | 
-| bootstrap.webservices.client_pool_total_mem | Server worker thread pool max. | 
 | bootstrap.webservices.clock_skew_sec | A max clock skew value (in seconds) between client and server accepted when validating timestamps in Query/REST protocol. | 
 | bootstrap.webservices.cluster_connect_timeout_millis | Cluster connect timeout (ms). | 
 | bootstrap.webservices.default_aws_sns_uri_scheme | Default scheme for AWS_SNS_URL. | 
 | bootstrap.webservices.default_ec2_uri_scheme | Default scheme for EC2_URL. | 
 | bootstrap.webservices.default_euare_uri_scheme | Default scheme for EUARE_URL. | 
-| bootstrap.webservices.default_eustore_url | Default EUSTORE_URL. | 
 | bootstrap.webservices.default_https_enabled | Default scheme prefix. | 
 | bootstrap.webservices.default_s3_uri_scheme | Default scheme for S3_URL. | 
 | bootstrap.webservices.disabled_soap_api_components | List of services with disabled SOAP APIs. | 
 | bootstrap.webservices.http_max_chunk_bytes | Maximum HTTP chunk size (bytes). | 
 | bootstrap.webservices.http_max_header_bytes | Maximum HTTP headers size (bytes). | 
 | bootstrap.webservices.http_max_initial_line_bytes | Maximum HTTP initial line size (bytes). | 
+| bootstrap.webservices.http_max_requests_per_connection | Maximum HTTP requests per persistent connection |
 | bootstrap.webservices.http_server_header | HTTP server header returned for responses. If set to "default", the standard version header is returned, e.g. Eucalyptus/4.3.1. If set to another value, that value is returned in the header, except for an empty value, which results in no server header being returned.Default: default | 
 | bootstrap.webservices.listener_address_match | CIDRs matching addresses to bind on Default interface is always bound regardless. | 
 | bootstrap.webservices.log_requests | Enable request logging. | 
 | bootstrap.webservices.oob_internal_operations | Execute internal service operations out of band from the normal service bus. | 
+| bootstrap.webservices.pipeline_enable_query_decompress | Enable Query Pipeline http request decompression |
 | bootstrap.webservices.pipeline_idle_timeout_seconds | Server socket idle time-out. | 
 | bootstrap.webservices.pipeline_max_query_request_size | Maximum Query Pipeline http chunk size (bytes). | 
 | bootstrap.webservices.port | Port to bind Port 8773 is always bound regardless. | 
@@ -122,6 +125,10 @@ The following table contains a list of common Eucalyptus cloud variables.
 | bootstrap.webservices.unknown_parameter_handling | Request unknown parameter handling (default | ignore | error) | 
 | bootstrap.webservices.use_dns_delegation | Use DNS delegation. | 
 | bootstrap.webservices.use_instance_dns | Use DNS names for instances. | 
+| bootstrap.webservices.ssl.client_https_enabled | Client HTTPS enabled |
+| bootstrap.webservices.ssl.client_https_server_cert_verify | Client HTTPS verify server certificate enabled |
+| bootstrap.webservices.ssl.client_ssl_ciphers | Client HTTPS ciphers for internal use |
+| bootstrap.webservices.ssl.client_ssl_protocols | Client HTTPS protocols for internal use |
 | bootstrap.webservices.ssl.server_alias | Alias of the certificate entry in euca.p12 to use for SSL for webservices. | 
 | bootstrap.webservices.ssl.server_password | Password of the private key corresponding to the specified certificate for SSL for web services. | 
 | bootstrap.webservices.ssl.server_ssl_ciphers | SSL ciphers for web services. | 
@@ -149,6 +156,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloud.images.defaultvisibility | The default value used to determine whether or not images are marked 'public' when first registered. | 
 | cloud.images.maximagesizegb | The maximum registerable image size in GB | 
 | cloud.images.maxmanifestsizebytes | The maximum allowed image manifest size in bytes | 
+| cloud.long_identifier_prefixes | List of resource identifier prefixes for long identifiers or * for all |
 | cloud.monitor.default_poll_interval_mins | How often the CLC requests data from the CC. Default value is 5 minutes. | 
 | cloud.monitor.history_size | How many data value samples are sent from the CC to the CLC. The default value is 5. | 
 | cloud.network.address_pending_timeout | Minutes before a pending system public address allocation times out and is released. Default: 35 minutes. | 
@@ -156,9 +164,12 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloud.network.max_broadcast_apply | Maximum time to apply network information. Default: 120 seconds. | 
 | cloud.network.min_broadcast_interval | Minimum interval between broadcasts of network information. Default: 5 seconds. | 
 | cloud.network.network_index_pending_timeout | Minutes before a pending index allocation times out and is released. Default: 35 minutes. | 
+| cloud.short_identifier_prefixes | List of resource identifier prefixes for short identifiers or * for all |
 | cloud.vmstate.buried_time | Amount of time (in minutes) to retain unreported terminated instance data. | 
 | cloud.vmstate.ebs_root_device_name | Name for root block device mapping | 
 | cloud.vmstate.ebs_volume_creation_timeout | Amount of time (in minutes) before a EBS volume backing the instance is created | 
+| cloud.vmstate.instance_private_prefix | Private name prefix for instance DNS |
+| cloud.vmstate.instance_public_prefix | Public name prefix for instance DNS |
 | cloud.vmstate.instance_reachability_timeout | Amount of time (in minutes) before a VM which is not reported by a cluster will fail a reachability test. | 
 | cloud.vmstate.instance_subdomain | Subdomain to use for instance DNS. | 
 | cloud.vmstate.instance_timeout | Amount of time (default unit minutes) before a previously running instance which is not reported will be marked as terminated. | 
@@ -166,7 +177,6 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloud.vmstate.mac_prefix | Default prefix to use for instance / network interface MAC addresses. | 
 | cloud.vmstate.max_state_threads | Maximum number of threads the system will use to service blocking state changes. | 
 | cloud.vmstate.migration_refresh_time | Maximum amount of time (in seconds) that migration state will take to propagate state changes (e.g., to tags). | 
-| cloud.vmstate.network_metadata_refresh_time | Maximum amount of time (in seconds) that the network topology service takes to propagate state changes. | 
 | cloud.vmstate.pending_time | Amount of time (in minutes) before a pending instance will be terminated. | 
 | cloud.vmstate.shut_down_time | Amount of time (in minutes) before a VM which is not reported by a cluster will be marked as terminated. | 
 | cloud.vmstate.stopping_time | Amount of time (in minutes) before a stopping VM which is not reported by a cluster will be marked as terminated. | 
@@ -184,8 +194,12 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloud.vmstate.volatile_state_timeout_sec | Timeout (in seconds) before a requested instance terminate will be repeated. | 
 | cloud.vmtypes.default_type_name | Default type used when no instance type is specified for run instances. | 
 | cloud.vmtypes.format_ephemeral_storage | Format first ephemeral disk by defaut with ext3 | 
+| cloud.vmtypes.merge_ephemeral_storage | Merge non-root ephemeral disks |
+| cloud.volumes.deleted_time | Amount of time (in minutes) that a deleted volume will continue to be reported |
 | cloud.vpc.defaultvpc | Enable default VPC. | 
+| cloud.vpc.defaultvpccidr | CIDR to use when creating default VPCs |
 | cloud.vpc.networkaclspervpc | Maximum number of network ACLs for each VPC. | 
+| cloud.vpc.reservedcidrs | Comma separated list of reserved CIDRs |
 | cloud.vpc.routespertable | Maximum number of routes for each route table. | 
 | cloud.vpc.routetablespervpc | Maximum number of route tables for each VPC. | 
 | cloud.vpc.rulespernetworkacl | Maximum number of rules per direction for each network ACL. | 
@@ -195,6 +209,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloud.vpc.subnetspervpc | Maximum number of subnets for each VPC. | 
 | cloudformation.autoscaling_group_deleted_max_delete_retry_secs | The amount of time (in seconds) to wait for an autoscaling group to be deleted after deletion) | 
 | cloudformation.autoscaling_group_zero_instances_max_delete_retry_secs | The amount of time (in seconds) to wait for an autoscaling group to have zero instances during delete | 
+| cloudformation.cfn_instance_auth_cache | CloudFormation instance credential authentication cache |
 | cloudformation.instance_attach_volume_max_create_retry_secs | The amount of time (in seconds) to wait for an instance to have volumes attached after creation) | 
 | cloudformation.instance_running_max_create_retry_secs | The amount of time (in seconds) to wait for an instance to be running after creation) | 
 | cloudformation.instance_terminated_max_delete_retry_secs | The amount of time (in seconds) to wait for an instance to be terminated after deletion) | 
@@ -203,6 +218,13 @@ The following table contains a list of common Eucalyptus cloud variables.
 | cloudformation.max_outputs_per_template | The maximum number of outputs allowed in a template | 
 | cloudformation.max_parameters_per_template | The maximum number of outputs allowed in a template | 
 | cloudformation.max_resources_per_template | The maximum number of resources allowed in a template | 
+| cloudformation.nat_gateway_available_max_create_retry_secs | The amount of time (in seconds) to wait for a nat gateway to be available after create) |
+| cloudformation.network_interface_attachment_max_create_or_update_retry_secs | The amount of time (in seconds) to wait for a network interface to be attached during create or update) |
+| cloudformation.network_interface_available_max_create_retry_secs | The amount of time (in seconds) to wait for a network interface to be available after create) |
+| cloudformation.network_interface_deleted_max_delete_retry_secs | The amount of time (in seconds) to wait for a network interface to be deleted) |
+| cloudformation.network_interface_detachment_max_delete_or_update_retry_secs | The amount of time (in seconds) to wait for a network interface to detach during delete or update) |
+| cloudformation.pseudo_param_partition | CloudFormation AWS::Partition (default: eucalyptus) |
+| cloudformation.pseudo_param_urlsuffix | CloudFormation AWS::URLSuffix (default: dns domain) |
 | cloudformation.region | The value of AWS::Region and value in CloudFormation ARNs for Region | 
 | cloudformation.request_template_body_max_length_bytes | The maximum number of bytes in a request-embedded template | 
 | cloudformation.request_template_url_max_content_length_bytes | The maximum number of bytes in a template referenced via a URL | 
@@ -235,12 +257,15 @@ The following table contains a list of common Eucalyptus cloud variables.
 | dns.spoof_regions.spoof_aws_default_regions | Enable spoofing of the default AWS DNS names, e.g., ec2.amazonaws.com would resolve to the ENABLED Cloud Controller. Here ec2 is any service name supported by Eucalyptus. Those that are not supported will continue to resolve through AWS's DNS. | 
 | dns.spoof_regions.spoof_aws_regions | Enable spoofing for the normal AWS regions, e.g., ec2.us-east-1.amazonaws.com would resolve to the ENABLED Cloud Controller. Here ec2 is any service name supported by Eucalyptus. Those that are not supported will continue to resolve through AWS's DNS. | 
 | dns.tcp.timeout_seconds | Variable controlling tcp handler timeout in seconds. | 
+| dns.dns_listener_port | Port number to listen on for DNS requests |
 | objectstorage.bucket_creation_wait_interval_seconds | Interval, in seconds, during which buckets in creating-state are valid. After this interval, the operation is assumed failed. | 
 | objectstorage.bucket_naming_restrictions | The S3 bucket naming restrictions to enforce. Values are 'dns-compliant' or 'extended'. Default is 'extended'. dns_compliant is non-US region S3 names, extended is for US-Standard Region naming. See  http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html.[]({{< relref "" >}}) | 
+| objectstorage.bucket_reserved_cnames | List of host names that may not be used as bucket cnames |
 | objectstorage.cleanup_task_interval_seconds | Interval, in seconds, at which cleanup tasks are initiated for removing old/stale objects. | 
 | objectstorage.dogetputoncopyfail | Should provider client attempt a GET / PUT when backend does not support Copy operation | 
 | objectstorage.failed_put_timeout_hrs | Number of hours to wait for object PUT operations to be allowed to complete before cleanup. | 
 | objectstorage.max_buckets_per_account | Maximum number of buckets per account | 
+| objectstorage.max_tags | Maximum number of user defined tags for a bucket |
 | objectstorage.max_total_reporting_capacity_gb | Total ObjectStorage storage capacity for Objects solely for reporting usage percentage. Not a size restriction. No enforcement of this value | 
 | objectstorage.providerclient | Object Storage Provider client to use for backend | 
 | objectstorage.queue_size | Channel buffer queue size for uploads | 
@@ -261,11 +286,6 @@ The following table contains a list of common Eucalyptus cloud variables.
 | region.region_ssl_default_cas | Use default CAs for region SSL connections. | 
 | region.region_ssl_protocols | Protocols to use for region SSL | 
 | region.region_ssl_verify_hostnames | Verify hostnames for region SSL connections. | 
-| services.database.appendonlyhost | host address of the backend database for append-only data | 
-| services.database.appendonlypassword | password of the backend database for append-only data | 
-| services.database.appendonlyport | port number of the backend database for append-only data | 
-| services.database.appendonlysslcert | ssl certificate to use when connecting to the backend database for append-only data | 
-| services.database.appendonlyuser | user name of the backend database for append-only data | 
 | services.imaging.import_task_expiration_hours | expiration hours of import volume/instance tasks | 
 | services.imaging.import_task_timeout_minutes | expiration time in minutes of import tasks | 
 | services.imaging.worker.availability_zones | availability zones for imaging worker | 
@@ -283,8 +303,10 @@ The following table contains a list of common Eucalyptus cloud variables.
 | services.loadbalancing.dns_resolver_enabled | Enable the load balancing DNS resolver. dns.enabled must also be 'true'. | 
 | services.loadbalancing.dns_subdomain | loadbalancer dns subdomain | 
 | services.loadbalancing.dns_ttl | loadbalancer dns ttl value | 
+| services.loadbalancing.max_tags | Maximum number of user defined tags for a load balancer |
 | services.loadbalancing.restricted_ports | The ports restricted for use as a loadbalancer port. Format should be port(, port) or port-port | 
 | services.loadbalancing.vm_per_zone | number of VMs per loadbalancer zone | 
+| services.loadbalancing.vpc_cidrs | Comma separated list of CIDRs for use with ELB VPCs |
 | services.loadbalancing.worker.app_cookie_duration | duration of app-controlled cookie to be kept in-memory (hours) | 
 | services.loadbalancing.worker.expiration_days | the days after which the loadbalancer VMs expire | 
 | services.loadbalancing.worker.image | EMI containing haproxy and the controller | 
@@ -326,15 +348,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | tokens.webidentityoidcdiscoveryrefresh | OpenID Connect discovery cache refresh expiry. Controls the time in seconds between checks for updated OIDC metadata. Works with tokens.webidentityoidcdiscoverycache. Default: 60 | 
 | tokens.webidentitysignaturealgorithmwhitelist | List of JSON Web Signature algorithms to allow in web identity tokens. The algorithm whitelist can be used to permit use of these signature algorithms: RS256, RS384, RS512, PS256, PS384, PS512. Default: RS512 | 
 | tokens.webidentitytokenskew | A clock skew value in seconds. The Web identity token expiry / not before validation is allowed within the configured skew. Default: 60 | 
-| walrusbackend.blockdevice | DRBD block device | 
-| walrusbackend.resource | DRBD resource name | 
 | walrusbackend.storagedir | Path to buckets storage | 
-| walrusbackend.storagemaxtotalcapacity | Total WalrusBackend storage capacity for Objects | 
-| ZONE.cluster.networkmode | Currently configured network mode. Default: None | 
-| ZONE.cluster.sourcehostname | Alternative address which is the source address for requests made by the component to the cloud controller. Default: None | 
-| ZONE.cluster.vnetnetmask | Netmask used by the cluster's virtual private networking. Default: None | 
-| ZONE.cluster.vnetsubnet | IP subnet used by the cluster's virtual private networking. Default: None | 
-| ZONE.cluster.vnettype | IP version used by the cluster's virtual private networking. Default: None | 
 | ZONE.storage.blockstoragemanager | EBS Block Storage Manager to use for backend | 
 | ZONE.storage.cephconfigfile | Absolute path to Ceph configuration (ceph.conf) file. Default value is '/etc/ceph/ceph.conf' | 
 | ZONE.storage.cephkeyringfile | Absolute path to Ceph keyring (ceph.client.eucalyptus.keyring) file. Default value is '/etc/ceph/ceph.client.eucalyptus.keyring' | 
@@ -363,7 +377,6 @@ The following table contains a list of common Eucalyptus cloud variables.
 | ZONE.storage.snapshotpartsizeinmb | Snapshot part size in MB for snapshot transfers using multipart upload. Minimum part size is 5MB | 
 | ZONE.storage.snapshottransfertimeoutinhours | Snapshot upload wait time in hours after which the upload will be cancelled | 
 | ZONE.storage.storeprefix | Prefix for ISCSI device | 
-| ZONE.storage.tasktimeout | Timeout for SAN commands. | 
 | ZONE.storage.tid | Next Target ID for ISCSI device | 
 | ZONE.storage.timeoutinmillis | Timeout value in milli seconds for storage operations | 
 | ZONE.storage.volexpiration | Time interval in minutes after which Storage Controller metadata for volumes that have been physically removed from the block storage backend will be deleted | 
