@@ -12,8 +12,8 @@ As an Infrastructure as a Service (IaaS) product, Eucalyptus allows your users t
 
 You can install Eucalyptus on the following Linux distributions: 
 
-* CentOS 7.8
-* Red Hat Enterprise Linux (RHEL) 7.8
+* CentOS 7.9
+* Red Hat Enterprise Linux (RHEL) 7.9
 
 {{% notice note %}}
 References to RHEL in this guide apply equally to CentOS unless otherwise specified. 

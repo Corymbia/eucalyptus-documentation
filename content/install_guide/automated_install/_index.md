@@ -7,7 +7,7 @@ weight = 25
 Automated Eucalytpus installation uses an [Ansible](https://www.ansible.com/overview/how-ansible-works) playbook.
 
 {{% notice note %}}
-Before starting the automated installation CentOS or RHEL 7.8 should be installed on all hosts.
+Before starting the automated installation CentOS or RHEL 7.9 should be installed on all hosts.
 {{% /notice %}}
 
 To install Eucalyptus you will need to have Ansible and the Eucalyptus playbooks available and to create an *inventory* file that describes your deployment.
