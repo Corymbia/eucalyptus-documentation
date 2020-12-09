@@ -13,7 +13,7 @@ The specific requirements of your deployment, including the number of physical m
 
 * Physical Machines: All services must be installed on physical servers, not virtual machines. 
 * Central Processing Units (CPUs): We recommend that each host machine in your cloud contain either an Intel or AMD processor with a minimum of 4 2GHz cores. 
-* Operating Systems: supports the following Linux distributions: CentOS 7.8 and RHEL 7.8. supports only 64-bit architecture. 
+* Operating Systems: supports the following Linux distributions: CentOS 7.9 and RHEL 7.9. supports only 64-bit architecture. 
 * Machine Clocks: Each host machine and any client machine clocks must be synchronized (for example, using NTP). These clocks must be synchronized all the time, not only during the installation process. 
 
 ## Storage and Memory Requirements
