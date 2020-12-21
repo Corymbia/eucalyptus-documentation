@@ -9,16 +9,16 @@ To allow easy use of the AWS CLI with Eucalyptus a plug-in is provided that unde
 
 ## Install
 
-To install the Eucalyptus plug-in a Eucalyptus YUM repository must first be enabled, either the snapshot repository:
+To install the Eucalyptus plug-in a Eucalyptus YUM repository must first be enabled, either the release repository:
 
 ```bash
-yum install http://downloads.eucalyptus.cloud/software/eucalyptus/snapshot/5/rhel/7/x86_64/eucalyptus-release-5-1.10.as.el7.noarch.rpm
+yum install https://downloads.eucalyptus.cloud/software/eucalyptus/5/rhel/7/x86_64/eucalyptus-release-5-1.11.as.el7.noarch.rpm
 ```
 
 or the master repository for the latest nightly build:
 
 ```bash
-yum install http://downloads.eucalyptus.cloud/software/eucalyptus/master/rhel/7/x86_64/eucalyptus-release-5-1.15.as.el7.noarch.rpm
+yum install https://downloads.eucalyptus.cloud/software/eucalyptus/master/rhel/7/x86_64/eucalyptus-release-5-1.15.as.el7.noarch.rpm
 ```
 
 Once a repository is configured, install the plugin and client:

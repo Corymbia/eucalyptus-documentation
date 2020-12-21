@@ -20,21 +20,17 @@ The host performing the installation must have the EPEL YUM repository available
 yum install epel-release
 ```
 
-and a Eucalyptus YUM repository, either the snapshot repository:
+and a Eucalyptus YUM repository, either the release repository:
 
 ```bash
-yum install http://downloads.eucalyptus.cloud/software/eucalyptus/snapshot/5/rhel/7/x86_64/eucalyptus-release-5-1.10.as.el7.noarch.rpm
+yum install https://downloads.eucalyptus.cloud/software/eucalyptus/5/rhel/7/x86_64/eucalyptus-release-5-1.11.as.el7.noarch.rpm
 ```
 
 or the master repository for the latest nightly build:
 
 ```bash
-yum install http://downloads.eucalyptus.cloud/software/eucalyptus/master/rhel/7/x86_64/eucalyptus-release-5-1.15.as.el7.noarch.rpm
+yum install https://downloads.eucalyptus.cloud/software/eucalyptus/master/rhel/7/x86_64/eucalyptus-release-5-1.15.as.el7.noarch.rpm
 ```
-
-{{% notice note %}}
-These are pre-releases for Eucalytpus 5. Once Eucalyptus 5 is released the release repository will be available and should be preferred.
-{{% /notice %}}
 
 ## Create Inventory
 
