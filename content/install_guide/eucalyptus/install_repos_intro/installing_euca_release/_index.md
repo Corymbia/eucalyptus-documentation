@@ -13,13 +13,13 @@ To install Eucalyptus from release packages, perform the tasks listed in this to
 
 Configure the Eucalyptus package repository on each host machine that will run a Eucalyptus service: 
 
-    yum install http://downloads.eucalyptus.cloud/software/eucalyptus/snapshot/5/rhel/7/x86_64/eucalyptus-release-5-1.10.as.el7.noarch.rpm # 5.0 snapshot pre-releases
+    yum install https://downloads.eucalyptus.cloud/software/eucalyptus/5/rhel/7/x86_64/eucalyptus-release-5-1.11.as.el7.noarch.rpm
 
 Enter `y` when prompted to install this package. 
 
 Configure the Euca2ools package repository on each host machine that will run a Eucalyptus service or Euca2ools: 
 
-    yum install http://downloads.eucalyptus.cloud/software/euca2ools/3.4/rhel/7/x86_64/euca2ools-release-3.4-2.2.as.el7.noarch.rpm
+    yum install https://downloads.eucalyptus.cloud/software/euca2ools/3.4/rhel/7/x86_64/euca2ools-release-3.4-2.2.as.el7.noarch.rpm
 
 Enter `y` when prompted to install this package. 
 
