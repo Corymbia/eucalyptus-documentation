@@ -13,7 +13,7 @@ You can choose from one of the installation types listed in the following table.
 
 | What Do You Want to Do? | Installation Type | 
 |  :---- |  :---- | 
-| Quickly deploy on one machine | If you have a CentOS 7.9 minimal install and a few IP addresses to spare, try the FastStart script. Run the following command as root: bash <(curl -Ls https://go.euca.me/5eav) |
+| Quickly deploy on one machine | If you have a CentOS 7.9 minimal install and a few IP addresses to spare, try the FastStart script. Run the following command as root: bash <(curl -Ls https://get.eucalyptus.cloud) |
 | Create a development or production environment | See the [Automated Eucalyptus Installation]({{< relref "automated_install" >}}) section for installation using Ansible |
 | Manually create a development or production environment | See the [Manual Eucalyptus Installation]({{< relref "eucalyptus" >}}) section for manual deployment steps |
 
