@@ -54,7 +54,7 @@ all:
     zone:
       hosts:
         cloud.example.com:
-    nodes:
+    node:
       hosts:
         node[01:10].example.com:
 
@@ -72,7 +72,7 @@ The minimum inventory for a deployment must specify one host and have a *childre
 
 For `VPCMIDO` the *vars* for *vpcmido_public_ip_range* and *vpcmido_public_ip_cidr* must also be provided.
 
-When the *zone* and *nodes* children are not specified they are assumed to be the same host as the *cloud*.
+When the *zone* and *node* children are not specified they are assumed to be the same host as the *cloud*.
 
 ### Customization
 
