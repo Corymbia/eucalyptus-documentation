@@ -248,6 +248,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | dns.server_pool_max_threads | Server worker thread pool max. | 
 | dns.server_pool_max_threads | Server worker thread pool max. | 
 | dns.instancedata.enabled | Enable the instance-data resolver. dns.enabled must also be 'true'. | 
+| dns.negative_ttl | Time-to-live for negative caching on authoritative records. Since version 5.1. |
 | dns.ns.enabled | Enable the NS resolver. dns.enabled must also be 'true'. | 
 | dns.recursive.enabled | Enable the recursive DNS resolver. dns.enabled must also be 'true'. | 
 | dns.services.enabled | Enable the service topology resolver. dns.enabled must also be 'true'. | 
@@ -257,6 +258,7 @@ The following table contains a list of common Eucalyptus cloud variables.
 | dns.spoof_regions.spoof_aws_default_regions | Enable spoofing of the default AWS DNS names, e.g., ec2.amazonaws.com would resolve to the ENABLED Cloud Controller. Here ec2 is any service name supported by Eucalyptus. Those that are not supported will continue to resolve through AWS's DNS. | 
 | dns.spoof_regions.spoof_aws_regions | Enable spoofing for the normal AWS regions, e.g., ec2.us-east-1.amazonaws.com would resolve to the ENABLED Cloud Controller. Here ec2 is any service name supported by Eucalyptus. Those that are not supported will continue to resolve through AWS's DNS. | 
 | dns.tcp.timeout_seconds | Variable controlling tcp handler timeout in seconds. | 
+| dns.ttl | Default time-to-live for authoritative records. Since version 5.1. |
 | dns.dns_listener_port | Port number to listen on for DNS requests |
 | objectstorage.bucket_creation_wait_interval_seconds | Interval, in seconds, during which buckets in creating-state are valid. After this interval, the operation is assumed failed. | 
 | objectstorage.bucket_naming_restrictions | The S3 bucket naming restrictions to enforce. Values are 'dns-compliant' or 'extended'. Default is 'extended'. dns_compliant is non-US region S3 names, extended is for US-Standard Region naming. See  http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html.[]({{< relref "" >}}) | 
